@@ -29,10 +29,6 @@ print("I am:")
 age = 15
 print(age)
 ```
-
-    I am:
-    15
-
 That is all :)
 
 ## Footnote
