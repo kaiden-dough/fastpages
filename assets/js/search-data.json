@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Kaiden's Markdown Post",
-            "content": "HELLO . My first Markdown Post on my FastPages site. . I am Kaiden Do. I am a junior at Del Norte High School. Follow my GitHub 1 . Things I Like . mangos | oranges | . turtles | bears | Cool Stuff . Alert Box . . ALERT!!! Info Box . . Information Penguin . . Code Things . print(&quot;I am:&quot;) age = 15 print(age) . I am: 15 . That is all :) . Footnote . My GitHub page. &#8617; . |",
+            "content": "HELLO . My first Markdown Post on my FastPages site. . I am Kaiden Do. I am a junior at Del Norte High School. Follow my GitHub 1 . Things I Like . mangos | oranges | . turtles | bears | Cool Stuff . Alert Box . . ALERT!!! Info Box . . Information Penguin . . Code Things . print(&quot;I am:&quot;) age = 15 print(age) . That is all :) . Footnote . My GitHub page. &#8617; . |",
             "url": "https://kaiden-dough.github.io/fastpages/markdown/2022/08/21/myfirstmarkdownpost.html",
             "relUrl": "/markdown/2022/08/21/myfirstmarkdownpost.html",
             "date": " • Aug 21, 2022"
