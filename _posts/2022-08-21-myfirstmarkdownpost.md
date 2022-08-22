@@ -18,6 +18,8 @@ Follow my [GitHub](https://github.com/kaiden-dough) [^1]
 | Oranges | Bears |
 
 
+---
+
 ## Code Things
 ```python
 print("I am:")
