@@ -10,19 +10,9 @@ title: Kaiden's Markdown Post
 I am `Kaiden Do`. I am a *junior* at **Del Norte High School**.
 Follow my [GitHub](https://github.com/kaiden-dough) [^1]
 ## Things I Like
-- mangos
-- oranges
-
-1. turtles
-2. bears
-
-## Cool Stuff
-> Alert Box
-{% include alert.html text="ALERT!!!" %}
-> Info Box
-{% include info.html text="Information" %}
-## Penguin
-![]({{ site.baseurl }}/images/penguin500x500.png "A penguin photo")
+| Fruits | Animals |
+| Mangos | Turtles |
+| Oranges | Bears |
 ## Code Things
 ```python
 print("I am:")
@@ -30,6 +20,7 @@ age = 15
 print(age)
 ```
 That is all :)
-
+## Penguin
+![]({{ site.baseurl }}/images/penguin500x500.png "A penguin photo")
 ## Footnote
 [^1]: My GitHub page.
