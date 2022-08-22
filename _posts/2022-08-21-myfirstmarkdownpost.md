@@ -12,7 +12,9 @@ I am `Kaiden Do`. I am a *junior* at **Del Norte High School**.
 Follow my [GitHub](https://github.com/kaiden-dough) [^1]
 ## Things I Like
 | Fruits | Animals |
+|-|-|
 | Mangos | Turtles |
+|-|-|
 | Oranges | Bears |
 ## Code Things
 ```python
