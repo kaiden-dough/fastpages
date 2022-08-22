@@ -15,7 +15,6 @@ Follow my [GitHub](https://github.com/kaiden-dough) [^1]
 | Fruits | Animals |
 |-|-|
 | Mangos | Turtles |
-|-|-|
 | Oranges | Bears |
 
 
