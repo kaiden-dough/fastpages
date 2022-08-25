@@ -49,7 +49,20 @@
   
 
   
-      ,"page1": {
+
+  
+      ,"page2": {
+          "title": "Notes for APCSP",
+          "content": "Notes . … | . Terms . … | . Ideas . … | .",
+          "url": "https://kaiden-dough.github.io/fastpages/_pages/02_notes.html",
+          "relUrl": "/_pages/02_notes.html",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page3": {
           "title": "About Me",
           "content": "I am Kaiden Do and I am a junior in Del Norte High School. Follow me on GitHub: kaiden-dough 1. . My GitHub profile. &#8617; . |",
           "url": "https://kaiden-dough.github.io/fastpages/about/",
@@ -62,13 +75,8 @@
   
 
   
-  
 
   
-
-  
-  
-
   
 
   
@@ -81,7 +89,10 @@
   
 
   
-      ,"page10": {
+  
+
+  
+      ,"page11": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://kaiden-dough.github.io/fastpages/robots.txt",
