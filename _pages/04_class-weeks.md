@@ -15,7 +15,7 @@ title: Class Weeks
 - [Python Quiz](https://kaiden-dough.github.io/fastpages/python/2022/08/26/Python-Hacks.html)
 - [APEL Syllabus](https://kaiden-dough.github.io/fastpages/2022/08/25/APEL-syllabus.html)
 - [DNHS Info](https://kaiden-dough.github.io/fastpages/markdown/dnhs/2022/08/25/delnortehighschool.html)
-- [Class Weeks](https://kaiden-dough.github.io/fastpages/class-weeks/)
+- [Class Weeks](https://kaiden-dough.github.io/fastpages/_pages/04_class-weeks.html)
 
 
 ## Week 0
