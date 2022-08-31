@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About Me
+categories: [week1]
 permalink: /about/
 ---
 

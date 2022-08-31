@@ -3,7 +3,7 @@ toc: true
 layout: post
 description: What I did each week.
 author: Kaiden Do
-categories: [markdown]
+categories: [markdown, week1]
 title: Class Weeks
 ---
 

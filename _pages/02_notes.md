@@ -3,7 +3,7 @@ toc: true
 layout: post
 description: Notes, terms, and ideas of APCSP.
 author: Kaiden Do
-categories: [markdown]
+categories: [markdown, week1]
 title: Notes for APCSP
 ---
 ## Notes and Terms and Ideas

@@ -3,7 +3,7 @@ toc: true
 layout: post
 description: Kaiden's 1st Markdown post.
 author: Kaiden Do
-categories: [markdown]
+categories: [markdown, week0]
 title: Kaiden's Markdown Post
 ---
 # HELLO
