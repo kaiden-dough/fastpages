@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      6 min read
+      9 min read
     
 </span></p>
 
@@ -256,9 +256,9 @@ person {'name': 'Kaiden Do', 'age': 15, 'score': 100.0, 'langs': ['Python', 'Jav
 - colors[ 5 ] Red &lt;class 'str'&gt;
 
 - shuffledAwards[ 0 ] Silver &lt;class 'str'&gt;
-- shuffledAwards[ 1 ] Participation &lt;class 'str'&gt;
+- shuffledAwards[ 1 ] Bronze &lt;class 'str'&gt;
 - shuffledAwards[ 2 ] Gold &lt;class 'str'&gt;
-- shuffledAwards[ 3 ] Bronze &lt;class 'str'&gt;
+- shuffledAwards[ 3 ] Participation &lt;class 'str'&gt;
 </pre>
 </div>
 </div>
@@ -339,11 +339,44 @@ person {'name': 'Kaiden Do', 'age': 15, 'score': 100.0, 'langs': ['Python', 'Jav
     <span class="s2">"Owns_Cars"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"Nissan Altima"</span><span class="p">]</span>
 <span class="p">})</span>
 
+<span class="kn">import</span> <span class="nn">getpass</span><span class="o">,</span> <span class="nn">sys</span>
+
+
+<span class="n">FirstName</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter your first name: "</span><span class="p">)</span>
+<span class="n">LastName</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter your last name: "</span><span class="p">)</span>
+<span class="n">DOB</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter your date of birth: "</span><span class="p">)</span>
+<span class="n">Residence</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter your city: "</span><span class="p">)</span>
+<span class="n">Email</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter your email: "</span><span class="p">)</span>
+<span class="n">Owns_Cars</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter your car or dream car: "</span><span class="p">)</span>
+    
+<span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+    <span class="s2">"FirstName"</span><span class="p">:</span> <span class="n">FirstName</span><span class="p">,</span>
+    <span class="s2">"LastName"</span><span class="p">:</span> <span class="n">LastName</span><span class="p">,</span>
+    <span class="s2">"DOB"</span><span class="p">:</span> <span class="n">DOB</span><span class="p">,</span>
+    <span class="s2">"Residence"</span><span class="p">:</span> <span class="n">Residence</span><span class="p">,</span>
+    <span class="s2">"Email"</span><span class="p">:</span> <span class="n">Email</span><span class="p">,</span>
+    <span class="s2">"Owns_Cars"</span><span class="p">:</span> <span class="n">Owns_Cars</span>
+<span class="p">})</span>
+
 <span class="c1"># Print the data structure</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">InfoDb</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[{'FirstName': 'John', 'LastName': 'Mortensen', 'DOB': 'October 21', 'Residence': 'San Diego', 'Email': 'jmortensen@powayusd.com', 'Owns_Cars': ['2015-Fusion', '2011-Ranger', '2003-Excursion', '1997-F350', '1969-Cadillac']}, {'FirstName': 'Sunny', 'LastName': 'Naidu', 'DOB': 'August 2', 'Residence': 'Temecula', 'Email': 'snaidu@powayusd.com', 'Owns_Cars': ['4Runner']}, {'FirstName': 'Kaiden', 'LastName': 'Do', 'DOB': 'September 10', 'Residence': 'San Diego', 'Email': 'kaidend@powayusd.com', 'Owns_Cars': ['Nissan Cube']}, {'FirstName': 'Samit', 'LastName': 'Poojary', 'DOB': 'February 24', 'Residence': 'San Diego', 'Email': 'samitp@powayusd.com', 'Owns_Cars': ['Nissan Altima']}, {'FirstName': 'Kaiden', 'LastName': 'Do', 'DOB': 'September 10', 'Residence': 'San Diego', 'Email': 'kaiden12345do@gmail.com', 'Owns_Cars': 'Nissan Cube'}]
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -380,8 +413,8 @@ person {'name': 'Kaiden Do', 'age': 15, 'score': 100.0, 'langs': ['Python', 'Jav
     <span class="nb">print</span><span class="p">(</span><span class="n">d_rec</span><span class="p">[</span><span class="s2">"FirstName"</span><span class="p">],</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"LastName"</span><span class="p">])</span>  <span class="c1"># using comma puts space between values</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Residence:"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"Residence"</span><span class="p">])</span> <span class="c1"># \t is a tab indent</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Birth Day:"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"DOB"</span><span class="p">])</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Cars: "</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">""</span><span class="p">)</span>  <span class="c1"># end="" make sure no return occurs</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">", "</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">d_rec</span><span class="p">[</span><span class="s2">"Owns_Cars"</span><span class="p">]))</span>  <span class="c1"># join allows printing a string list with separator</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Cars: "</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"Owns_Cars"</span><span class="p">])</span>  <span class="c1"># end="" make sure no return occurs</span>
+      <span class="c1"># join allows printing a string list with separator</span>
     <span class="nb">print</span><span class="p">()</span>
 
 
@@ -395,6 +428,46 @@ person {'name': 'Kaiden Do', 'age': 15, 'score': 100.0, 'langs': ['Python', 'Jav
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>For loop output
+
+John Mortensen
+	 Residence: San Diego
+	 Birth Day: October 21
+	 Cars:  ['2015-Fusion', '2011-Ranger', '2003-Excursion', '1997-F350', '1969-Cadillac']
+
+Sunny Naidu
+	 Residence: Temecula
+	 Birth Day: August 2
+	 Cars:  ['4Runner']
+
+Kaiden Do
+	 Residence: San Diego
+	 Birth Day: September 10
+	 Cars:  ['Nissan Cube']
+
+Samit Poojary
+	 Residence: San Diego
+	 Birth Day: February 24
+	 Cars:  ['Nissan Altima']
+
+Kaiden Do
+	 Residence: San Diego
+	 Birth Day: September 10
+	 Cars:  Nissan Cube
+
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -435,6 +508,46 @@ person {'name': 'Kaiden Do', 'age': 15, 'score': 100.0, 'langs': ['Python', 'Jav
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>While loop output
+
+John Mortensen
+	 Residence: San Diego
+	 Birth Day: October 21
+	 Cars:  ['2015-Fusion', '2011-Ranger', '2003-Excursion', '1997-F350', '1969-Cadillac']
+
+Sunny Naidu
+	 Residence: Temecula
+	 Birth Day: August 2
+	 Cars:  ['4Runner']
+
+Kaiden Do
+	 Residence: San Diego
+	 Birth Day: September 10
+	 Cars:  ['Nissan Cube']
+
+Samit Poojary
+	 Residence: San Diego
+	 Birth Day: February 24
+	 Cars:  ['Nissan Altima']
+
+Kaiden Do
+	 Residence: San Diego
+	 Birth Day: September 10
+	 Cars:  Nissan Cube
+
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -479,6 +592,46 @@ person {'name': 'Kaiden Do', 'age': 15, 'score': 100.0, 'langs': ['Python', 'Jav
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Recursive loop output
+
+John Mortensen
+	 Residence: San Diego
+	 Birth Day: October 21
+	 Cars:  ['2015-Fusion', '2011-Ranger', '2003-Excursion', '1997-F350', '1969-Cadillac']
+
+Sunny Naidu
+	 Residence: Temecula
+	 Birth Day: August 2
+	 Cars:  ['4Runner']
+
+Kaiden Do
+	 Residence: San Diego
+	 Birth Day: September 10
+	 Cars:  ['Nissan Cube']
+
+Samit Poojary
+	 Residence: San Diego
+	 Birth Day: February 24
+	 Cars:  ['Nissan Altima']
+
+Kaiden Do
+	 Residence: San Diego
+	 Birth Day: September 10
+	 Cars:  Nissan Cube
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -503,6 +656,91 @@ person {'name': 'Kaiden Do', 'age': 15, 'score': 100.0, 'langs': ['Python', 'Jav
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">questions</span> <span class="o">=</span> <span class="mi">6</span>
+<span class="n">correct</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">def</span> <span class="nf">question_and_answer</span><span class="p">(</span><span class="n">prompt</span><span class="p">,</span> <span class="n">answer</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Question: "</span> <span class="o">+</span> <span class="n">prompt</span><span class="p">)</span>
+    <span class="n">msg</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Answer: "</span> <span class="o">+</span> <span class="n">msg</span><span class="p">)</span>
+    
+    <span class="k">if</span> <span class="n">answer</span> <span class="o">==</span> <span class="n">msg</span><span class="o">.</span><span class="n">lower</span><span class="p">():</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Correct Answer"</span><span class="p">)</span>
+        <span class="k">global</span> <span class="n">correct</span>
+        <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span> <span class="p">(</span><span class="s2">"Incorrect Answer"</span><span class="p">)</span>
+        
+    <span class="k">return</span> <span class="n">msg</span>
+ 
+<span class="n">Q1</span> <span class="o">=</span> <span class="n">question_and_answer</span><span class="p">(</span><span class="s2">"What is 2+2?"</span><span class="p">,</span> <span class="s2">"4"</span><span class="p">)</span>
+<span class="n">Q2</span> <span class="o">=</span> <span class="n">question_and_answer</span><span class="p">(</span><span class="s2">"What is the capital of California?"</span><span class="p">,</span> <span class="s2">"sacramento"</span><span class="p">)</span>
+<span class="n">Q3</span> <span class="o">=</span> <span class="n">question_and_answer</span><span class="p">(</span><span class="s2">"What continent is India in?"</span><span class="p">,</span> <span class="s2">"asia"</span><span class="p">)</span>
+<span class="n">Q4</span> <span class="o">=</span> <span class="n">question_and_answer</span><span class="p">(</span><span class="s2">"When is Christmas"</span><span class="p">,</span> <span class="s2">"december 25"</span><span class="p">)</span>
+<span class="n">Q5</span> <span class="o">=</span> <span class="n">question_and_answer</span><span class="p">(</span><span class="s2">"What number is Aaron Donald?"</span><span class="p">,</span> <span class="s2">"99"</span><span class="p">)</span>
+<span class="n">Q6</span> <span class="o">=</span> <span class="n">question_and_answer</span><span class="p">(</span><span class="s2">"What color is the sky"</span><span class="p">,</span> <span class="s2">"blue"</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">correct</span><span class="p">,</span> <span class="s2">"answers correct"</span><span class="p">,</span> <span class="n">correct</span><span class="o">*</span><span class="mi">100</span><span class="o">/</span><span class="n">questions</span><span class="p">,</span><span class="s2">"%"</span><span class="p">)</span>
+    
+<span class="n">Quiz</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"Q1"</span><span class="p">:</span> <span class="n">Q1</span><span class="p">,</span>
+    <span class="s2">"Q2"</span><span class="p">:</span> <span class="n">Q2</span><span class="p">,</span>
+    <span class="s2">"Q3"</span><span class="p">:</span> <span class="n">Q3</span><span class="p">,</span>
+    <span class="s2">"Q4"</span><span class="p">:</span> <span class="n">Q4</span><span class="p">,</span>
+    <span class="s2">"Q5"</span><span class="p">:</span> <span class="n">Q5</span><span class="p">,</span>
+    <span class="s2">"Q6"</span><span class="p">:</span> <span class="n">Q6</span>
+<span class="p">}</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Your answers:"</span><span class="p">,</span><span class="n">Quiz</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Question: What is 2+2?
+Answer: 4
+Correct Answer
+Question: What is the capital of California?
+Answer: sacramento
+Correct Answer
+Question: What continent is India in?
+Answer: ASia
+Correct Answer
+Question: When is Christmas
+Answer: December 25
+Correct Answer
+Question: What number is Aaron Donald?
+Answer: 99
+Correct Answer
+Question: What color is the sky
+Answer: BLUe
+Correct Answer
+6 answers correct 100.0 %
+Your answers: {'Q1': '4', 'Q2': 'sacramento', 'Q3': 'ASia', 'Q4': 'December 25', 'Q5': '99', 'Q6': 'BLUe'}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
