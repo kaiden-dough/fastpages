@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Python Tech Talk | Kaiden Do FastPages</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Python Tech Talk" />
+<meta name="author" content="Kaiden Do" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Python lists, dictionaries, and iterations hacks." />
+<meta property="og:description" content="Python lists, dictionaries, and iterations hacks." />
+<link rel="canonical" href="https://kaiden-dough.github.io/fastpages/python/week2/2022/09/04/python_lists.html" />
+<meta property="og:url" content="https://kaiden-dough.github.io/fastpages/python/week2/2022/09/04/python_lists.html" />
+<meta property="og:site_name" content="Kaiden Do FastPages" />
+<meta property="og:image" content="https://kaiden-dough.github.io/fastpages/images/pythonlogo.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-09-04T00:00:00-05:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://kaiden-dough.github.io/fastpages/images/pythonlogo.png" />
+<meta property="twitter:title" content="Python Tech Talk" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Kaiden Do"},"dateModified":"2022-09-04T00:00:00-05:00","datePublished":"2022-09-04T00:00:00-05:00","description":"Python lists, dictionaries, and iterations hacks.","headline":"Python Tech Talk","image":"https://kaiden-dough.github.io/fastpages/images/pythonlogo.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://kaiden-dough.github.io/fastpages/python/week2/2022/09/04/python_lists.html"},"url":"https://kaiden-dough.github.io/fastpages/python/week2/2022/09/04/python_lists.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/fastpages/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://kaiden-dough.github.io/fastpages/feed.xml" title="Kaiden Do FastPages" /><link rel="shortcut icon" type="image/x-icon" href="/fastpages/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/fastpages/">Kaiden Do FastPages</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/fastpages/search/">Search</a><a class="page-link" href="/fastpages/categories/">Tags</a><a class="page-link" href="/fastpages/_pages/02_notes.html">Notes for APCSP</a><a class="page-link" href="/fastpages/about/">About Me</a><a class="page-link" href="/fastpages/_pages/04_class-weeks.html">Class Weeks</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Python Tech Talk</h1><p class="page-description">Python lists, dictionaries, and iterations hacks.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-09-04T00:00:00-05:00" itemprop="datePublished">
+        Sep 4, 2022
+      </time>• 
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">Kaiden Do</span></span>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      6 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/fastpages/categories/#python">python</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/fastpages/categories/#week2">week2</a>
+        
+      
+      </p>
+    
+
+    
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#InfoDb-Cell">InfoDb Cell </a></li>
+<li class="toc-entry toc-h2"><a href="#Fruits-Database">Fruits Database </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#print_data-Function">print_data Function </a></li>
+<li class="toc-entry toc-h3"><a href="#For-Loop">For Loop </a></li>
+<li class="toc-entry toc-h3"><a href="#For-Loop-(reversed)">For Loop (reversed) </a></li>
+<li class="toc-entry toc-h3"><a href="#While-Loop-(shuffled)">While Loop (shuffled) </a></li>
+<li class="toc-entry toc-h3"><a href="#Recursive-Loop">Recursive Loop </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#Quiz-that-Stores-Responses">Quiz that Stores Responses </a></li>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2022-09-04-python_lists.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="InfoDb-Cell">
+<a class="anchor" href="#InfoDb-Cell" aria-hidden="true"><span class="octicon octicon-link"></span></a>InfoDb Cell<a class="anchor-link" href="#InfoDb-Cell"> </a>
+</h2>
+<p>In the below cell, I create and add to a dictionaries to a list. Then at the end, I prompt the user to input their own information to add to the list. Then the list is printed.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">InfoDb</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="c1"># Append to List a Dictionary of key/values related to a person and cars</span>
+<span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+    <span class="s2">"FirstName"</span><span class="p">:</span> <span class="s2">"John"</span><span class="p">,</span>
+    <span class="s2">"LastName"</span><span class="p">:</span> <span class="s2">"Mortensen"</span><span class="p">,</span>
+    <span class="s2">"DOB"</span><span class="p">:</span> <span class="s2">"October 21"</span><span class="p">,</span>
+    <span class="s2">"Residence"</span><span class="p">:</span> <span class="s2">"San Diego"</span><span class="p">,</span>
+    <span class="s2">"Email"</span><span class="p">:</span> <span class="s2">"jmortensen@powayusd.com"</span><span class="p">,</span>
+    <span class="s2">"Owns_Cars"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"2015-Fusion"</span><span class="p">,</span> <span class="s2">"2011-Ranger"</span><span class="p">,</span> <span class="s2">"2003-Excursion"</span><span class="p">,</span> <span class="s2">"1997-F350"</span><span class="p">,</span> <span class="s2">"1969-Cadillac"</span><span class="p">]</span>
+<span class="p">})</span>
+
+<span class="c1"># Append to List a 2nd Dictionary of key/values</span>
+<span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+    <span class="s2">"FirstName"</span><span class="p">:</span> <span class="s2">"Sunny"</span><span class="p">,</span>
+    <span class="s2">"LastName"</span><span class="p">:</span> <span class="s2">"Naidu"</span><span class="p">,</span>
+    <span class="s2">"DOB"</span><span class="p">:</span> <span class="s2">"August 2"</span><span class="p">,</span>
+    <span class="s2">"Residence"</span><span class="p">:</span> <span class="s2">"Temecula"</span><span class="p">,</span>
+    <span class="s2">"Email"</span><span class="p">:</span> <span class="s2">"snaidu@powayusd.com"</span><span class="p">,</span>
+    <span class="s2">"Owns_Cars"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"4Runner"</span><span class="p">]</span>
+<span class="p">})</span>
+<span class="c1"># Append a 3rd dictionary</span>
+<span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+    <span class="s2">"FirstName"</span><span class="p">:</span> <span class="s2">"Kaiden"</span><span class="p">,</span>
+    <span class="s2">"LastName"</span><span class="p">:</span> <span class="s2">"Do"</span><span class="p">,</span>
+    <span class="s2">"DOB"</span><span class="p">:</span> <span class="s2">"September 10"</span><span class="p">,</span>
+    <span class="s2">"Residence"</span><span class="p">:</span> <span class="s2">"San Diego"</span><span class="p">,</span>
+    <span class="s2">"Email"</span><span class="p">:</span> <span class="s2">"kaidend@powayusd.com"</span><span class="p">,</span>
+    <span class="s2">"Owns_Cars"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"Nissan Cube"</span><span class="p">]</span>
+<span class="p">})</span>
+<span class="c1"># Append a 4th dictionary</span>
+<span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+    <span class="s2">"FirstName"</span><span class="p">:</span> <span class="s2">"Samit"</span><span class="p">,</span>
+    <span class="s2">"LastName"</span><span class="p">:</span> <span class="s2">"Poojary"</span><span class="p">,</span>
+    <span class="s2">"DOB"</span><span class="p">:</span> <span class="s2">"February 24"</span><span class="p">,</span>
+    <span class="s2">"Residence"</span><span class="p">:</span> <span class="s2">"San Diego"</span><span class="p">,</span>
+    <span class="s2">"Email"</span><span class="p">:</span> <span class="s2">"samitp@powayusd.com"</span><span class="p">,</span>
+    <span class="s2">"Owns_Cars"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"Nissan Altima"</span><span class="p">]</span>
+<span class="p">})</span>
+
+<span class="kn">import</span> <span class="nn">getpass</span><span class="o">,</span> <span class="nn">sys</span>
+
+
+<span class="n">FirstName</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter your first name: "</span><span class="p">)</span>
+<span class="n">LastName</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter your last name: "</span><span class="p">)</span>
+<span class="n">DOB</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter your date of birth: "</span><span class="p">)</span>
+<span class="n">Residence</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter your city: "</span><span class="p">)</span>
+<span class="n">Email</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter your email: "</span><span class="p">)</span>
+<span class="n">Owns_Cars</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter your car or dream car: "</span><span class="p">)</span>
+
+<span class="c1"># Append a 5th dictionary with inputted values    </span>
+<span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+    <span class="s2">"FirstName"</span><span class="p">:</span> <span class="n">FirstName</span><span class="p">,</span>
+    <span class="s2">"LastName"</span><span class="p">:</span> <span class="n">LastName</span><span class="p">,</span>
+    <span class="s2">"DOB"</span><span class="p">:</span> <span class="n">DOB</span><span class="p">,</span>
+    <span class="s2">"Residence"</span><span class="p">:</span> <span class="n">Residence</span><span class="p">,</span>
+    <span class="s2">"Email"</span><span class="p">:</span> <span class="n">Email</span><span class="p">,</span>
+    <span class="s2">"Owns_Cars"</span><span class="p">:</span> <span class="n">Owns_Cars</span>
+<span class="p">})</span>
+
+<span class="c1"># Print the data structure</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">InfoDb</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[{'FirstName': 'John', 'LastName': 'Mortensen', 'DOB': 'October 21', 'Residence': 'San Diego', 'Email': 'jmortensen@powayusd.com', 'Owns_Cars': ['2015-Fusion', '2011-Ranger', '2003-Excursion', '1997-F350', '1969-Cadillac']}, {'FirstName': 'Sunny', 'LastName': 'Naidu', 'DOB': 'August 2', 'Residence': 'Temecula', 'Email': 'snaidu@powayusd.com', 'Owns_Cars': ['4Runner']}, {'FirstName': 'Kaiden', 'LastName': 'Do', 'DOB': 'September 10', 'Residence': 'San Diego', 'Email': 'kaidend@powayusd.com', 'Owns_Cars': ['Nissan Cube']}, {'FirstName': 'Samit', 'LastName': 'Poojary', 'DOB': 'February 24', 'Residence': 'San Diego', 'Email': 'samitp@powayusd.com', 'Owns_Cars': ['Nissan Altima']}, {'FirstName': 'Kaiden', 'LastName': 'Do', 'DOB': 'September 10', 'Residence': 'San Diego', 'Email': 'kaiden12345do@gmail.com', 'Owns_Cars': 'Nissan Cube'}]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Fruits-Database">
+<a class="anchor" href="#Fruits-Database" aria-hidden="true"><span class="octicon octicon-link"></span></a>Fruits Database<a class="anchor-link" href="#Fruits-Database"> </a>
+</h2>
+<p>This database is a list of fruits with 6 dictionary values. The 6 fruits are apple, orange, pineapple, pear, blueberry, and grape. Each of the dictionaries consists of keys/values for the fruits' name, color, and size.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Fruits</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="c1"># append apple dictionary</span>
+<span class="n">Fruits</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+    <span class="s2">"Name"</span><span class="p">:</span> <span class="s2">"Apple"</span><span class="p">,</span>
+    <span class="s2">"Color"</span><span class="p">:</span> <span class="s2">"Red"</span><span class="p">,</span>
+    <span class="s2">"Size"</span><span class="p">:</span> <span class="s2">"Normal"</span>
+<span class="p">})</span>
+
+<span class="c1"># append orange dictionary</span>
+<span class="n">Fruits</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+    <span class="s2">"Name"</span><span class="p">:</span> <span class="s2">"Orange"</span><span class="p">,</span>
+    <span class="s2">"Color"</span><span class="p">:</span> <span class="s2">"Orange"</span><span class="p">,</span>
+    <span class="s2">"Size"</span><span class="p">:</span> <span class="s2">"Normal"</span>
+<span class="p">})</span>
+
+<span class="c1"># append pineapple dictionary</span>
+<span class="n">Fruits</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+    <span class="s2">"Name"</span><span class="p">:</span> <span class="s2">"Pineapple"</span><span class="p">,</span>
+    <span class="s2">"Color"</span><span class="p">:</span> <span class="s2">"Yellow"</span><span class="p">,</span>
+    <span class="s2">"Size"</span><span class="p">:</span> <span class="s2">"Large"</span>
+<span class="p">})</span>
+
+<span class="c1"># append pear dictionary</span>
+<span class="n">Fruits</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+    <span class="s2">"Name"</span><span class="p">:</span> <span class="s2">"Pear"</span><span class="p">,</span>
+    <span class="s2">"Color"</span><span class="p">:</span> <span class="s2">"Green"</span><span class="p">,</span>
+    <span class="s2">"Size"</span><span class="p">:</span> <span class="s2">"Normal"</span>
+<span class="p">})</span>
+
+<span class="c1"># append blueberry dictionary</span>
+<span class="n">Fruits</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+    <span class="s2">"Name"</span><span class="p">:</span> <span class="s2">"Blueberry"</span><span class="p">,</span>
+    <span class="s2">"Color"</span><span class="p">:</span> <span class="s2">"Blue"</span><span class="p">,</span>
+    <span class="s2">"Size"</span><span class="p">:</span> <span class="s2">"Small"</span>
+<span class="p">})</span>
+
+<span class="c1"># append grape dictionary</span>
+<span class="n">Fruits</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+    <span class="s2">"Name"</span><span class="p">:</span> <span class="s2">"Grape"</span><span class="p">,</span>
+    <span class="s2">"Color"</span><span class="p">:</span> <span class="s2">"Purple"</span><span class="p">,</span>
+    <span class="s2">"Size"</span><span class="p">:</span> <span class="s2">"Small"</span>
+<span class="p">})</span>
+
+<span class="c1"># prints the whole list</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Fruits</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[{'Name': 'Apple', 'Color': 'Red', 'Size': 'Normal'}, {'Name': 'Orange', 'Color': 'Orange', 'Size': 'Normal'}, {'Name': 'Pineapple', 'Color': 'Yellow', 'Size': 'Large'}, {'Name': 'Pear', 'Color': 'Green', 'Size': 'Normal'}, {'Name': 'Blueberry', 'Color': 'Blue', 'Size': 'Small'}, {'Name': 'Grape', 'Color': 'Purple', 'Size': 'Small'}]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="print_data-Function">
+<a class="anchor" href="#print_data-Function" aria-hidden="true"><span class="octicon octicon-link"></span></a>print_data Function<a class="anchor-link" href="#print_data-Function"> </a>
+</h3>
+<p>This function is used to format the outputs of fruits when printing the fruits using some sort of loop.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">print_data</span><span class="p">(</span><span class="n">d_rec</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">d_rec</span><span class="p">[</span><span class="s2">"Name"</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Color: "</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"Color"</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Size: "</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"Size"</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="For-Loop">
+<a class="anchor" href="#For-Loop" aria-hidden="true"><span class="octicon octicon-link"></span></a>For Loop<a class="anchor-link" href="#For-Loop"> </a>
+</h3>
+<p>This for loop prints the fruits and their details in order.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">for_loop</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"For Loop</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">record</span> <span class="ow">in</span> <span class="n">Fruits</span><span class="p">:</span> <span class="c1"># loops for everything in Fruits</span>
+        <span class="n">print_data</span><span class="p">(</span><span class="n">record</span><span class="p">)</span> <span class="c1"># calls the print formatter</span>
+
+<span class="n">for_loop</span><span class="p">()</span> <span class="c1"># calls the function</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>For Loop
+
+Apple
+	 Color:  Red
+	 Size:  Normal
+
+Orange
+	 Color:  Orange
+	 Size:  Normal
+
+Pineapple
+	 Color:  Yellow
+	 Size:  Large
+
+Pear
+	 Color:  Green
+	 Size:  Normal
+
+Blueberry
+	 Color:  Blue
+	 Size:  Small
+
+Grape
+	 Color:  Purple
+	 Size:  Small
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="For-Loop-(reversed)">
+<a class="anchor" href="#For-Loop-(reversed)" aria-hidden="true"><span class="octicon octicon-link"></span></a>For Loop (reversed)<a class="anchor-link" href="#For-Loop-(reversed)"> </a>
+</h3>
+<p>This for loop prints the fruits and their details in reverse order(from Grape to Apple).</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">rev_for_loop</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"For Loop with Reversed Outputs</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">record</span> <span class="ow">in</span> <span class="nb">reversed</span><span class="p">(</span><span class="n">Fruits</span><span class="p">):</span>  <span class="c1"># reverses the list</span>
+        <span class="n">print_data</span><span class="p">(</span><span class="n">record</span><span class="p">)</span>
+        
+<span class="n">rev_for_loop</span><span class="p">()</span> <span class="c1"># calls the function</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>For Loop with Reversed Outputs
+
+Grape
+	 Color:  Purple
+	 Size:  Small
+
+Blueberry
+	 Color:  Blue
+	 Size:  Small
+
+Pear
+	 Color:  Green
+	 Size:  Normal
+
+Pineapple
+	 Color:  Yellow
+	 Size:  Large
+
+Orange
+	 Color:  Orange
+	 Size:  Normal
+
+Apple
+	 Color:  Red
+	 Size:  Normal
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="While-Loop-(shuffled)">
+<a class="anchor" href="#While-Loop-(shuffled)" aria-hidden="true"><span class="octicon octicon-link"></span></a>While Loop (shuffled)<a class="anchor-link" href="#While-Loop-(shuffled)"> </a>
+</h3>
+<p>This while loop prints the fruits that have been randomly shuffled.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+<span class="n">shuffledFruits</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">Fruits</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">Fruits</span><span class="p">))</span> <span class="c1"># randomly shuffles the list</span>
+<span class="k">def</span> <span class="nf">while_loop</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"While Loop</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">shuffledFruits</span><span class="p">):</span>  <span class="c1"># while i is less than the length of the list, it loops</span>
+        <span class="n">record</span> <span class="o">=</span> <span class="n">shuffledFruits</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+        <span class="n">print_data</span><span class="p">(</span><span class="n">record</span><span class="p">)</span>
+        <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>  <span class="c1"># adds 1 to i each loop</span>
+    <span class="k">return</span>
+
+<span class="n">while_loop</span><span class="p">()</span> <span class="c1"># calls the function</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>While Loop
+
+Blueberry
+	 Color:  Blue
+	 Size:  Small
+
+Orange
+	 Color:  Orange
+	 Size:  Normal
+
+Apple
+	 Color:  Red
+	 Size:  Normal
+
+Grape
+	 Color:  Purple
+	 Size:  Small
+
+Pear
+	 Color:  Green
+	 Size:  Normal
+
+Pineapple
+	 Color:  Yellow
+	 Size:  Large
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Recursive-Loop">
+<a class="anchor" href="#Recursive-Loop" aria-hidden="true"><span class="octicon octicon-link"></span></a>Recursive Loop<a class="anchor-link" href="#Recursive-Loop"> </a>
+</h3>
+<p>This loop prints the fruits in order using a recursive loop.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">recursive_loop</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>  <span class="c1"># keeps on looping if x is there</span>
+    <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">Fruits</span><span class="p">):</span>  <span class="c1"># if x is less than the length of the list, it will do the following</span>
+        <span class="c1"># if x is greater it will stop</span>
+        <span class="n">record</span> <span class="o">=</span> <span class="n">Fruits</span><span class="p">[</span><span class="n">x</span><span class="p">]</span>
+        <span class="n">print_data</span><span class="p">(</span><span class="n">record</span><span class="p">)</span>
+        <span class="n">recursive_loop</span><span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="c1"># makes it loop again</span>
+    <span class="k">return</span>
+
+<span class="c1"># printing fruits in order using a recursive loop</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Recursive Loop</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+<span class="n">recursive_loop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="c1"># calls the function</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Recursive Loop
+
+Apple
+	 Color:  Red
+	 Size:  Normal
+
+Orange
+	 Color:  Orange
+	 Size:  Normal
+
+Pineapple
+	 Color:  Yellow
+	 Size:  Large
+
+Pear
+	 Color:  Green
+	 Size:  Normal
+
+Blueberry
+	 Color:  Blue
+	 Size:  Small
+
+Grape
+	 Color:  Purple
+	 Size:  Small
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Quiz-that-Stores-Responses">
+<a class="anchor" href="#Quiz-that-Stores-Responses" aria-hidden="true"><span class="octicon octicon-link"></span></a>Quiz that Stores Responses<a class="anchor-link" href="#Quiz-that-Stores-Responses"> </a>
+</h2>
+<p>This quiz asks the user 6 questions and saves each response. At the end, the quiz outputs the user's fraction and percentage of questions correct. Then the test outputs the user's answers.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">questions</span> <span class="o">=</span> <span class="mi">6</span>
+<span class="n">correct</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">def</span> <span class="nf">question_and_answer</span><span class="p">(</span><span class="n">prompt</span><span class="p">,</span> <span class="n">answer</span><span class="p">):</span> <span class="c1"># function that has the prompt and answer as parameters</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Question: "</span> <span class="o">+</span> <span class="n">prompt</span><span class="p">)</span> <span class="c1"># displays the prompt</span>
+    <span class="n">msg</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Answer: "</span> <span class="o">+</span> <span class="n">msg</span><span class="p">)</span> <span class="c1"># displays the user's answer</span>
+    
+    <span class="k">if</span> <span class="n">answer</span> <span class="o">==</span> <span class="n">msg</span><span class="o">.</span><span class="n">lower</span><span class="p">():</span> <span class="c1"># compares the user's answer to correct answer, no regard to case</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Correct Answer"</span><span class="p">)</span> <span class="c1"># if correct, prints that it is correct</span>
+        <span class="k">global</span> <span class="n">correct</span>
+        <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span> <span class="p">(</span><span class="s2">"Incorrect Answer"</span><span class="p">)</span> <span class="c1"># if not, prints that it is incorrect</span>
+    <span class="k">return</span> <span class="n">msg</span> <span class="c1"># returns the user's answer</span>
+
+<span class="c1"># these add the user's answers to a list</span>
+<span class="n">Q1</span> <span class="o">=</span> <span class="n">question_and_answer</span><span class="p">(</span><span class="s2">"What is 2+2?"</span><span class="p">,</span> <span class="s2">"4"</span><span class="p">)</span>
+<span class="n">Q2</span> <span class="o">=</span> <span class="n">question_and_answer</span><span class="p">(</span><span class="s2">"What is the capital of California?"</span><span class="p">,</span> <span class="s2">"sacramento"</span><span class="p">)</span>
+<span class="n">Q3</span> <span class="o">=</span> <span class="n">question_and_answer</span><span class="p">(</span><span class="s2">"What continent is India in?"</span><span class="p">,</span> <span class="s2">"asia"</span><span class="p">)</span>
+<span class="n">Q4</span> <span class="o">=</span> <span class="n">question_and_answer</span><span class="p">(</span><span class="s2">"When is Christmas?"</span><span class="p">,</span> <span class="s2">"december 25"</span><span class="p">)</span>
+<span class="n">Q5</span> <span class="o">=</span> <span class="n">question_and_answer</span><span class="p">(</span><span class="s2">"What number is Aaron Donald?"</span><span class="p">,</span> <span class="s2">"99"</span><span class="p">)</span>
+<span class="n">Q6</span> <span class="o">=</span> <span class="n">question_and_answer</span><span class="p">(</span><span class="s2">"What color is the sky"</span><span class="p">,</span> <span class="s2">"blue"</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">correct</span><span class="p">,</span> <span class="s2">"answers correct or"</span><span class="p">,</span> <span class="n">correct</span><span class="o">*</span><span class="mi">100</span><span class="o">/</span><span class="n">questions</span><span class="p">,</span><span class="s2">"%"</span><span class="p">)</span> <span class="c1"># calculates the user's score</span>
+    
+<span class="n">Quiz</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"Q1"</span><span class="p">:</span> <span class="n">Q1</span><span class="p">,</span>
+    <span class="s2">"Q2"</span><span class="p">:</span> <span class="n">Q2</span><span class="p">,</span>
+    <span class="s2">"Q3"</span><span class="p">:</span> <span class="n">Q3</span><span class="p">,</span>
+    <span class="s2">"Q4"</span><span class="p">:</span> <span class="n">Q4</span><span class="p">,</span>
+    <span class="s2">"Q5"</span><span class="p">:</span> <span class="n">Q5</span><span class="p">,</span>
+    <span class="s2">"Q6"</span><span class="p">:</span> <span class="n">Q6</span>
+<span class="p">}</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Your answers:"</span><span class="p">,</span><span class="n">Quiz</span><span class="p">)</span> <span class="c1"># prints the user's answers</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Question: What is 2+2?
+Answer: 4
+Correct Answer
+Question: What is the capital of California?
+Answer: SacramEnto
+Correct Answer
+Question: What continent is India in?
+Answer: ASIA
+Correct Answer
+Question: When is Christmas?
+Answer: december 25
+Correct Answer
+Question: What number is Aaron Donald?
+Answer: 99
+Correct Answer
+Question: What color is the sky
+Answer: Blue
+Correct Answer
+6 answers correct or 100.0 %
+Your answers: {'Q1': '4', 'Q2': 'SacramEnto', 'Q3': 'ASIA', 'Q4': 'december 25', 'Q5': '99', 'Q6': 'Blue'}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+</div>
+
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="kaiden-dough/fastpages"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/fastpages/python/week2/2022/09/04/python_lists.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/fastpages/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/fastpages/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/fastpages/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>Kaiden&#39;s FastPages site!</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/kaiden-dough" target="_blank" title="kaiden-dough"><svg class="svg-icon grey"><use xlink:href="/fastpages/assets/minima-social-icons.svg#github"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
