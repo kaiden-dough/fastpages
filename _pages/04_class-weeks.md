@@ -88,3 +88,14 @@ tr:nth-child(odd) {
 
 </body>
 </html>
+
+# Weekly Progress
+## Week 3
+## Week 2
+- 
+
+## Week 1
+- 
+
+## Week 0
+- 
