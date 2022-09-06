@@ -6,6 +6,30 @@ author: Kaiden Do
 categories: [markdown, week1, week2]
 title: Class Weeks
 ---
+# Weekly Progress
+## Week 3
+- 
+## Week 2
+- Demonstrated my learning with Python lists, dictionaries, and loops
+- Added a table to the weekly log
+- Explored different themes on Fastpages
+- Changed my Fastpages to purple mode
+
+## Week 1
+- Made a page for notes in APCSP
+- Created a page with my classes and goals
+- Did my Bash tool check
+- Made a Python Quiz
+- Imported a .docx file
+- Started a log for what I do each week
+- Added two parallaxes to my homepage and added a gradient background
+
+## Week 0
+- Setup my tools
+- Added a photo to my index.html
+- Changed my favicon
+- Updated my about me
+- Created a Markdown and Jupyter Notebook post
 <html>
     <head>
         <style>
@@ -94,28 +118,3 @@ title: Class Weeks
 </table>
 </body>
 </html>
-
-# Weekly Progress
-## Week 3
-- 
-## Week 2
-- Demonstrated my learning with Python lists, dictionaries, and loops
-- Added a table to the weekly log
-- Explored different themes on Fastpages
-- Changed my Fastpages to purple mode
-
-## Week 1
-- Made a page for notes in APCSP
-- Created a page with my classes and goals
-- Did my Bash tool check
-- Made a Python Quiz
-- Imported a .docx file
-- Started a log for what I do each week
-- Added two parallaxes to my homepage and added a gradient background
-
-## Week 0
-- Setup my tools
-- Added a photo to my index.html
-- Changed my favicon
-- Updated my about me
-- Created a Markdown and Jupyter Notebook post
