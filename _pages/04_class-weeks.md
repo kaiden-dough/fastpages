@@ -115,6 +115,3 @@ title: Class Weeks
     <td></td>
     <td></td>
   </tr>
-</table>
-</body>
-</html>
