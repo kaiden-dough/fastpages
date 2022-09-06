@@ -41,6 +41,11 @@ tr:nth-child(odd) {
     <th colspan="9">What I Did</th>
   </tr>
   <tr>
+  <!-- In config.yml -->
+    <th colspan="10">{{site.cont}}</th>
+  </tr>
+  <tr>
+  <tr>
     <th>3</th>
     <td></td>
     <td></td>
