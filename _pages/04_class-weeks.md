@@ -33,6 +33,7 @@ tr:nth-child(odd) {
 
 <table>
   <tr>
+  <!-- In config.yml -->
     <th colspan="10">{{site.TableInfo}}</th>
   </tr>
   <tr>
