@@ -33,8 +33,11 @@ tr:nth-child(odd) {
 
 <table>
   <tr>
+    <th colspan="10">{{site.TableInfo}}</th>
+  </tr>
+  <tr>
     <th>Week</th>
-    <th colspan="8">What I Did</th>
+    <th colspan="9">What I Did</th>
   </tr>
   <tr>
     <th>3</th>
@@ -52,7 +55,7 @@ tr:nth-child(odd) {
     <th>2</th>
     <td><a href="https://kaiden-dough.github.io/fastpages/python/week2/2022/09/04/python_lists.html">Python Tech Talk</a></td>
     <td><a href="https://kaiden-dough.github.io/fastpages/_pages/04_class-weeks.html">Class Weeks</a></td>
-    <td><a href="">Theme and Dark Mode Exploration</a></td>
+    <td><a href="https://kaiden-dough.github.io/fastpages/markdown/week2/2022/09/04/theme.html">Theme and Dark Mode Exploration</a></td>
     <td></td>
     <td></td>
     <td></td>
