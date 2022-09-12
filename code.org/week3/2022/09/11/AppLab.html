@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>AppLab Planning and Process | Kaiden Do FastPages</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="AppLab Planning and Process" />
+<meta name="author" content="Kaiden Do" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="My plan, problems, solutions, and challenges while making my app." />
+<meta property="og:description" content="My plan, problems, solutions, and challenges while making my app." />
+<link rel="canonical" href="https://kaiden-dough.github.io/fastpages/code.org/week3/2022/09/11/AppLab.html" />
+<meta property="og:url" content="https://kaiden-dough.github.io/fastpages/code.org/week3/2022/09/11/AppLab.html" />
+<meta property="og:site_name" content="Kaiden Do FastPages" />
+<meta property="og:image" content="https://kaiden-dough.github.io/fastpages/images/code.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-09-11T00:00:00-05:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://kaiden-dough.github.io/fastpages/images/code.png" />
+<meta property="twitter:title" content="AppLab Planning and Process" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Kaiden Do"},"dateModified":"2022-09-11T00:00:00-05:00","datePublished":"2022-09-11T00:00:00-05:00","description":"My plan, problems, solutions, and challenges while making my app.","headline":"AppLab Planning and Process","image":"https://kaiden-dough.github.io/fastpages/images/code.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://kaiden-dough.github.io/fastpages/code.org/week3/2022/09/11/AppLab.html"},"url":"https://kaiden-dough.github.io/fastpages/code.org/week3/2022/09/11/AppLab.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/fastpages/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://kaiden-dough.github.io/fastpages/feed.xml" title="Kaiden Do FastPages" /><link rel="shortcut icon" type="image/x-icon" href="/fastpages/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/fastpages/">Kaiden Do FastPages</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/fastpages/search/">Search</a><a class="page-link" href="/fastpages/categories/">Tags</a><a class="page-link" href="/fastpages/_pages/02_notes.html">Notes for APCSP</a><a class="page-link" href="/fastpages/about/">About Me</a><a class="page-link" href="/fastpages/_pages/04_class-weeks.html">Class Weeks</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">AppLab Planning and Process</h1><p class="page-description">My plan, problems, solutions, and challenges while making my app.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-09-11T00:00:00-05:00" itemprop="datePublished">
+        Sep 11, 2022
+      </time>• 
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">Kaiden Do</span></span>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      9 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/fastpages/categories/#code.org">code.org</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/fastpages/categories/#week3">week3</a>
+        
+      
+      </p>
+    
+
+    
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#My-App">My App </a></li>
+<li class="toc-entry toc-h2"><a href="#Plan">Plan </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Animal-Quiz">Animal Quiz </a></li>
+<li class="toc-entry toc-h3"><a href="#Luck-Based-Game">Luck Based Game </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#Extra-Features">Extra Features </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Animal-Quiz">Animal Quiz </a></li>
+<li class="toc-entry toc-h3"><a href="#Luck-Based-Game-(Logo-Game)">Luck Based Game (Logo Game) </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#Problems-and-Solutions">Problems and Solutions </a></li>
+<li class="toc-entry toc-h2"><a href="#Create-Performance-Task-skills-and-rubric">Create Performance Task skills and rubric </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Program-Purpose-and-Function">Program Purpose and Function </a></li>
+<li class="toc-entry toc-h3"><a href="#Data-Abstraction">Data Abstraction </a></li>
+<li class="toc-entry toc-h3"><a href="#Managing-Complexity">Managing Complexity </a></li>
+<li class="toc-entry toc-h3"><a href="#Procedural-Abstraction">Procedural Abstraction </a></li>
+<li class="toc-entry toc-h3"><a href="#Algorithm-Implementation">Algorithm Implementation </a></li>
+<li class="toc-entry toc-h3"><a href="#Testing">Testing </a></li>
+</ul>
+</li>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2022-09-11-AppLab.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="My-App">
+<a class="anchor" href="#My-App" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="https://studio.code.org/projects/applab/rrhMZ0WoGvsJaDqiw1F6EZQbpIunXvd8U0o591jiu4g">My App</a><a class="anchor-link" href="#My-App"> </a>
+</h2>
+<p><iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/rrhMZ0WoGvsJaDqiw1F6EZQbpIunXvd8U0o591jiu4g/embed"></iframe></p>
+<h2 id="Plan">
+<a class="anchor" href="#Plan" aria-hidden="true"><span class="octicon octicon-link"></span></a>Plan<a class="anchor-link" href="#Plan"> </a>
+</h2>
+<p>I plan to create two things on my App. I want to make a quiz about animals and a luck based game that uses tiles.</p>
+<h3 id="Animal-Quiz">
+<a class="anchor" href="#Animal-Quiz" aria-hidden="true"><span class="octicon octicon-link"></span></a>Animal Quiz<a class="anchor-link" href="#Animal-Quiz"> </a>
+</h3>
+<p>I want this to be a 10 question quiz that requires the user to type in their answer. I will do this with the onEvent function and use an image and text input.</p>
+<h3 id="Luck-Based-Game">
+<a class="anchor" href="#Luck-Based-Game" aria-hidden="true"><span class="octicon octicon-link"></span></a>Luck Based Game<a class="anchor-link" href="#Luck-Based-Game"> </a>
+</h3>
+<p>I want this game to have 16 tiles and the user and a friend can take turns choosing tiles. I will do this will boxes and images that appear by using the onEvent click function. I will also use variable to control whose turn it is.</p>
+<h2 id="Extra-Features">
+<a class="anchor" href="#Extra-Features" aria-hidden="true"><span class="octicon octicon-link"></span></a>Extra Features<a class="anchor-link" href="#Extra-Features"> </a>
+</h2>
+<h3 id="Animal-Quiz">
+<a class="anchor" href="#Animal-Quiz" aria-hidden="true"><span class="octicon octicon-link"></span></a>Animal Quiz<a class="anchor-link" href="#Animal-Quiz"> </a>
+</h3>
+<ul>
+<li>The user can click a back button that allows them to go back to the homepage or restart the game</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">onEvent</span><span class="p">(</span><span class="s2">"home"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="n">setScreen</span><span class="p">(</span><span class="s2">"homepage"</span><span class="p">);</span>
+<span class="p">});</span>
+<span class="n">onEvent</span><span class="p">(</span><span class="s2">"animalstart"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="n">setScreen</span><span class="p">(</span><span class="s2">"start"</span><span class="p">);</span>
+<span class="p">});</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>The question the user is on before they click the back button is recorded so they can return if they decide to cancel</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">onEvent</span><span class="p">(</span><span class="s2">"cancel"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+    <span class="n">setScreen</span><span class="p">(</span><span class="n">Arrq</span><span class="p">[</span><span class="n">animalq</span><span class="p">]);</span>
+<span class="p">});</span>
+
+<span class="n">animalq</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>I used arrays to minimize the repeating, the arrays were used to move through questions</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">var</span> <span class="n">Arrq</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"q1"</span><span class="p">,</span> <span class="s2">"q2"</span><span class="p">,</span> <span class="s2">"q3"</span><span class="p">,</span> <span class="s2">"q4"</span><span class="p">,</span> <span class="s2">"q5"</span><span class="p">,</span> <span class="s2">"q6"</span><span class="p">,</span> <span class="s2">"q7"</span><span class="p">,</span> <span class="s2">"q8"</span><span class="p">,</span> <span class="s2">"q9"</span><span class="p">,</span> <span class="s2">"q10"</span><span class="p">,</span> <span class="s2">"end"</span><span class="p">];</span>
+<span class="n">setScreen</span><span class="p">(</span><span class="n">Arrq</span><span class="p">[</span><span class="n">animalq</span><span class="p">]);</span>
+<span class="n">animalq</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>I made a function that would see if the answer was correct or incorrect, so it could display and check or x</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">function</span> <span class="n">grade</span><span class="p">(</span><span class="nb">input</span><span class="p">,</span> <span class="n">animal</span><span class="p">,</span> <span class="n">animal2</span><span class="p">,</span> <span class="n">check</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">q</span><span class="p">){</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">getText</span><span class="p">(</span><span class="nb">input</span><span class="p">)</span><span class="o">.</span><span class="n">toLowerCase</span><span class="p">()</span> <span class="o">==</span> <span class="n">animal</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">correct</span><span class="o">++</span><span class="p">;</span>
+    <span class="n">showElement</span><span class="p">(</span><span class="n">check</span><span class="p">);</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">getText</span><span class="p">(</span><span class="nb">input</span><span class="p">)</span><span class="o">.</span><span class="n">toLowerCase</span><span class="p">()</span> <span class="o">==</span> <span class="n">animal2</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">correct</span><span class="o">++</span><span class="p">;</span>
+    <span class="n">showElement</span><span class="p">(</span><span class="n">check</span><span class="p">);</span>
+  <span class="p">}</span>  <span class="k">else</span> <span class="p">{</span>
+    <span class="n">showElement</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="n">hideElement</span><span class="p">(</span><span class="nb">input</span><span class="p">);</span>
+  <span class="n">setTimeout</span><span class="p">(</span><span class="n">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">hideElement</span><span class="p">(</span><span class="n">check</span><span class="p">);</span>
+    <span class="n">hideElement</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
+    <span class="n">showElement</span><span class="p">(</span><span class="nb">input</span><span class="p">);</span>
+    <span class="n">setText</span><span class="p">(</span><span class="nb">input</span><span class="p">,</span> <span class="s2">""</span><span class="p">);</span>
+    <span class="n">setScreen</span><span class="p">(</span><span class="n">q</span><span class="p">);</span>
+  <span class="p">},</span> <span class="mi">1000</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="n">grade</span><span class="p">(</span><span class="s2">"panda-input"</span><span class="p">,</span> <span class="s2">"panda"</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">"check1"</span><span class="p">,</span> <span class="s2">"x1"</span><span class="p">,</span> <span class="s2">"q2"</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>The user's score is posted at the end of the game (out of 10)</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">setText</span><span class="p">(</span><span class="s2">"score"</span><span class="p">,</span> <span class="s2">"Your score is "</span> <span class="o">+</span> <span class="n">correct</span> <span class="o">+</span> <span class="s2">"/10!!!"</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>The user's answer can be in any case, because I converted their answer to lowercase to compare it to the lowercase answer key</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="n">getText</span><span class="p">(</span><span class="nb">input</span><span class="p">)</span><span class="o">.</span><span class="n">toLowerCase</span><span class="p">()</span> <span class="o">==</span> <span class="n">animal</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">correct</span><span class="o">++</span><span class="p">;</span>
+    <span class="n">showElement</span><span class="p">(</span><span class="n">check</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Luck-Based-Game-(Logo-Game)">
+<a class="anchor" href="#Luck-Based-Game-(Logo-Game)" aria-hidden="true"><span class="octicon octicon-link"></span></a>Luck Based Game (Logo Game)<a class="anchor-link" href="#Luck-Based-Game-(Logo-Game)"> </a>
+</h3>
+<ul>
+<li>The user can also click a back button that lets them restart or go to the homepage</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">onEvent</span><span class="p">(</span><span class="s2">"back"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="n">setScreen</span><span class="p">(</span><span class="s2">"choiceslogo"</span><span class="p">);</span>
+<span class="p">});</span>
+<span class="n">onEvent</span><span class="p">(</span><span class="s2">"homepagelogo"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="n">setScreen</span><span class="p">(</span><span class="s2">"homepage"</span><span class="p">);</span>
+  <span class="n">codeorg</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">});</span>
+<span class="n">onEvent</span><span class="p">(</span><span class="s2">"reset"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="n">setScreen</span><span class="p">(</span><span class="s2">"logostart"</span><span class="p">);</span>
+  <span class="n">codeorg</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">});</span>
+<span class="n">onEvent</span><span class="p">(</span><span class="s2">"cancellogo"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="n">setScreen</span><span class="p">(</span><span class="s2">"gamescreen"</span><span class="p">);</span>
+<span class="p">});</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>The tiles are shuffled each game to make each experience unique</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">var</span> <span class="n">Arrsquare</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"a1"</span><span class="p">,</span> <span class="s2">"a2"</span><span class="p">,</span> <span class="s2">"b1"</span><span class="p">,</span> <span class="s2">"b2"</span><span class="p">,</span> <span class="s2">"c1"</span><span class="p">,</span> <span class="s2">"c2"</span><span class="p">,</span> <span class="s2">"d1"</span><span class="p">,</span> <span class="s2">"d2"</span><span class="p">,</span> <span class="s2">"e1"</span><span class="p">,</span> <span class="s2">"e2"</span><span class="p">,</span> <span class="s2">"f1"</span><span class="p">,</span> <span class="s2">"f2"</span><span class="p">,</span> <span class="s2">"g1"</span><span class="p">,</span> <span class="s2">"g2"</span><span class="p">,</span> <span class="s2">"h1"</span><span class="p">,</span> <span class="s2">"h2"</span><span class="p">];</span>
+
+<span class="n">function</span> <span class="n">shuffle</span><span class="p">(</span><span class="n">array</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">var</span> <span class="n">Arrbefore</span> <span class="o">=</span> <span class="n">array</span><span class="o">.</span><span class="n">length</span><span class="p">,</span>  <span class="n">Arrshuffle</span><span class="p">;</span>
+  <span class="k">while</span> <span class="p">(</span><span class="n">Arrbefore</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">Arrshuffle</span> <span class="o">=</span> <span class="n">Math</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="n">Math</span><span class="o">.</span><span class="n">random</span><span class="p">()</span> <span class="o">*</span> <span class="n">Arrbefore</span><span class="p">);</span>
+    <span class="n">Arrbefore</span><span class="o">--</span><span class="p">;</span>
+    <span class="n">var</span> <span class="n">swap</span> <span class="o">=</span> <span class="n">array</span><span class="p">[</span><span class="n">Arrbefore</span><span class="p">];</span>
+    <span class="n">array</span><span class="p">[</span><span class="n">Arrbefore</span><span class="p">]</span> <span class="o">=</span> <span class="n">array</span><span class="p">[</span><span class="n">Arrshuffle</span><span class="p">];</span>
+    <span class="n">array</span><span class="p">[</span><span class="n">Arrshuffle</span><span class="p">]</span> <span class="o">=</span> <span class="n">swap</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="n">array</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="n">Arrnewsquare</span> <span class="o">=</span> <span class="n">shuffle</span><span class="p">(</span><span class="n">Arrsquare</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>They are shuffled into an array, then the tiles are moved to the correct position using a for loop and an array</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">var</span> <span class="n">Arrxcoord</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"13"</span><span class="p">,</span> <span class="s2">"89"</span><span class="p">,</span> <span class="s2">"165"</span><span class="p">,</span> <span class="s2">"241"</span><span class="p">,</span> <span class="s2">"13"</span><span class="p">,</span> <span class="s2">"89"</span><span class="p">,</span> <span class="s2">"165"</span><span class="p">,</span> <span class="s2">"241"</span><span class="p">,</span> <span class="s2">"13"</span><span class="p">,</span> <span class="s2">"89"</span><span class="p">,</span> <span class="s2">"165"</span><span class="p">,</span> <span class="s2">"241"</span><span class="p">,</span> <span class="s2">"13"</span><span class="p">,</span> <span class="s2">"89"</span><span class="p">,</span> <span class="s2">"165"</span><span class="p">,</span> <span class="s2">"241"</span><span class="p">];</span>
+<span class="n">var</span> <span class="n">Arrycoord</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"78"</span><span class="p">,</span> <span class="s2">"78"</span><span class="p">,</span> <span class="s2">"78"</span><span class="p">,</span> <span class="s2">"78"</span><span class="p">,</span> <span class="s2">"154"</span><span class="p">,</span> <span class="s2">"154"</span><span class="p">,</span> <span class="s2">"154"</span><span class="p">,</span> <span class="s2">"154"</span><span class="p">,</span> <span class="s2">"230"</span><span class="p">,</span> <span class="s2">"230"</span><span class="p">,</span> <span class="s2">"230"</span><span class="p">,</span> <span class="s2">"230"</span><span class="p">,</span> <span class="s2">"306"</span><span class="p">,</span> <span class="s2">"306"</span><span class="p">,</span> <span class="s2">"306"</span><span class="p">,</span> <span class="s2">"306"</span><span class="p">];</span>
+<span class="n">var</span> <span class="n">Arrbox</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"box1"</span><span class="p">,</span> <span class="s2">"box2"</span><span class="p">,</span> <span class="s2">"box3"</span><span class="p">,</span> <span class="s2">"box4"</span><span class="p">,</span> <span class="s2">"box5"</span><span class="p">,</span> <span class="s2">"box6"</span><span class="p">,</span> <span class="s2">"box7"</span><span class="p">,</span> <span class="s2">"box8"</span><span class="p">,</span> <span class="s2">"box9"</span><span class="p">,</span> <span class="s2">"box10"</span><span class="p">,</span> <span class="s2">"box11"</span><span class="p">,</span> <span class="s2">"box12"</span><span class="p">,</span> <span class="s2">"box13"</span><span class="p">,</span> <span class="s2">"box14"</span><span class="p">,</span> <span class="s2">"box15"</span><span class="p">,</span> <span class="s2">"box16"</span><span class="p">];</span>
+
+<span class="n">onEvent</span><span class="p">(</span><span class="s2">"logostartbutton"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="n">setScreen</span><span class="p">(</span><span class="s2">"gamescreen"</span><span class="p">);</span>
+  <span class="n">Arrnewsquare</span> <span class="o">=</span> <span class="n">shuffle</span><span class="p">(</span><span class="n">Arrsquare</span><span class="p">);</span>
+  <span class="k">for</span> <span class="p">(</span><span class="n">var</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">16</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">hideElement</span><span class="p">(</span><span class="n">Arrnewsquare</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+    <span class="n">hideElement</span><span class="p">(</span><span class="s2">"win"</span><span class="p">);</span>
+    <span class="n">setPosition</span><span class="p">(</span><span class="n">Arrnewsquare</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">Arrxcoord</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">Arrycoord</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">60</span><span class="p">);</span>
+    <span class="n">setProperty</span><span class="p">(</span><span class="n">Arrbox</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="s2">"background-color"</span><span class="p">,</span> <span class="s2">"#D7DADA"</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Each time the tile is clicked, it is tested to be the winner and then it changes the tile color to minimize confusion while playing</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">function</span> <span class="n">redundant</span><span class="p">(</span><span class="n">box</span><span class="p">){</span>
+  <span class="n">showElement</span><span class="p">(</span><span class="n">Arrnewsquare</span><span class="p">[</span><span class="n">clicked</span><span class="p">]);</span>
+  <span class="n">numclick</span><span class="o">++</span><span class="p">;</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">Arrnewsquare</span><span class="p">[</span><span class="n">clicked</span><span class="p">]</span><span class="o">==</span><span class="s2">"h1"</span><span class="p">){</span>
+    <span class="n">wintime</span><span class="p">();</span>
+  <span class="p">}</span>
+  <span class="n">evenorodd</span> <span class="o">=</span> <span class="n">numclick</span><span class="o">%</span><span class="k">2</span>;
+  <span class="k">if</span> <span class="p">(</span><span class="n">evenorodd</span> <span class="o">==</span> <span class="mi">0</span><span class="p">){</span>
+    <span class="n">setProperty</span><span class="p">(</span><span class="n">box</span><span class="p">,</span> <span class="s2">"background-color"</span><span class="p">,</span> <span class="s2">"#6BC9FF"</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">evenorodd</span> <span class="o">==</span> <span class="mi">1</span><span class="p">){</span>
+    <span class="n">setProperty</span><span class="p">(</span><span class="n">box</span><span class="p">,</span> <span class="s2">"background-color"</span><span class="p">,</span> <span class="s2">"#F27A72"</span><span class="p">);</span>
+  <span class="p">}</span> 
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>When there is a winner, the program sees if the amount of clicks is even or odd to decide if player 1 or 2 wins  </li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">function</span> <span class="n">wintime</span><span class="p">(){</span>
+  <span class="n">showElement</span><span class="p">(</span><span class="s2">"win"</span><span class="p">);</span>
+  <span class="n">evenorodd</span> <span class="o">=</span> <span class="n">numclick</span><span class="o">%</span><span class="k">2</span>;
+  <span class="k">if</span> <span class="p">(</span><span class="n">evenorodd</span> <span class="o">==</span> <span class="mi">0</span><span class="p">){</span>
+    <span class="n">setProperty</span><span class="p">(</span><span class="s2">"win"</span><span class="p">,</span> <span class="s2">"text-color"</span><span class="p">,</span> <span class="s2">"#6BC9FF"</span><span class="p">);</span>
+    <span class="n">setText</span><span class="p">(</span><span class="s2">"win"</span><span class="p">,</span> <span class="s2">"Player 2 Wins!!!"</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">evenorodd</span> <span class="o">==</span> <span class="mi">1</span><span class="p">){</span>
+    <span class="n">setProperty</span><span class="p">(</span><span class="s2">"win"</span><span class="p">,</span> <span class="s2">"text-color"</span><span class="p">,</span> <span class="s2">"#F27A72"</span><span class="p">);</span>
+    <span class="n">setText</span><span class="p">(</span><span class="s2">"win"</span><span class="p">,</span> <span class="s2">"Player 1 Wins!!!"</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Problems-and-Solutions">
+<a class="anchor" href="#Problems-and-Solutions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Problems and Solutions<a class="anchor-link" href="#Problems-and-Solutions"> </a>
+</h2>
+<ul>
+<li>
+<strong>On the animal quiz, I couldn't type in rhinoceros or hippopotamus</strong>, so I added that the quiz would test both for hippo or hippopotamus and rhino or rhinoceros.</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="n">getText</span><span class="p">(</span><span class="nb">input</span><span class="p">)</span><span class="o">.</span><span class="n">toLowerCase</span><span class="p">()</span> <span class="o">==</span> <span class="n">animal</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">correct</span><span class="o">++</span><span class="p">;</span>
+    <span class="n">showElement</span><span class="p">(</span><span class="n">check</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">getText</span><span class="p">(</span><span class="nb">input</span><span class="p">)</span><span class="o">.</span><span class="n">toLowerCase</span><span class="p">()</span> <span class="o">==</span> <span class="n">animal2</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">correct</span><span class="o">++</span><span class="p">;</span>
+    <span class="n">showElement</span><span class="p">(</span><span class="n">check</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>
+<strong>On both games, when I restarted the game, the previous results were still there</strong>, so I reset the game every time the screen was switched to the game screen.</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">onEvent</span><span class="p">(</span><span class="s2">"start-button"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+    <span class="n">setScreen</span><span class="p">(</span><span class="s2">"q1"</span><span class="p">);</span>
+    <span class="n">correct</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">});</span>
+
+<span class="n">onEvent</span><span class="p">(</span><span class="s2">"logostartbutton"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+    <span class="n">setScreen</span><span class="p">(</span><span class="s2">"gamescreen"</span><span class="p">);</span>
+    <span class="n">Arrnewsquare</span> <span class="o">=</span> <span class="n">shuffle</span><span class="p">(</span><span class="n">Arrsquare</span><span class="p">);</span>
+    <span class="k">for</span> <span class="p">(</span><span class="n">var</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">16</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">hideElement</span><span class="p">(</span><span class="n">Arrnewsquare</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+      <span class="n">hideElement</span><span class="p">(</span><span class="s2">"win"</span><span class="p">);</span>
+      <span class="n">setPosition</span><span class="p">(</span><span class="n">Arrnewsquare</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">Arrxcoord</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">Arrycoord</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">60</span><span class="p">);</span>
+      <span class="n">setProperty</span><span class="p">(</span><span class="n">Arrbox</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="s2">"background-color"</span><span class="p">,</span> <span class="s2">"#D7DADA"</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">});</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>
+<strong>On the luck game, I couldn't figure out how to shuffle the position of the tiles</strong>, so I researched online on ways to shuffle an array and used this in my code.</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">function</span> <span class="n">shuffle</span><span class="p">(</span><span class="n">array</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">var</span> <span class="n">Arrbefore</span> <span class="o">=</span> <span class="n">array</span><span class="o">.</span><span class="n">length</span><span class="p">,</span>  <span class="n">Arrshuffle</span><span class="p">;</span>
+    <span class="k">while</span> <span class="p">(</span><span class="n">Arrbefore</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">Arrshuffle</span> <span class="o">=</span> <span class="n">Math</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="n">Math</span><span class="o">.</span><span class="n">random</span><span class="p">()</span> <span class="o">*</span> <span class="n">Arrbefore</span><span class="p">);</span>
+      <span class="n">Arrbefore</span><span class="o">--</span><span class="p">;</span>
+      <span class="n">var</span> <span class="n">swap</span> <span class="o">=</span> <span class="n">array</span><span class="p">[</span><span class="n">Arrbefore</span><span class="p">];</span>
+      <span class="n">array</span><span class="p">[</span><span class="n">Arrbefore</span><span class="p">]</span> <span class="o">=</span> <span class="n">array</span><span class="p">[</span><span class="n">Arrshuffle</span><span class="p">];</span>
+      <span class="n">array</span><span class="p">[</span><span class="n">Arrshuffle</span><span class="p">]</span> <span class="o">=</span> <span class="n">swap</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">array</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>
+<strong>On the logo game, I couldn't make it announce the winner</strong>, so I debugged my code and realized that I needed to test after each click if the logo had been found.</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">function</span> <span class="n">wintime</span><span class="p">(){</span>
+    <span class="n">showElement</span><span class="p">(</span><span class="s2">"win"</span><span class="p">);</span>
+    <span class="n">evenorodd</span> <span class="o">=</span> <span class="n">numclick</span><span class="o">%</span><span class="k">2</span>;
+    <span class="k">if</span> <span class="p">(</span><span class="n">evenorodd</span> <span class="o">==</span> <span class="mi">0</span><span class="p">){</span>
+      <span class="n">setProperty</span><span class="p">(</span><span class="s2">"win"</span><span class="p">,</span> <span class="s2">"text-color"</span><span class="p">,</span> <span class="s2">"#6BC9FF"</span><span class="p">);</span>
+      <span class="n">setText</span><span class="p">(</span><span class="s2">"win"</span><span class="p">,</span> <span class="s2">"Player 2 Wins!!!"</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">evenorodd</span> <span class="o">==</span> <span class="mi">1</span><span class="p">){</span>
+      <span class="n">setProperty</span><span class="p">(</span><span class="s2">"win"</span><span class="p">,</span> <span class="s2">"text-color"</span><span class="p">,</span> <span class="s2">"#F27A72"</span><span class="p">);</span>
+      <span class="n">setText</span><span class="p">(</span><span class="s2">"win"</span><span class="p">,</span> <span class="s2">"Player 1 Wins!!!"</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">function</span> <span class="n">redundant</span><span class="p">(</span><span class="n">box</span><span class="p">){</span>
+  <span class="n">showElement</span><span class="p">(</span><span class="n">Arrnewsquare</span><span class="p">[</span><span class="n">clicked</span><span class="p">]);</span>
+  <span class="n">numclick</span><span class="o">++</span><span class="p">;</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">Arrnewsquare</span><span class="p">[</span><span class="n">clicked</span><span class="p">]</span><span class="o">==</span><span class="s2">"h1"</span><span class="p">){</span>
+    <span class="n">wintime</span><span class="p">();</span>
+  <span class="p">}</span>
+  <span class="n">evenorodd</span> <span class="o">=</span> <span class="n">numclick</span><span class="o">%</span><span class="k">2</span>;
+  <span class="k">if</span> <span class="p">(</span><span class="n">evenorodd</span> <span class="o">==</span> <span class="mi">0</span><span class="p">){</span>
+    <span class="n">setProperty</span><span class="p">(</span><span class="n">box</span><span class="p">,</span> <span class="s2">"background-color"</span><span class="p">,</span> <span class="s2">"#6BC9FF"</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">evenorodd</span> <span class="o">==</span> <span class="mi">1</span><span class="p">){</span>
+    <span class="n">setProperty</span><span class="p">(</span><span class="n">box</span><span class="p">,</span> <span class="s2">"background-color"</span><span class="p">,</span> <span class="s2">"#F27A72"</span><span class="p">);</span>
+  <span class="p">}</span> 
+<span class="p">}</span>
+
+<span class="n">onEvent</span><span class="p">(</span><span class="s2">"box1"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+    <span class="n">clicked</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="n">redundant</span><span class="p">(</span><span class="s2">"box1"</span><span class="p">);</span>
+<span class="p">});</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>
+<strong>On the luck game, the user could press in a small portion of the tile and cause the tile to change color</strong>, so I edited the sizing and position of the tiles to eliminate the error.</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">setPosition</span><span class="p">(</span><span class="n">Arrnewsquare</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">Arrxcoord</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">Arrycoord</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">60</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Create-Performance-Task-skills-and-rubric">
+<a class="anchor" href="#Create-Performance-Task-skills-and-rubric" aria-hidden="true"><span class="octicon octicon-link"></span></a>Create Performance Task skills and rubric<a class="anchor-link" href="#Create-Performance-Task-skills-and-rubric"> </a>
+</h2>
+<h3 id="Program-Purpose-and-Function">
+<a class="anchor" href="#Program-Purpose-and-Function" aria-hidden="true"><span class="octicon octicon-link"></span></a>Program Purpose and Function<a class="anchor-link" href="#Program-Purpose-and-Function"> </a>
+</h3>
+<p>The Animal Quiz's purpose is to quiz the user on their knowledge of animals from photos. The function of the quiz is they press the animal button in the homepage, then press another button to start the quiz. They are then prompted to type in the name of the animal in a text input for 10 animals. For each correct answer a check is displayed and an x for every incorrect. At the end the user can view their score. At any point in the quiz, the user can click the back arrow and they can either return to the homepage, restart the quiz, or cancel the back arrow.</p>
+<p>The Logo Game's purpose is to let the 2 users have a friendly contest. The function of the game is that they press the game in the homepage, then press start to begin the game. The users take turns picking tiles, each turning a different color for each player. Once a logo is found, the player who clicked it is announced as the winner and the users are given a chance to play again. At any point in the quiz, the user can hit a back arrow to return to the homepage, restart the game, or cancel.</p>
+<h3 id="Data-Abstraction">
+<a class="anchor" href="#Data-Abstraction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Data Abstraction<a class="anchor-link" href="#Data-Abstraction"> </a>
+</h3>
+<p>I used a list for the x and y coordinates of the tiles. These tiles were then used to reposition the positions of the tiles in a randomized order to create a new game each time. The name of the variable in the code are Arrxcoord and Arrycoord. The data in these lists are the x and y coordinates of the tiles and where they should be placed.</p>
+<h3 id="Managing-Complexity">
+<a class="anchor" href="#Managing-Complexity" aria-hidden="true"><span class="octicon octicon-link"></span></a>Managing Complexity<a class="anchor-link" href="#Managing-Complexity"> </a>
+</h3>
+<p>I created a function called grade that would check if the answer given by the the user was correct in the Animal Quiz. It would take in a parameter of the text inputted, the correct answer, an alternate spelling, the screen's checkmark, the screen's x and the next question screen. With these, the function would compare the inputted text with the correct answer or alternate spelling. If it is correct, the function would display the screen's checkmark. If not, the function displays the screen's x. After a second passes, the function would switch to the next question. This minimizes the complexity of the program by condensing the multiple tests into one singular function.</p>
+<h3 id="Procedural-Abstraction">
+<a class="anchor" href="#Procedural-Abstraction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Procedural Abstraction<a class="anchor-link" href="#Procedural-Abstraction"> </a>
+</h3>
+<p>Like how I managed complexity I made a function to grade the Animal Quiz responses. It would take in a parameter of the text inputted, the correct answer, an alternate spelling, the screen's checkmark, the screen's x and the next question screen. With these, the function would compare the inputted text with the correct answer or alternate spelling. If it is correct, the function would display the screen's checkmark. If not, the function displays the screen's x. After a second passes, the function would switch to the next question.</p>
+<h3 id="Algorithm-Implementation">
+<a class="anchor" href="#Algorithm-Implementation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Algorithm Implementation<a class="anchor-link" href="#Algorithm-Implementation"> </a>
+</h3>
+<p>I used iteration in the for loop when shuffling the position of the tiles in the Logo Game The loop would run through an array and use the data of each element to position the tiles on the x and y coordinate plane. I had selection through my if and else statements. These would only run the code if the if and else statements' requirements were met.
+I had sequencing in my AppLab by running code consecutively. When resetting the game screens and questions, the answers were erased and the colors were wiped and correct amount of answers were ran in a sequence.</p>
+<h3 id="Testing">
+<a class="anchor" href="#Testing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Testing<a class="anchor-link" href="#Testing"> </a>
+</h3>
+<p>I tested my quiz and game multiple times to make it as efficient and make it avoid as many errors as I could think of. I would let it so the variable that regarded score would always be reset so the score would not superscore. Also I would reshuffle the tiles in the Logo Game so the position of the winning tile would be different every time.</p>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="kaiden-dough/fastpages"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/fastpages/code.org/week3/2022/09/11/AppLab.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/fastpages/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/fastpages/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/fastpages/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>Kaiden&#39;s FastPages site!</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/kaiden-dough" target="_blank" title="kaiden-dough"><svg class="svg-icon grey"><use xlink:href="/fastpages/assets/minima-social-icons.svg#github"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
