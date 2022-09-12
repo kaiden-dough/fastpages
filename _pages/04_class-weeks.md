@@ -69,9 +69,9 @@ title: Class Weeks
   <tr>
   <tr>
     <th>3</th>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td><a href="https://studio.code.org/projects/applab/rrhMZ0WoGvsJaDqiw1F6EZQbpIunXvd8U0o591jiu4g">AppLab App</a></td>
+    <td><a href="">AppLab Write Up</a></td>
+    <td><a href="">Creative Performance Task Brainstorm</a></td>
     <td></td>
     <td></td>
     <td></td>
