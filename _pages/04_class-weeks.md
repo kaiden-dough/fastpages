@@ -8,7 +8,9 @@ title: Class Weeks
 ---
 # Weekly Progress
 ## Week 3
-- 
+- I created an app on AppLab, it has an Animal Quiz and Logo Game
+- Wrote up about the app, my plan and problems and extra features
+- Brainstormed my Create Performance Task
 ## Week 2
 - Demonstrated my learning with Python lists, dictionaries, and loops
 - Added a table to the weekly log
