@@ -1,1 +1,15 @@
-
+# Ignore from local build
+settings.ini
+Gemfile.lock
+images/copied_from_nb/
+_posts/2020-02-20-test.md
+_posts/2022-08-21-firstjupyternotebook.md
+_posts/2022-08-25-APEL-syllabus.md
+_posts/2022-08-25-myclassesandgoals.md
+_posts/2022-08-26-Python-Hacks.md
+_posts/2022-08-27-bashtoolcheck.md
+_posts/2022-08-27-mycodingjourney.md
+_posts/2022-08-27-psychology.md
+_posts/2022-09-04-python_lists.md
+_posts/2022-09-11-AppLab.md
+_posts/2022-09-11-creativeperformancetask.md
