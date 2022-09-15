@@ -50,6 +50,26 @@ layout: notebook
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Gratitude-List">Gratitude List<a class="anchor-link" href="#Gratitude-List"> </a></h2><ul>
+<li>My family</li>
+<li>Access to good food</li>
+<li>An opportunity to receive a good education</li>
+<li>Access to internet and technology</li>
+<li>Living in a nice neighborhood</li>
+</ul>
+<h2 id="My-Mental-Health-Goals">My Mental Health Goals<a class="anchor-link" href="#My-Mental-Health-Goals"> </a></h2><ul>
+<li>Do something I enjoy daily</li>
+<li>Get 7-9 hours of sleep a day</li>
+<li>Eat healthy with occasional treat</li>
+<li>Exercise at least 3 times a week</li>
+<li>Do something fun everyday</li>
+</ul>
+
+</div>
+</div>
+</div>
 </div>
  
 
