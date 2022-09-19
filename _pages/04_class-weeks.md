@@ -7,6 +7,11 @@ categories: [markdown, week1, week2]
 title: Class Weeks
 ---
 # Weekly Progress
+## Week 4
+- Made a local Fastpages Server
+- Made a Flask/Python server (personal and table group)
+- Learned about collaboration
+- Learned about psychology
 ## Week 3
 - I created an app on AppLab, it has an Animal Quiz and Logo Game
 - Wrote up about the app, my plan and problems and extra features
@@ -69,6 +74,17 @@ title: Class Weeks
     <th colspan="10">{{site.cont}}</th>
   </tr>
   <tr>
+    <th>4</th>
+    <td><a href="https://kaiden-dough.github.io/fastpages/markdown/week4/2022/09/13/collaboration.html">Collaboration (Unit 1.1)</a></td>
+    <td><a href="https://kaiden-dough.github.io/fastpages/jupyter/week4/2022/09/15/psychology.html">Psychology and the Good Life</a></td>
+    <td><a href="http://127.0.0.1:4000/fastpages/">Local Fastpages Server (only on my computer)</a></td>
+    <td><a href="http://127.0.0.1:5000/">Flask Python Server (only on my computer)</a></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
   <tr>
     <th>3</th>
     <td><a href="https://studio.code.org/projects/applab/rrhMZ0WoGvsJaDqiw1F6EZQbpIunXvd8U0o591jiu4g">AppLab App</a></td>
