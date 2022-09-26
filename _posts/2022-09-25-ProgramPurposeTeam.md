@@ -1,6 +1,6 @@
 ---
 keywords: fastai
-title: Team Project: Program Purpose
+title: Team Project Program Purpose
 toc: true
 badges: false
 comments: true

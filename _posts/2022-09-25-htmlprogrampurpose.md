@@ -6,10 +6,13 @@ categories: [week5]
 title: HTML Program Purpose
 ---
 
+## Visual
+![]({{ site.baseurl }}/images/Imageforproject.png)
+
+## Description
 <html>
   <style>
     .button {
-      background-color: #4CAF50; /* Green */
       border: none;
       color: white;
       padding: 15px 32px;
@@ -20,7 +23,6 @@ title: HTML Program Purpose
     }
   </style>
   <body>
-    <img src="Imageforproject.jpg">
     <button onclick="aText()" class="button">A</button>
     <button onclick="bText()" class="button">B</button>
     <button onclick="cText()" class="button">C</button>
