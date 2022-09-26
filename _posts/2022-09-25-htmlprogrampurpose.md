@@ -6,7 +6,6 @@ categories: [week5]
 title: HTML Program Purpose
 ---
 
-<img src="Imageforproject.jpg">
 .button {
   background-color: #4CAF50; /* Green */
   border: none;
@@ -17,6 +16,8 @@ title: HTML Program Purpose
   display: inline-block;
   font-size: 16px;
 }
+<img src="Imageforproject.jpg">
+
 <button onclick="aText()" class="button">A</button>
 <button onclick="bText()" class="button">B</button>
 <button onclick="cText()" class="button">C</button>
