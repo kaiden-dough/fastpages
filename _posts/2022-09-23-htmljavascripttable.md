@@ -1,6 +1,11 @@
 ---
 keywords: fastai
-title: Title
+title: HTML & JavaScript Table
+toc: true
+badges: false
+comments: true
+author: Kaiden Do
+categories: [week5]
 nb_path: _notebooks/2022-09-23-htmljavascripttable.ipynb
 layout: notebook
 ---

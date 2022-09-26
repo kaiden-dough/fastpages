@@ -21,7 +21,7 @@ layout: notebook
         
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Program-Purpose-Brainstorm">Program Purpose Brainstorm<a class="anchor-link" href="#Program-Purpose-Brainstorm"> </a></h2><p>An idea for the project would be a Singleplayer vs Dealer Blackjack game. This game would take user input and it would also need algorithms to check cards, deal cards, and control the dealer.</p>
+<h2 id="Program-Purpose-Idea">Program Purpose Idea<a class="anchor-link" href="#Program-Purpose-Idea"> </a></h2><p>An idea for the project would be a Singleplayer vs Dealer Blackjack game. This game would take user input and it would also need algorithms to check cards, deal cards, and control the dealer.</p>
 <p>This project would be very good for education because it would teach us many skills in programming. Also this project would take a lot of thinking and it wouldn't just be a simple game.</p>
 <p>This project would hold the team members interest for 8 weeks because the project would have many parts. The Frontend Developer would create the Blackjack table and show visual images on the screen. The Backend Developer would create all of the algorithms behind the scenes that makes sure the program functions. The Dev Ops would make sure the website deploys and functions. The Scrum Master would direct the team and assign tasks and goals for each sprint. Also the Dev Ops and Scrum Master would help the Backend and Frontend Developers.</p>
 <p>This project could be used outside of the class but it would be unlikely because there are numerous Blackjack apps online and on phones.</p>
