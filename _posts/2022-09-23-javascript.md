@@ -21,6 +21,13 @@ layout: notebook
         
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>{% include navbarsubmenu.html %}</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="My-Edits-on-the-Tutorial">My Edits on the Tutorial<a class="anchor-link" href="#My-Edits-on-the-Tutorial"> </a></h2>
 </div>
 </div>
