@@ -7,6 +7,15 @@ categories: [markdown, week1, week2]
 title: Class Weeks
 ---
 # Weekly Progress
+## Week 5
+- Customized my index.html on flask server
+- Customized my stub.html on flask server, renamed to Kaiden.html
+- Made new page called square.html and it has squares that change color
+- Used some JavaScript
+- Made a table with HTML and JavaScript
+- Came up with a Project idea and Program and Purpose
+- Made a Program Purpose visual
+- Theo made an Agile Methodology Diagram
 ## Week 4
 - Made a local Fastpages Server
 - Made a Flask/Python server (personal and table group)
@@ -75,10 +84,10 @@ title: Class Weeks
   </tr>
   <tr>
     <th>5</th>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td><a href="https://kaiden-dough.github.io/fastpages/week5/2022/09/23/javascript.html">Personal JavaScript</a></td>
+    <td><a href="https://kaiden-dough.github.io/fastpages/week5/2022/09/23/htmljavascripttable.html">HTML JavaScript Table</a></td>
+    <td><a href="https://kaiden-dough.github.io/fastpages/week5/2022/09/25/ProgramPurposeTeam.html">Program Purpose</a></td>
+    <td><a href="https://kaiden-dough.github.io/fastpages/week5/2022/09/25/htmlprogrampurpose.html">Program Purpose Visual</a></td>
     <td></td>
     <td></td>
     <td></td>
