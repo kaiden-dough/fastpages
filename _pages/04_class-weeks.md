@@ -74,6 +74,18 @@ title: Class Weeks
     <th colspan="10">{{site.cont}}</th>
   </tr>
   <tr>
+    <th>5</th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
     <th>4</th>
     <td><a href="https://kaiden-dough.github.io/fastpages/markdown/week4/2022/09/13/collaboration.html">Collaboration (Unit 1.1)</a></td>
     <td><a href="https://kaiden-dough.github.io/fastpages/jupyter/week4/2022/09/15/psychology.html">Psychology and the Good Life</a></td>
