@@ -1,7 +1,6 @@
 ---
 toc: true
 layout: post
-description: Kaiden's 1st Markdown post.
 author: Kaiden Do
 categories: [markdown, week5]
 title: Program Function and Purpose (Unit 1.2)
