@@ -7,6 +7,13 @@ categories: [markdown, week1, week2]
 title: Class Weeks
 ---
 # Weekly Progress
+
+## Week 6
+- compiled my grades for the Big Idea Unit 1.1-1.3 from College Board
+- used the AWS and deployed the team flask website
+- made a browser for my personal flask website
+- made a browser for the group flask through the IP address
+- made a group plan for the project
 ## Week 5
 - Customized my index.html on flask server
 - Customized my stub.html on flask server, renamed to Kaiden.html
@@ -85,10 +92,10 @@ title: Class Weeks
   <tr>
     <th>6</th>
     <td><a href="https://kaiden-dough.github.io/fastpages/markdown/week6/2022/10/02/unit1grades.html">Unit 1 Grades</a></td>
-    <td><a href="https://kaiden-dough.github.io/fastpages/markdown/week6/2022/10/02/groupplan.html">Group Plan</a></td>
-    <td><a href="http://52.15.68.161/">Group Flask</a></td>
-    <td><a href="https://www.kaidennighthawk.tk/">My website</a></td>
     <td><a href="https://kaiden-dough.github.io/fastpages/markdown/week6/2022/10/02/awsdeployment.html">AWS Deployment</a></td>
+    <td><a href="https://www.kaidennighthawk.tk/">My website</a></td>
+    <td><a href="http://52.15.68.161/">Group Flask</a></td>
+    <td><a href="http://52.15.68.161/GroupProjectPlan/">Group Plan</a></td>
     <td></td>
     <td></td>
     <td></td>
