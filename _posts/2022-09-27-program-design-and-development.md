@@ -2,7 +2,7 @@
 toc: true
 layout: post
 author: Kaiden Do
-categories: [markdown, week5]
+categories: [markdown, week6]
 title: Program Design and Development (Unit 1.3)
 ---
 
