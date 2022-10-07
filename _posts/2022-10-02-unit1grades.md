@@ -17,3 +17,7 @@ The videos didn't fully prepare me for the questions and I had to put a little b
 ## Unit 1.3 Program Design and Development Grade: 3/3
 From watching the videos, the MC questions were fairly straightforward to answer.
 ![]({{ site.baseurl }}/images/pdad.png)
+
+## Unit 1.4 Identifying and Correcting Errors:
+Question 3 Corrections: The number 7 results in the correct answer so it was incorrect because the answer wanted wrong results. But number 8 results in check minus instead of check so that was the correct answer.
+![]({{ site.baseurl }}/images/iace.png)

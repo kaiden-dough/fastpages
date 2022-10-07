@@ -33,3 +33,5 @@ title: Identifying and Correcting Errors (Unit 1.4)
 - Takeaway: Identify inputs and intended outputs by testing the program
 
 ## MCQ Grade:
+Question 3 Corrections: the Number 7 results in the correct answer. But number 8 results in check minus instead of check.
+![]({{ site.baseurl }}/images/iace.png)
