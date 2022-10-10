@@ -1,0 +1,1730 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Airline API | Kaiden Do FastPages</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Airline API" />
+<meta name="author" content="Kaiden Do" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Kaiden’s FastPages site!" />
+<meta property="og:description" content="Kaiden’s FastPages site!" />
+<link rel="canonical" href="https://kaiden-dough.github.io/fastpages/week7/2022/10/09/api.html" />
+<meta property="og:url" content="https://kaiden-dough.github.io/fastpages/week7/2022/10/09/api.html" />
+<meta property="og:site_name" content="Kaiden Do FastPages" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-10-09T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Airline API" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Kaiden Do"},"dateModified":"2022-10-09T00:00:00-05:00","datePublished":"2022-10-09T00:00:00-05:00","description":"Kaiden’s FastPages site!","headline":"Airline API","mainEntityOfPage":{"@type":"WebPage","@id":"https://kaiden-dough.github.io/fastpages/week7/2022/10/09/api.html"},"url":"https://kaiden-dough.github.io/fastpages/week7/2022/10/09/api.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/fastpages/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://kaiden-dough.github.io/fastpages/feed.xml" title="Kaiden Do FastPages" /><link rel="shortcut icon" type="image/x-icon" href="/fastpages/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/fastpages/">Kaiden Do FastPages</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/fastpages/search/">Search</a><a class="page-link" href="/fastpages/categories/">Tags</a><a class="page-link" href="/fastpages/_pages/02_notes.html">Notes for APCSP</a><a class="page-link" href="/fastpages/about/">About Me</a><a class="page-link" href="/fastpages/_pages/04_class-weeks.html">Class Weeks</a><a class="page-link" href="/fastpages/_pages/05_submenu.html">Submenu</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Airline API</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-10-09T00:00:00-05:00" itemprop="datePublished">
+        Oct 9, 2022
+      </time>• 
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">Kaiden Do</span></span>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      29 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/fastpages/categories/#week7">week7</a>
+        
+      
+      </p>
+    
+
+    
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2022-10-09-api.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p></p>
+<table>
+    <tr>
+        <td><img src="/fastpages//images/penguin500x500.png" height="60" title="Submenu" alt=""></td>
+        <td><a href="/fastpages/week5/2022/09/23/javascript.html">JavaScript</a></td>
+        <td><a href="/fastpages/week5/2022/09/23/htmljavascripttable.html">Table</a></td>
+        <td><a href="/fastpages/week7/2022/10/09/api.html">Airline API</a></td>        
+    </tr>
+</table>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="s2">"https://iata-and-icao-codes.p.rapidapi.com/airlines"</span>
+
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+	<span class="s2">"X-RapidAPI-Key"</span><span class="p">:</span> <span class="s2">"460f88d59amsh76ca8a31ce1e3e8p1980d4jsn45f1c423170f"</span><span class="p">,</span>
+	<span class="s2">"X-RapidAPI-Host"</span><span class="p">:</span> <span class="s2">"iata-and-icao-codes.p.rapidapi.com"</span>
+<span class="p">}</span>
+
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">"GET"</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+<span class="nb">all</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">all</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">x</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">key</span> <span class="o">==</span> <span class="s2">"name"</span><span class="p">):</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"Airline Name:"</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">key</span> <span class="o">==</span> <span class="s2">"icao_code"</span><span class="p">):</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"    ICAO Code:"</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Airline Name: VASCO
+    ICAO Code: VFC
+Airline Name: Branson Air Express
+    ICAO Code: None
+Airline Name: Angara Airlines
+    ICAO Code: AGU
+Airline Name: Star Peru
+    ICAO Code: SRU
+Airline Name: Air Burkina
+    ICAO Code: VBW
+Airline Name: Avianca
+    ICAO Code: GLG
+Airline Name: Maya Island Air
+    ICAO Code: MYD
+Airline Name: Albawings
+    ICAO Code: AWT
+Airline Name: Blue Air
+    ICAO Code: BMS
+Airline Name: Helvetic Airways
+    ICAO Code: OAW
+Airline Name: Sun d'Or Airlines
+    ICAO Code: ERO
+Airline Name: Passaredo Linhas Aéreas
+    ICAO Code: PTB
+Airline Name: Binter Cabo Verde
+    ICAO Code: NTB
+Airline Name: Air Chathams
+    ICAO Code: CVA
+Airline Name: Air Choice One
+    ICAO Code: WBR
+Airline Name: Pacificair
+    ICAO Code: None
+Airline Name: Air Inuit
+    ICAO Code: AIE
+Airline Name: Jubba Airways
+    ICAO Code: JBW
+Airline Name: Silver Airways
+    ICAO Code: SIL
+Airline Name: Airline Urga
+    ICAO Code: URG
+Airline Name: Air Philip
+    ICAO Code: APV
+Airline Name: Avior Regional
+    ICAO Code: RGR
+Airline Name: Air Antilles
+    ICAO Code: GUY
+Airline Name: Tarco Aviation
+    ICAO Code: TRQ
+Airline Name: Sichuan Airlines
+    ICAO Code: CSC
+Airline Name: Malawi Airlines
+    ICAO Code: MWI
+Airline Name: Boutique Air
+    ICAO Code: BTQ
+Airline Name: Gazpromavia
+    ICAO Code: GZP
+Airline Name: FlyDamas
+    ICAO Code: FDK
+Airline Name: Kenn Borek Air
+    ICAO Code: KBA
+Airline Name: Airnorth
+    ICAO Code: ANT
+Airline Name: Star East Airlines
+    ICAO Code: SEK
+Airline Name: Warbelows Air
+    ICAO Code: WAV
+Airline Name: Airlink
+    ICAO Code: LNK
+Airline Name: Bassaka Air
+    ICAO Code: BSX
+Airline Name: Aeromexico Connect
+    ICAO Code: SLI
+Airline Name: FlyOne
+    ICAO Code: FIA
+Airline Name: FlyMontserrat
+    ICAO Code: MNT
+Airline Name: SmartAvia
+    ICAO Code: AUL
+Airline Name: ASL Airlines France
+    ICAO Code: FPO
+Airline Name: Rutaca Airlines
+    ICAO Code: RUC
+Airline Name: Canadian North
+    ICAO Code: MPE
+Airline Name: TAG Airlines
+    ICAO Code: TGU
+Airline Name: CemAir
+    ICAO Code: KEM
+Airline Name: TUI fly Nordiс
+    ICAO Code: BLX
+Airline Name: Air Timor
+    ICAO Code: 586
+Airline Name: Israir Airlines
+    ICAO Code: ISR
+Airline Name: Solaseed Air
+    ICAO Code: SNJ
+Airline Name: Aklak Air
+    ICAO Code: AKK
+Airline Name: Niger Airlines
+    ICAO Code: NIN
+Airline Name: Orbest
+    ICAO Code: OBS
+Airline Name: Cham Wings Airlines
+    ICAO Code: SAW
+Airline Name: ALROSA
+    ICAO Code: DRU
+Airline Name: SaudiGulf
+    ICAO Code: SGQ
+Airline Name: SmartLynx Airlines Estonia
+    ICAO Code: MYX
+Airline Name: Madagasikara Airways
+    ICAO Code: AYS
+Airline Name: Sylt Air
+    ICAO Code: AWU
+Airline Name: First Air
+    ICAO Code: FAB
+Airline Name: MAYAir
+    ICAO Code: MYI
+Airline Name: Air Panama
+    ICAO Code: PST
+Airline Name: Elite Airways
+    ICAO Code: MNU
+Airline Name: RusLine
+    ICAO Code: RLU
+Airline Name: Federal Airlines
+    ICAO Code: FDR
+Airline Name: Windrose Airlines
+    ICAO Code: WRC
+Airline Name: Mann Yadanarpon Airlines
+    ICAO Code: MYP
+Airline Name: TransNusa
+    ICAO Code: TNU
+Airline Name: Bering Air
+    ICAO Code: BRG
+Airline Name: STP Airways
+    ICAO Code: STP
+Airline Name: Fly Mid Africa
+    ICAO Code: MFG
+Airline Name: BHAir
+    ICAO Code: BGH
+Airline Name: EcoJet
+    ICAO Code: ECO
+Airline Name: Myanmar Airways International
+    ICAO Code: MMA
+Airline Name: Regional Air
+    ICAO Code: REG
+Airline Name: Pacific Coastal Airlines
+    ICAO Code: PCO
+Airline Name: Air Tindi
+    ICAO Code: TID
+Airline Name: Afriqiyah Airways
+    ICAO Code: AAW
+Airline Name: EWA Air
+    ICAO Code: EWR
+Airline Name: LATAM Colombia
+    ICAO Code: ARE
+Airline Name: PAL Express
+    ICAO Code: GAP
+Airline Name: Jetstar Asia
+    ICAO Code: JSA
+Airline Name: Air Arabia Maroc
+    ICAO Code: MAC
+Airline Name: Fly540
+    ICAO Code: FFV
+Airline Name: IndiGo
+    ICAO Code: IGO
+Airline Name: Jeju Air
+    ICAO Code: JJA
+Airline Name: Lucky Air
+    ICAO Code: LKE
+Airline Name: StarFlyer
+    ICAO Code: SFJ
+Airline Name: TruJet
+    ICAO Code: TRJ
+Airline Name: Ravn Alaska
+    ICAO Code: RVF
+Airline Name: Eurowings
+    ICAO Code: GWI
+Airline Name: Onur Air
+    ICAO Code: OHY
+Airline Name: Interjet
+    ICAO Code: AIJ
+Airline Name: Wright Air Service
+    ICAO Code: WRT
+Airline Name: Fly All Ways
+    ICAO Code: EDR
+Airline Name: Pan Pacific Airlines
+    ICAO Code: AAV
+Airline Name: Congo Airways
+    ICAO Code: CGA
+Airline Name: Air Changan
+    ICAO Code: CGN
+Airline Name: Alliance Air
+    ICAO Code: LLR
+Airline Name: Dana Air
+    ICAO Code: DAN
+Airline Name: Cape Air
+    ICAO Code: KAP
+Airline Name: Central Mountain Air
+    ICAO Code: GLR
+Airline Name: Tropic Air
+    ICAO Code: TOS
+Airline Name: Caicos Express Airways
+    ICAO Code: CXE
+Airline Name: SATENA
+    ICAO Code: NSE
+Airline Name: Air Moldova
+    ICAO Code: MLD
+Airline Name: Avior Airlines
+    ICAO Code: ROI
+Airline Name: Jet Airways
+    ICAO Code: JAI
+Airline Name: Southern Airways Express
+    ICAO Code: FDY
+Airline Name: National Airways Ethiopia
+    ICAO Code: NAE
+Airline Name: Astra Airlines
+    ICAO Code: AZI
+Airline Name: Azimuth
+    ICAO Code: AZO
+Airline Name: HOP!
+    ICAO Code: HOP
+Airline Name: Air Travel
+    ICAO Code: HTU
+Airline Name: AeroLink
+    ICAO Code: XAU
+Airline Name: Georgian Airways
+    ICAO Code: TGZ
+Airline Name: Mandarin Airlines
+    ICAO Code: MDA
+Airline Name: Aruba Airlines
+    ICAO Code: ARU
+Airline Name: Air Algerie
+    ICAO Code: DAH
+Airline Name: Aztec Airways
+    ICAO Code: AZY
+Airline Name: Air Juan
+    ICAO Code: None
+Airline Name: AlbaStar
+    ICAO Code: LAV
+Airline Name: Alaska Airlines
+    ICAO Code: ASA
+Airline Name: Royal Air Maroc
+    ICAO Code: RAM
+Airline Name: Austral
+    ICAO Code: AUT
+Airline Name: Africa World Airlines
+    ICAO Code: AFW
+Airline Name: Venezolana
+    ICAO Code: VNE
+Airline Name: La Compagnie
+    ICAO Code: DJT
+Airline Name: Belavia
+    ICAO Code: BRU
+Airline Name: Bhutan Airlines
+    ICAO Code: BTN
+Airline Name: ZanAir
+    ICAO Code: TAN
+Airline Name: EastAfrican
+    ICAO Code: EXZ
+Airline Name: Uni Air
+    ICAO Code: UIA
+Airline Name: Eritrean Airlines
+    ICAO Code: ERT
+Airline Name: Iran Air Tours
+    ICAO Code: IRB
+Airline Name: Seaborne Airlines
+    ICAO Code: SBS
+Airline Name: Cambodia Bayon Airlines
+    ICAO Code: BYC
+Airline Name: French Bee
+    ICAO Code: FBU
+Airline Name: Biman Bangladesh Airlines
+    ICAO Code: BBC
+Airline Name: Royal Brunei Airlines
+    ICAO Code: RBA
+Airline Name: Nouvelair
+    ICAO Code: LBT
+Airline Name: Okay Airways
+    ICAO Code: OKA
+Airline Name: Air Botswana
+    ICAO Code: BOT
+Airline Name: US-Bangla Airlines
+    ICAO Code: UBG
+Airline Name: airBaltic
+    ICAO Code: BTI
+Airline Name: flyCAA
+    ICAO Code: FPY
+Airline Name: Caribbean Airlines
+    ICAO Code: BWA
+Airline Name: TUI Airways
+    ICAO Code: TOM
+Airline Name: Blue Bird Airways
+    ICAO Code: BBG
+Airline Name: CEIBA Intercontinental
+    ICAO Code: CEL
+Airline Name: Aegean Airlines
+    ICAO Code: AEE
+Airline Name: Air Canada
+    ICAO Code: ACA
+Airline Name: Air India
+    ICAO Code: AIC
+Airline Name: Avianca
+    ICAO Code: AVA
+Airline Name: British Airways
+    ICAO Code: BAW
+Airline Name: American Airlines
+    ICAO Code: AAL
+Airline Name: Finnair
+    ICAO Code: FIN
+Airline Name: Aeromexico
+    ICAO Code: AMX
+Airline Name: Alitalia
+    ICAO Code: AZA
+Airline Name: Aerolineas Argentinas
+    ICAO Code: ARG
+Airline Name: Air France
+    ICAO Code: AFR
+Airline Name: Jetstar Pacific
+    ICAO Code: PIC
+Airline Name: 9 Air
+    ICAO Code: JYH
+Airline Name: AirAsia
+    ICAO Code: AXM
+Airline Name: Air Busan
+    ICAO Code: ABL
+Airline Name: Eastar Jet
+    ICAO Code: ESR
+Airline Name: Skymark Airlines
+    ICAO Code: SKY
+Airline Name: Spring Airlines
+    ICAO Code: CQH
+Airline Name: Blue Panorama Airlines
+    ICAO Code: BPA
+Airline Name: Flybe
+    ICAO Code: BEE
+Airline Name: Azul
+    ICAO Code: AZU
+Airline Name: Aereo Calafia
+    ICAO Code: CFV
+Airline Name: jetBlue
+    ICAO Code: JBU
+Airline Name: Trade Air
+    ICAO Code: TDR
+Airline Name: AZUR Air
+    ICAO Code: KTK
+Airline Name: Cinnamon Air
+    ICAO Code: CIN
+Airline Name: Cronos Airlines
+    ICAO Code: CRA
+Airline Name: Air China
+    ICAO Code: CCA
+Airline Name: CM Airlines
+    ICAO Code: OMT
+Airline Name: Corendon Dutch Airlines
+    ICAO Code: CND
+Airline Name: Chalair Aviation
+    ICAO Code: CLG
+Airline Name: PNG Air
+    ICAO Code: TOK
+Airline Name: Lufthansa CityLine
+    ICAO Code: CLH
+Airline Name: Grand China Air
+    ICAO Code: GDC
+Airline Name: Coastal Aviation
+    ICAO Code: CSV
+Airline Name: Alitalia CityLiner
+    ICAO Code: CYL
+Airline Name: Cubana
+    ICAO Code: CUB
+Airline Name: Copa Airlines
+    ICAO Code: CMP
+Airline Name: China Airlines
+    ICAO Code: CAL
+Airline Name: Cyprus Airways
+    ICAO Code: CYP
+Airline Name: China Southern Airlines
+    ICAO Code: CSN
+Airline Name: Severstal Air Company
+    ICAO Code: SSF
+Airline Name: Daallo Airlines
+    ICAO Code: DAO
+Airline Name: Norwegian Air International
+    ICAO Code: IBK
+Airline Name: BRA
+    ICAO Code: BRX
+Airline Name: Condor
+    ICAO Code: None
+Airline Name: Norwegian
+    ICAO Code: NAN
+Airline Name: Norwegian
+    ICAO Code: NRS
+Airline Name: Thomas Cook Scandinavia
+    ICAO Code: VKG
+Airline Name: Norwegian Air Argentina
+    ICAO Code: NAA
+Airline Name: TAAG Angola
+    ICAO Code: DTA
+Airline Name: SCAT Airlines
+    ICAO Code: VSV
+Airline Name: Danish Air Transport
+    ICAO Code: DTR
+Airline Name: Donghai Airlines
+    ICAO Code: EPA
+Airline Name: New Gen Airways
+    ICAO Code: VGO
+Airline Name: Enter Air
+    ICAO Code: ENT
+Airline Name: Estelar Latinoamerica
+    ICAO Code: ETR
+Airline Name: Equaflight
+    ICAO Code: EKA
+Airline Name: Evelop!
+    ICAO Code: EVE
+Airline Name: Wamos Air
+    ICAO Code: PLM
+Airline Name: easyJet
+    ICAO Code: EJU
+Airline Name: Ernest Airlines
+    ICAO Code: ERN
+Airline Name: ANA Wings
+    ICAO Code: AKX
+Airline Name: Aer Lingus
+    ICAO Code: EIN
+Airline Name: Emirates
+    ICAO Code: UAE
+Airline Name: Ellinair
+    ICAO Code: ELB
+Airline Name: AirDolomiti
+    ICAO Code: DLA
+Airline Name: Pegas Fly
+    ICAO Code: KAR
+Airline Name: Iran Aseman Airlines
+    ICAO Code: IRC
+Airline Name: TAME
+    ICAO Code: TAE
+Airline Name: Serene Air
+    ICAO Code: SEP
+Airline Name: Etihad Airways
+    ICAO Code: ETD
+Airline Name: Safarilink Aviation
+    ICAO Code: XLK
+Airline Name: flyadeal
+    ICAO Code: FAD
+Airline Name: Air Flamenco
+    ICAO Code: WAF
+Airline Name: FlyValan
+    ICAO Code: FXP
+Airline Name: iFly
+    ICAO Code: RSY
+Airline Name: Bulgaria Air
+    ICAO Code: LZB
+Airline Name: Vivaair
+    ICAO Code: VVC
+Airline Name: FAT Far Eastern Air Transport
+    ICAO Code: FEA
+Airline Name: Ariana Afghan Airlines
+    ICAO Code: AFG
+Airline Name: Icelandair
+    ICAO Code: ICE
+Airline Name: Shanghai Airlines
+    ICAO Code: CSH
+Airline Name: Fastjet Tanzania
+    ICAO Code: FTZ
+Airline Name: Flybondi
+    ICAO Code: FBD
+Airline Name: FlyPelican
+    ICAO Code: FRE
+Airline Name: Flyest Lineas Aereas
+    ICAO Code: None
+Airline Name: FlyEgypt
+    ICAO Code: FEG
+Airline Name: Fly Tiwi
+    ICAO Code: None
+Airline Name: Fuzhou Airlines
+    ICAO Code: FZA
+Airline Name: Rossiya Airlines
+    ICAO Code: SDM
+Airline Name: Ibex Airlines
+    ICAO Code: IBX
+Airline Name: Firefly
+    ICAO Code: FFM
+Airline Name: China Express Airlines
+    ICAO Code: HXA
+Airline Name: Cathay Pacific
+    ICAO Code: CPA
+Airline Name: SUN-AIR
+    ICAO Code: SUS
+Airline Name: Fiji Airways
+    ICAO Code: FJI
+Airline Name: Delta
+    ICAO Code: DAL
+Airline Name: Chengdu Airlines
+    ICAO Code: UEA
+Airline Name: Ruili Airlines
+    ICAO Code: RLH
+Airline Name: Air Arabia Egypt
+    ICAO Code: RBG
+Airline Name: Fastjet Zimbabwe
+    ICAO Code: FJW
+Airline Name: FlySafair
+    ICAO Code: SFR
+Airline Name: AirAsia X
+    ICAO Code: XAX
+Airline Name: Nok Air
+    ICAO Code: NOK
+Airline Name: Thai AirAsia
+    ICAO Code: AIQ
+Airline Name: AirAsia Japan
+    ICAO Code: WAJ
+Airline Name: Condor
+    ICAO Code: CFG
+Airline Name: easyJet
+    ICAO Code: EZS
+Airline Name: Eurowings
+    ICAO Code: EWG
+Airline Name: Eurowings
+    ICAO Code: EWE
+Airline Name: Norwegian
+    ICAO Code: NAX
+Airline Name: Pobeda
+    ICAO Code: PBD
+Airline Name: Ryanair
+    ICAO Code: RYR
+Airline Name: GOL Linhas Aéreas
+    ICAO Code: GLO
+Airline Name: Fly Corporate
+    ICAO Code: None
+Airline Name: Flydubai
+    ICAO Code: FDB
+Airline Name: Allegiant Air
+    ICAO Code: AAY
+Airline Name: Flair Airlines
+    ICAO Code: FLE
+Airline Name: Frontier Airlines
+    ICAO Code: FFT
+Airline Name: Gowair Vacation Airlines
+    ICAO Code: GWR
+Airline Name: Gulf Air
+    ICAO Code: GFA
+Airline Name: Loong Air
+    ICAO Code: CDC
+Airline Name: Air Greenland
+    ICAO Code: GRL
+Airline Name: Germania Flug
+    ICAO Code: GSW
+Airline Name: APG Airlines
+    ICAO Code: RIV
+Airline Name: Sky Express Greece
+    ICAO Code: SEH
+Airline Name: Aurigny
+    ICAO Code: AUR
+Airline Name: Tianjin Airlines
+    ICAO Code: GCR
+Airline Name: Air Guilin
+    ICAO Code: CGH
+Airline Name: Avianca Guatemala
+    ICAO Code: GUG
+Airline Name: Grant Aviation
+    ICAO Code: GUN
+Airline Name: GX Airlines
+    ICAO Code: CBG
+Airline Name: Colorful Guizhou Airlines
+    ICAO Code: CGZ
+Airline Name: Air Rarotonga
+    ICAO Code: RAR
+Airline Name: Thomas Cook Airlines Balearics
+    ICAO Code: CTB
+Airline Name: Bulgarian Air Charter
+    ICAO Code: BUC
+Airline Name: Ravn Alaska
+    ICAO Code: RVF
+Airline Name: Eagle Air
+    ICAO Code: FEI
+Airline Name: Taron Avia
+    ICAO Code: TRV
+Airline Name: Hawaiian Airlines
+    ICAO Code: HAL
+Airline Name: Asia Atlantic Airlines
+    ICAO Code: AAQ
+Airline Name: Air Senegal
+    ICAO Code: SZN
+Airline Name: Air Cote D'Ivoire
+    ICAO Code: VRE
+Airline Name: Taban Airlines
+    ICAO Code: TBN
+Airline Name: Skippers Aviation
+    ICAO Code: None
+Airline Name: Juneyao Airlines
+    ICAO Code: DKH
+Airline Name: Hainan Airlines
+    ICAO Code: CHH
+Airline Name: North-Wright Airways
+    ICAO Code: NWL
+Airline Name: Hong Kong Airlines
+    ICAO Code: CRK
+Airline Name: Uzbekistan Airways
+    ICAO Code: UZB
+Airline Name: Aurora
+    ICAO Code: SHU
+Airline Name: ATA Airlines
+    ICAO Code: TBZ
+Airline Name: Island Air Express
+    ICAO Code: EXP
+Airline Name: Izhavia
+    ICAO Code: IZA
+Airline Name: Iraqi Airways
+    ICAO Code: IAW
+Airline Name: Batik Air
+    ICAO Code: BTK
+Airline Name: Solomon Airlines
+    ICAO Code: SOL
+Airline Name: Fly Baghdad
+    ICAO Code: FBA
+Airline Name: Air Kiribati
+    ICAO Code: AKL
+Airline Name: Trigana Air Service
+    ICAO Code: TGN
+Airline Name: NAM Air
+    ICAO Code: LKN
+Airline Name: IrAero
+    ICAO Code: IAE
+Airline Name: Qazaq Air
+    ICAO Code: QAZ
+Airline Name: Iran Air
+    ICAO Code: IRA
+Airline Name: Sepehran Airlines
+    ICAO Code: SHI
+Airline Name: Caspian Airlines
+    ICAO Code: CPN
+Airline Name: Yemenia
+    ICAO Code: IYE
+Airline Name: Arkia
+    ICAO Code: AIZ
+Airline Name: Azerbaijan Airlines
+    ICAO Code: AHY
+Airline Name: Buta Airways
+    ICAO Code: None
+Airline Name: Northwestern Air
+    ICAO Code: PLR
+Airline Name: Badr Airlines
+    ICAO Code: BDR
+Airline Name: Buffalo Airways
+    ICAO Code: BFL
+Airline Name: Alaska Seaplanes
+    ICAO Code: None
+Airline Name: Berjaya Air
+    ICAO Code: BVT
+Airline Name: JetSmart
+    ICAO Code: JAT
+Airline Name: Helijet
+    ICAO Code: JBA
+Airline Name: Beijing Capital Airlines
+    ICAO Code: CBJ
+Airline Name: Iberia
+    ICAO Code: IBE
+Airline Name: Iberia Express
+    ICAO Code: IBS
+Airline Name: Japan Air Commuter
+    ICAO Code: JAC
+Airline Name: Air Seychelles
+    ICAO Code: SEY
+Airline Name: Int'Air Iles
+    ICAO Code: IIA
+Airline Name: Harbour Air Seaplanes
+    ICAO Code: HES
+Airline Name: AirAsia India
+    ICAO Code: IAD
+Airline Name: Air Do
+    ICAO Code: ADO
+Airline Name: Air India Express
+    ICAO Code: AXB
+Airline Name: GoAir
+    ICAO Code: GOW
+Airline Name: Jetstar Japan
+    ICAO Code: JJP
+Airline Name: Spring Airlines Japan
+    ICAO Code: SJO
+Airline Name: Tigerair Taiwan
+    ICAO Code: TTW
+Airline Name: Wings Air
+    ICAO Code: WON
+Airline Name: Air Italy
+    ICAO Code: ISS
+Airline Name: Himalaya Airlines
+    ICAO Code: HIM
+Airline Name: Transavia
+    ICAO Code: TRA
+Airline Name: Sky Airline
+    ICAO Code: SKU
+Airline Name: Air Arabia
+    ICAO Code: ABY
+Airline Name: Jazeera Airways
+    ICAO Code: JZR
+Airline Name: Jet Asia Airways
+    ICAO Code: JAA
+Airline Name: Fuji Dream Airlines
+    ICAO Code: FDA
+Airline Name: Meraj Airlines
+    ICAO Code: MRJ
+Airline Name: Jambojet
+    ICAO Code: None
+Airline Name: Joy Air
+    ICAO Code: JOY
+Airline Name: Air Koryo
+    ICAO Code: KOR
+Airline Name: Air Serbia
+    ICAO Code: ASL
+Airline Name: Bearskin Airlines
+    ICAO Code: BLS
+Airline Name: DAC Aviation
+    ICAO Code: None
+Airline Name: InterCaribbean Airways
+    ICAO Code: IWY
+Airline Name: Jubba Airways
+    ICAO Code: JUB
+Airline Name: Taquan Air
+    ICAO Code: TQN
+Airline Name: Cambodia Angkor Air
+    ICAO Code: KHV
+Airline Name: Air KBZ
+    ICAO Code: KBZ
+Airline Name: Drukair
+    ICAO Code: DRK
+Airline Name: Air Astana
+    ICAO Code: KZR
+Airline Name: Air Belgium
+    ICAO Code: ABB
+Airline Name: KrasAvia
+    ICAO Code: SSJ
+Airline Name: Air Malta
+    ICAO Code: AMC
+Airline Name: China United Airlines
+    ICAO Code: CUA
+Airline Name: Maroomba Airlines
+    ICAO Code: None
+Airline Name: Komiaviatrans
+    ICAO Code: KMA
+Airline Name: ASKY Airlines
+    ICAO Code: SKK
+Airline Name: Cambodia Airways
+    ICAO Code: KME
+Airline Name: Penair
+    ICAO Code: PEN
+Airline Name: Kuwait Airways
+    ICAO Code: KAC
+Airline Name: Korea Express Air
+    ICAO Code: KEA
+Airline Name: Cayman Airways
+    ICAO Code: CAY
+Airline Name: Kunming Airlines
+    ICAO Code: KNA
+Airline Name: LASA Líneas Aéreas
+    ICAO Code: None
+Airline Name: Mauritania Airlines International
+    ICAO Code: MAI
+Airline Name: Luxair
+    ICAO Code: LGL
+Airline Name: Liat
+    ICAO Code: LIA
+Airline Name: Lao Skyway
+    ICAO Code: LLL
+Airline Name: Miami Air International
+    ICAO Code: BSK
+Airline Name: Loganair
+    ICAO Code: LOG
+Airline Name: Libyan Airlines
+    ICAO Code: LAA
+Airline Name: Avianca Costa Rica
+    ICAO Code: LRC
+Airline Name: LongJiang Airlines
+    ICAO Code: SNG
+Airline Name: Level
+    ICAO Code: BOS
+Airline Name: EL AL
+    ICAO Code: ELY
+Airline Name: Aero Mongolia
+    ICAO Code: MNG
+Airline Name: Kenmore Air
+    ICAO Code: KEN
+Airline Name: SkyJet Airlines
+    ICAO Code: MSJ
+Airline Name: Motor Sich Airlines
+    ICAO Code: MSI
+Airline Name: SilkAir
+    ICAO Code: SLK
+Airline Name: Calm Air
+    ICAO Code: CAV
+Airline Name: Hunnu Air
+    ICAO Code: MML
+Airline Name: Egyptair
+    ICAO Code: MSR
+Airline Name: Thomas Cook Airlines
+    ICAO Code: TCX
+Airline Name: Air Mediterranean
+    ICAO Code: MAR
+Airline Name: Mokulele Airlines
+    ICAO Code: MHO
+Airline Name: MASwings
+    ICAO Code: MWG
+Airline Name: Amakusa Airlines
+    ICAO Code: AHX
+Airline Name: Nordwind Airlines
+    ICAO Code: NWS
+Airline Name: Nolinor Aviation
+    ICAO Code: NRL
+Airline Name: Novair
+    ICAO Code: NVR
+Airline Name: Nesma Airlines
+    ICAO Code: NSS
+Airline Name: Cobham Aviation Services Australia
+    ICAO Code: JTE
+Airline Name: Nesma Airlines
+    ICAO Code: NMA
+Airline Name: Air Vanuatu
+    ICAO Code: AVN
+Airline Name: Al Naser Wings
+    ICAO Code: NAD
+Airline Name: aero
+    ICAO Code: NIG
+Airline Name: TAP Air Portugal
+    ICAO Code: PGA
+Airline Name: Niger Airways
+    ICAO Code: NWA
+Airline Name: Neos
+    ICAO Code: NOS
+Airline Name: Nile Air
+    ICAO Code: NIA
+Airline Name: SWISS
+    ICAO Code: SWR
+Airline Name: Lufthansa
+    ICAO Code: DLH
+Airline Name: LOT Polish
+    ICAO Code: LOT
+Airline Name: EgyptAir Express
+    ICAO Code: MSE
+Airline Name: LATAM Brasil
+    ICAO Code: TAM
+Airline Name: Mango
+    ICAO Code: MNO
+Airline Name: Japan Airlines
+    ICAO Code: JAL
+Airline Name: Cathay Dragon
+    ICAO Code: HDA
+Airline Name: LATAM Chile
+    ICAO Code: LAN
+Airline Name: Malaysia Airlines
+    ICAO Code: MAS
+Airline Name: LATAM Express
+    ICAO Code: LXP
+Airline Name: LATAM Peru
+    ICAO Code: LPE
+Airline Name: NORRA
+    ICAO Code: FCM
+Airline Name: KLM
+    ICAO Code: KLM
+Airline Name: Kenya Airways
+    ICAO Code: KQA
+Airline Name: Middle East Airlines
+    ICAO Code: MEA
+Airline Name: Xiamen Airlines
+    ICAO Code: CXA
+Airline Name: China Eastern
+    ICAO Code: CES
+Airline Name: Air Madagascar
+    ICAO Code: MDG
+Airline Name: Air Mauritius
+    ICAO Code: MAU
+Airline Name: Kulula
+    ICAO Code: CAW
+Airline Name: Jetstar
+    ICAO Code: JST
+Airline Name: Jin Air
+    ICAO Code: JNA
+Airline Name: Lion Air
+    ICAO Code: LNI
+Airline Name: Myway Airlines
+    ICAO Code: MYW
+Airline Name: Peach
+    ICAO Code: APJ
+Airline Name: Lanmei Airlines
+    ICAO Code: MKR
+Airline Name: Vanilla Air
+    ICAO Code: VNL
+Airline Name: Atlasglobal
+    ICAO Code: KKK
+Airline Name: Jet2.com
+    ICAO Code: EXS
+Airline Name: Spirit Airlines
+    ICAO Code: NKS
+Airline Name: Air Japan
+    ICAO Code: AJX
+Airline Name: Hebei Airlines
+    ICAO Code: HBH
+Airline Name: Binter Canarias
+    ICAO Code: IBB
+Airline Name: Karun Airlines
+    ICAO Code: IRG
+Airline Name: Air Macau
+    ICAO Code: AMU
+Airline Name: Air Iceland Connect
+    ICAO Code: FXI
+Airline Name: Avianca Brazil
+    ICAO Code: ONE
+Airline Name: Orenburzhye
+    ICAO Code: ORG
+Airline Name: NOVA Airways
+    ICAO Code: NOV
+Airline Name: Olympic Air
+    ICAO Code: OAL
+Airline Name: BOA Boliviana de Aviación
+    ICAO Code: BOV
+Airline Name: Oriental Air Bridge
+    ICAO Code: ORC
+Airline Name: Cairo Aviation
+    ICAO Code: CCE
+Airline Name: Laudamotion
+    ICAO Code: LDM
+Airline Name: Overland Airways
+    ICAO Code: OLA
+Airline Name: Originair
+    ICAO Code: OGN
+Airline Name: Hinterland Aviation
+    ICAO Code: HND
+Airline Name: Samoa Airways
+    ICAO Code: PAO
+Airline Name: MIAT Mongolian Airlines
+    ICAO Code: MGL
+Airline Name: Nauru Airlines
+    ICAO Code: RON
+Airline Name: PassionAir
+    ICAO Code: DIG
+Airline Name: Chongqing Airlines
+    ICAO Code: CQN
+Airline Name: TUIfly Netherlands
+    ICAO Code: TFL
+Airline Name: Skyward Express
+    ICAO Code: SEW
+Airline Name: Andes Lineas Aereas
+    ICAO Code: ANS
+Airline Name: Proflight Zambia
+    ICAO Code: PFZ
+Airline Name: AirKenya
+    ICAO Code: XAK
+Airline Name: Wingo
+    ICAO Code: RPB
+Airline Name: Pascan Aviation
+    ICAO Code: PSC
+Airline Name: Privilege Style
+    ICAO Code: PVG
+Airline Name: SprintAir
+    ICAO Code: SRN
+Airline Name: Peruvian Airlines
+    ICAO Code: PVN
+Airline Name: PAL Airlines
+    ICAO Code: PVL
+Airline Name: Pegasus Airlines
+    ICAO Code: PGT
+Airline Name: Porter Airlines
+    ICAO Code: POE
+Airline Name: People's Viennaline
+    ICAO Code: PEV
+Airline Name: Bangkok Airways
+    ICAO Code: BKP
+Airline Name: Phoenix Air
+    ICAO Code: PHA
+Airline Name: Polar Airlines
+    ICAO Code: RKA
+Airline Name: Air Saint Pierre
+    ICAO Code: SPM
+Airline Name: PIA
+    ICAO Code: PIA
+Airline Name: Southern Air Charter
+    ICAO Code: SOA
+Airline Name: Canaryfly
+    ICAO Code: CNF
+Airline Name: Philippine Airlines
+    ICAO Code: PAL
+Airline Name: UIA
+    ICAO Code: AUI
+Airline Name: Plus Ultra Lineas Aereas
+    ICAO Code: PUE
+Airline Name: St Barth Commuter
+    ICAO Code: SBU
+Airline Name: Precision Air
+    ICAO Code: PRF
+Airline Name: Air Niugini
+    ICAO Code: ANG
+Airline Name: Surinam Airways
+    ICAO Code: SLM
+Airline Name: LATAM Paraguay
+    ICAO Code: LAP
+Airline Name: Maldivian
+    ICAO Code: DQA
+Airline Name: Anguilla Air Services
+    ICAO Code: AXL
+Airline Name: 40 Mile Air
+    ICAO Code: MLA
+Airline Name: SkyBahamas
+    ICAO Code: SBM
+Airline Name: Trans Air Congo
+    ICAO Code: TSG
+Airline Name: Qeshm Air
+    ICAO Code: IRQ
+Airline Name: Camair-co
+    ICAO Code: CRC
+Airline Name: JC International Airlines
+    ICAO Code: JCC
+Airline Name: Bamboo Airways
+    ICAO Code: BAV
+Airline Name: Air Kyrgyzstan
+    ICAO Code: LYN
+Airline Name: Air Canada Express
+    ICAO Code: JZA
+Airline Name: LASER Airlines
+    ICAO Code: LER
+Airline Name: Monacair
+    ICAO Code: None
+Airline Name: Skytrans
+    ICAO Code: SKP
+Airline Name: Alliance Airlines
+    ICAO Code: UTY
+Airline Name: Azur Air Ukraine
+    ICAO Code: UTN
+Airline Name: Lao Airlines
+    ICAO Code: LAO
+Airline Name: Qingdao Airlines
+    ICAO Code: QDA
+Airline Name: Transair Senegal
+    ICAO Code: GTS
+Airline Name: Yakutia Airlines
+    ICAO Code: SYL
+Airline Name: DOT LT
+    ICAO Code: DNU
+Airline Name: Nepal Airlines
+    ICAO Code: RNA
+Airline Name: SyrianAir
+    ICAO Code: SYR
+Airline Name: Atlantic Airways
+    ICAO Code: FLI
+Airline Name: Rotana Jet
+    ICAO Code: RJD
+Airline Name: Royal Flight
+    ICAO Code: ABG
+Airline Name: Armenia Aircompany
+    ICAO Code: NGT
+Airline Name: Kam Air
+    ICAO Code: KMF
+Airline Name: Ryanair Sun
+    ICAO Code: RYS
+Airline Name: UVT Aero
+    ICAO Code: BUG
+Airline Name: Air Canada Rouge
+    ICAO Code: ROU
+Airline Name: Royal Air Charter
+    ICAO Code: RYL
+Airline Name: Regent Airways
+    ICAO Code: RGE
+Airline Name: SANSA
+    ICAO Code: LRS
+Airline Name: Aerolineas Sosa
+    ICAO Code: NSO
+Airline Name: Azores Airlines
+    ICAO Code: RZO
+Airline Name: Sunrise Airways
+    ICAO Code: KSZ
+Airline Name: Croatia Airlines
+    ICAO Code: CTN
+Airline Name: Asiana Airlines
+    ICAO Code: AAR
+Airline Name: Japan Transocean Air
+    ICAO Code: JTA
+Airline Name: S7 Airlines
+    ICAO Code: SBI
+Airline Name: Qantas
+    ICAO Code: QFA
+Airline Name: Qatar Airways
+    ICAO Code: QTR
+Airline Name: Royal Jordanian
+    ICAO Code: RJA
+Airline Name: Tarom
+    ICAO Code: ROT
+Airline Name: CSA Czech Airlines
+    ICAO Code: CSA
+Airline Name: Citilink
+    ICAO Code: CTV
+Airline Name: Air Peace
+    ICAO Code: APK
+Airline Name: airblue
+    ICAO Code: ABQ
+Airline Name: Air Seoul
+    ICAO Code: ASV
+Airline Name: West Air
+    ICAO Code: CHB
+Airline Name: Indonesia AirAsia
+    ICAO Code: AWQ
+Airline Name: JetLite
+    ICAO Code: JLL
+Airline Name: Malindo Air
+    ICAO Code: MXD
+Airline Name: SmartWings Czechia
+    ICAO Code: TVS
+Airline Name: Volaris Costa Rica
+    ICAO Code: VOC
+Airline Name: Jordan Aviation
+    ICAO Code: JAV
+Airline Name: SalamAir
+    ICAO Code: OMS
+Airline Name: Sounds Air
+    ICAO Code: SDA
+Airline Name: Aircalin
+    ICAO Code: ACI
+Airline Name: Shandong Airlines
+    ICAO Code: CDG
+Airline Name: Sudan Airways
+    ICAO Code: SUD
+Airline Name: XL Airways France
+    ICAO Code: XLF
+Airline Name: Tassili Airlines
+    ICAO Code: DTH
+Airline Name: Sharp Airlines
+    ICAO Code: SHA
+Airline Name: Flybe
+    ICAO Code: BCI
+Airline Name: Sriwijaya Air
+    ICAO Code: SJY
+Airline Name: Air Cairo
+    ICAO Code: MSC
+Airline Name: SATA Air Acores
+    ICAO Code: SAT
+Airline Name: Sky Pasada
+    ICAO Code: WCC
+Airline Name: SundAir
+    ICAO Code: SDR
+Airline Name: Corsair International
+    ICAO Code: CRL
+Airline Name: Air Namibia
+    ICAO Code: NMB
+Airline Name: Somon Air
+    ICAO Code: SMR
+Airline Name: Avianca Peru
+    ICAO Code: TPU
+Airline Name: Fly Art
+    ICAO Code: FLB
+Airline Name: Eastern Airways
+    ICAO Code: EZE
+Airline Name: Turkmenistan Airlines
+    ICAO Code: TUA
+Airline Name: AirSWIFT
+    ICAO Code: ATX
+Airline Name: Twin Jet
+    ICAO Code: TJT
+Airline Name: Avianca El Salvador
+    ICAO Code: TAI
+Airline Name: Air Tanzania
+    ICAO Code: ATC
+Airline Name: SkyTaxi
+    ICAO Code: IGA
+Airline Name: BRA
+    ICAO Code: SCW
+Airline Name: Tailwind Airlines
+    ICAO Code: TWI
+Airline Name: Tradewind Aviation
+    ICAO Code: GPD
+Airline Name: Airnorth
+    ICAO Code: ANO
+Airline Name: LAM Mozambique Airlines
+    ICAO Code: LAM
+Airline Name: Air Tahiti Nui
+    ICAO Code: THT
+Airline Name: Tandem Aero
+    ICAO Code: TDM
+Airline Name: Air Transat
+    ICAO Code: TSC
+Airline Name: Tunisair
+    ICAO Code: TAR
+Airline Name: Tibet Airlines
+    ICAO Code: TBA
+Airline Name: Air Caraibes
+    ICAO Code: FWI
+Airline Name: Air Caledonie
+    ICAO Code: TPC
+Airline Name: Tsaradia
+    ICAO Code: None
+Airline Name: Buddha Air
+    ICAO Code: BHA
+Airline Name: Karinou Airlines
+    ICAO Code: KRN
+Airline Name: Ural Airlines
+    ICAO Code: SVR
+Airline Name: Tus Airways
+    ICAO Code: CYF
+Airline Name: Myanmar National Airlines
+    ICAO Code: UBA
+Airline Name: Ultimate Air Shuttle
+    ICAO Code: UJC
+Airline Name: Tunisair Express
+    ICAO Code: TUX
+Airline Name: AtlasGlobal Ukraine
+    ICAO Code: UJX
+Airline Name: Auric Air
+    ICAO Code: AUK
+Airline Name: ALMasria Universal Airlines
+    ICAO Code: LMU
+Airline Name: Vistara
+    ICAO Code: VTI
+Airline Name: South African Airways
+    ICAO Code: SAA
+Airline Name: SAS Scandinavian
+    ICAO Code: SAS
+Airline Name: Air Zimbabwe
+    ICAO Code: AZW
+Airline Name: Bahamasair
+    ICAO Code: BHS
+Airline Name: Utair
+    ICAO Code: UTA
+Airline Name: Buraq Air
+    ICAO Code: BRQ
+Airline Name: Conviasa
+    ICAO Code: VCV
+Airline Name: Vieques Air Link
+    ICAO Code: VES
+Airline Name: Aerovias DAP
+    ICAO Code: DAP
+Airline Name: VI Airlink
+    ICAO Code: VIL
+Airline Name: THAI airways
+    ICAO Code: THA
+Airline Name: United Airlines
+    ICAO Code: UAL
+Airline Name: Brussels Airlines
+    ICAO Code: BEL
+Airline Name: Singapore Airlines
+    ICAO Code: SIA
+Airline Name: Turkish Airlines
+    ICAO Code: THY
+Airline Name: TAP Air Portugal
+    ICAO Code: TAP
+Airline Name: SriLankan Airlines
+    ICAO Code: ALK
+Airline Name: Saudia
+    ICAO Code: SVA
+Airline Name: Aeroflot
+    ICAO Code: AFL
+Airline Name: Air Europa
+    ICAO Code: AEA
+Airline Name: Air Austral
+    ICAO Code: REU
+Airline Name: Thai Lion Air
+    ICAO Code: TLM
+Airline Name: Urumqi Air
+    ICAO Code: CUH
+Airline Name: HK Express
+    ICAO Code: HKE
+Airline Name: Scoot
+    ICAO Code: SCO
+Airline Name: SpiceJet
+    ICAO Code: SEJ
+Airline Name: Tigerair Australia
+    ICAO Code: TGG
+Airline Name: T'way Air
+    ICAO Code: TWB
+Airline Name: easyJet
+    ICAO Code: EZY
+Airline Name: Transavia France
+    ICAO Code: TVF
+Airline Name: TUI fly Belgium
+    ICAO Code: JAF
+Airline Name: Volotea
+    ICAO Code: VOE
+Airline Name: Sun Country Airlines
+    ICAO Code: SCX
+Airline Name: Iliamna Air Taxi
+    ICAO Code: IAR
+Airline Name: Virgin Australia
+    ICAO Code: VOZ
+Airline Name: LATAM Ecuador
+    ICAO Code: LNE
+Airline Name: Aeropostal
+    ICAO Code: ALV
+Airline Name: Anisec Luftfahrt
+    ICAO Code: FOO
+Airline Name: Med-View Airline
+    ICAO Code: MEV
+Airline Name: Max Air
+    ICAO Code: NGL
+Airline Name: Flyme
+    ICAO Code: VQI
+Airline Name: Novoair
+    ICAO Code: NVQ
+Airline Name: Cabo Verde Airlines
+    ICAO Code: TCV
+Airline Name: Virgin Atlantic
+    ICAO Code: VIR
+Airline Name: Air Tahiti
+    ICAO Code: VTA
+Airline Name: Viva Air Peru
+    ICAO Code: VPE
+Airline Name: Aeromar
+    ICAO Code: TAO
+Airline Name: Thai Vietjet Air
+    ICAO Code: TVJ
+Airline Name: FlexFlight
+    ICAO Code: FXT
+Airline Name: Arik Air
+    ICAO Code: ARA
+Airline Name: Mahan Air
+    ICAO Code: IRM
+Airline Name: Wings of Lebanon
+    ICAO Code: WLB
+Airline Name: Wizz Air UK
+    ICAO Code: WUK
+Airline Name: KLM Cityhopper
+    ICAO Code: KLC
+Airline Name: RwandAir
+    ICAO Code: RWD
+Airline Name: Avianca Honduras
+    ICAO Code: ISV
+Airline Name: THAI Smile
+    ICAO Code: THD
+Airline Name: Widerøe
+    ICAO Code: WIF
+Airline Name: White Airways
+    ICAO Code: WHT
+Airline Name: Edelweiss Air
+    ICAO Code: EDW
+Airline Name: Winair
+    ICAO Code: WIA
+Airline Name: Swift Air
+    ICAO Code: SWQ
+Airline Name: Wasaya Airways
+    ICAO Code: WSG
+Airline Name: Jetways Airlines
+    ICAO Code: JWX
+Airline Name: Westair Aviation
+    ICAO Code: WAA
+Airline Name: Oman Air
+    ICAO Code: OMA
+Airline Name: Red Wings
+    ICAO Code: RWZ
+Airline Name: Alaska Seaplanes
+    ICAO Code: None
+Airline Name: Air Europa Express
+    ICAO Code: OVA
+Airline Name: Corendon Airlines
+    ICAO Code: CAI
+Airline Name: JetSuiteX
+    ICAO Code: JSX
+Airline Name: Air Corsica
+    ICAO Code: CCM
+Airline Name: XpressAir
+    ICAO Code: XAR
+Airline Name: Corendon Airlines Europe
+    ICAO Code: CXI
+Airline Name: Indonesia AirAsia X
+    ICAO Code: IDX
+Airline Name: African Express Airways
+    ICAO Code: AXK
+Airline Name: Air Century
+    ICAO Code: CEY
+Airline Name: AB Aviation
+    ICAO Code: AYD
+Airline Name: NordStar
+    ICAO Code: TYA
+Airline Name: Suparna Airlines
+    ICAO Code: YZR
+Airline Name: Kish Air
+    ICAO Code: IRK
+Airline Name: Yamal Airlines
+    ICAO Code: LLM
+Airline Name: YANAIR
+    ICAO Code: ANR
+Airline Name: Yangon Airways
+    ICAO Code: AYG
+Airline Name: Asian Wings Airways
+    ICAO Code: AWM
+Airline Name: Avia Traffic Company
+    ICAO Code: AVJ
+Airline Name: Libyan Wings
+    ICAO Code: LWA
+Airline Name: Montenegro Airlines
+    ICAO Code: MGX
+Airline Name: Air Creebec
+    ICAO Code: CRQ
+Airline Name: Heli Air Monaco
+    ICAO Code: MCM
+Airline Name: Perimeter Aviation
+    ICAO Code: PAG
+Airline Name: TAR Aerolineas
+    ICAO Code: LCT
+Airline Name: HOP! Regional
+    ICAO Code: RAE
+Airline Name: Yeti Airlines
+    ICAO Code: NYT
+Airline Name: EuroAtlantic Airways
+    ICAO Code: MMZ
+Airline Name: Amaszonas Uruguay
+    ICAO Code: AUZ
+Airline Name: Amaszonas
+    ICAO Code: AZN
+Airline Name: Bek Air
+    ICAO Code: BEK
+Airline Name: Sky Angkor Airlines
+    ICAO Code: SWM
+Airline Name: Iberia Regional by Air Nostrum
+    ICAO Code: ANE
+Airline Name: Vietnam Airlines
+    ICAO Code: HVN
+Airline Name: Vueling
+    ICAO Code: VLG
+Airline Name: Golden Myanmar Airlines
+    ICAO Code: GMR
+Airline Name: NokScoot
+    ICAO Code: NCT
+Airline Name: Philippines AirAsia
+    ICAO Code: APG
+Airline Name: SEAir International
+    ICAO Code: SGD
+Airline Name: Thai AirAsia X
+    ICAO Code: TAX
+Airline Name: Sevenair
+    ICAO Code: RVP
+Airline Name: Vietjet
+    ICAO Code: VJC
+Airline Name: SunExpress
+    ICAO Code: SXS
+Airline Name: SunExpress Deutschland
+    ICAO Code: SXD
+Airline Name: TUI fly Deutschland
+    ICAO Code: TUI
+Airline Name: Wizz Air
+    ICAO Code: WZZ
+Airline Name: EasyFly
+    ICAO Code: EFY
+Airline Name: Viva Aerobus
+    ICAO Code: VIV
+Airline Name: Volaris
+    ICAO Code: VOI
+Airline Name: Flynas
+    ICAO Code: KNE
+Airline Name: Southwest Airlines
+    ICAO Code: SWA
+Airline Name: Sunwing Airlines
+    ICAO Code: SWG
+Airline Name: ViaAir
+    ICAO Code: SRY
+Airline Name: WestJet
+    ICAO Code: WJA
+Airline Name: WestJet Encore
+    ICAO Code: WEN
+Airline Name: Swoop
+    ICAO Code: WSW
+Airline Name: Aigle Azur
+    ICAO Code: AAF
+Airline Name: Regional Express
+    ICAO Code: RXA
+Airline Name: Zoom Air
+    ICAO Code: ZOM
+Airline Name: Paranair
+    ICAO Code: AZP
+Airline Name: Azman Air
+    ICAO Code: AZM
+Airline Name: Air Canada Express
+    ICAO Code: GGN
+Airline Name: Hi Fly Malta
+    ICAO Code: HFM
+Airline Name: EVA Air
+    ICAO Code: EVA
+Airline Name: Adria Airways
+    ICAO Code: ADR
+Airline Name: Ethiopian Airlines
+    ICAO Code: ETH
+Airline Name: Austrian Airlines
+    ICAO Code: AUA
+Airline Name: All Nippon Airways
+    ICAO Code: ANA
+Airline Name: Shenzhen Airlines
+    ICAO Code: CSZ
+Airline Name: LATAM Argentina
+    ICAO Code: DSM
+Airline Name: BA CityFlyer
+    ICAO Code: CFE
+Airline Name: Globus Airlines
+    ICAO Code: GLP
+Airline Name: J-Air
+    ICAO Code: JLJ
+Airline Name: Qatar Executive
+    ICAO Code: QQE
+Airline Name: Jiangxi Air
+    ICAO Code: CJX
+Airline Name: Korean Air
+    ICAO Code: KAL
+Airline Name: Garuda Indonesia
+    ICAO Code: GIA
+Airline Name: Joon
+    ICAO Code: JON
+Airline Name: Turpial Airlines
+    ICAO Code: VTU
+Airline Name: Air Manas
+    ICAO Code: MBB
+Airline Name: Cebgo
+    ICAO Code: SRQ
+Airline Name: Cebu Pacific
+    ICAO Code: CEB
+Airline Name: Air New Zealand
+    ICAO Code: ANZ
+Airline Name: Scoot
+    ICAO Code: TGW
+Airline Name: Hi Fly
+    ICAO Code: HFY
+Airline Name: Hibernian Airlines
+    ICAO Code: HBN
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+</div>
+
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="kaiden-dough/fastpages"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/fastpages/week7/2022/10/09/api.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/fastpages/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/fastpages/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/fastpages/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>Kaiden&#39;s FastPages site!</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/kaiden-dough" target="_blank" title="kaiden-dough"><svg class="svg-icon grey"><use xlink:href="/fastpages/assets/minima-social-icons.svg#github"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
