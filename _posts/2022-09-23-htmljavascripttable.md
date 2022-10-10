@@ -77,11 +77,24 @@ layout: notebook
 
 <div class="output_area">
 
+<div class="output_subarea output_text output_error">
+<pre>
+evalmachine.&lt;anonymous&gt;:1
+Drinks.prototype._toHtml = function() {
+^
 
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div style='display:inline-block;border: 5px solid green;box-shadow: 1em 1em 1em yellow;'><table><tr><th><b>Name</b></th><th><b>Color</b></th><th><b>Calories</b></th><th><b>Type</b></th></tr><tr><td>Water</td><td>Clear</td><td>0</td><td>Water</td><tr><tr><td>Fanta</td><td>Orange</td><td>160</td><td>Soda</td><tr><tr><td>Mtn Dew</td><td>Green</td><td>170</td><td>Soda</td><tr><tr><td>Root Beer</td><td>Brown</td><td>180</td><td>Soda</td><tr><tr><td>Coca-Cola</td><td>Brown</td><td>140</td><td>Soda</td><tr><tr><td>Pepsi</td><td>Brown</td><td>150</td><td>Soda</td><tr><tr><td>Sprite</td><td>Clear</td><td>140</td><td>Soda</td><tr><tr><td>Apple Juice</td><td>Gold-Yellow</td><td>180</td><td>Juice</td><tr><tr><td>Orange Juice</td><td>Orange-Yellow</td><td>110</td><td>Juice</td><tr><tr><td>Cranberry Juice</td><td>Red</td><td>100</td><td>Juice</td><tr></table></div>
+ReferenceError: Drinks is not defined
+    at evalmachine.&lt;anonymous&gt;:1:1
+    at ContextifyScript.Script.runInThisContext (vm.js:25:33)
+    at Object.runInThisContext (vm.js:97:38)
+    at run ([eval]:1020:15)
+    at onRunRequest ([eval]:864:18)
+    at onMessage ([eval]:828:13)
+    at emitTwo (events.js:106:13)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:758:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)</pre>
 </div>
-
 </div>
 
 </div>
