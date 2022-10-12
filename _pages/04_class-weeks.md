@@ -8,6 +8,11 @@ title: Class Weeks
 ---
 # Weekly Progress
 
+## Week 7
+- I learned about identifying errors in code
+- practiced identifying errors in code segments
+- implemented API through jupyter notebook
+- made a group plan
 ## Week 6
 - compiled my grades for the Big Idea Unit 1.1-1.3 from College Board
 - used the AWS and deployed the team flask website
@@ -88,6 +93,18 @@ title: Class Weeks
   <tr>
   <!-- In config.yml -->
     <th colspan="10">{{site.cont}}</th>
+  </tr>
+  <tr>
+    <th>7</th>
+    <td><a href="https://kaiden-dough.github.io/fastpages/collegeboard/error"></a>Changes to Error Testing Code</td>
+    <td><a href="https://kaiden-dough.github.io/fastpages/markdown/week7/2022/10/03/identifyingandcorrectingerrors.html">College Board Notes and Quiz</a></td>
+    <td><a href="https://kaiden-dough.github.io/fastpages/week7/2022/10/09/api.html">Airline API</a></td>
+    <td><a href="https://kaiden-dough.github.io/fastpages/markdown/week7/2022/10/09/groupplan.html"></a>Group Plan</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
     <th>6</th>
