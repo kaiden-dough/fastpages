@@ -145,15 +145,15 @@ window.onload = wrap_img;
               trfa.innerHTML = row.id + ". " + row.trfa;  // add fetched data to innerHTML
 
             // td for haha cell with onclick actions
-            const true = document.createElement("td");
+            const trued = document.createElement("td");
               const true_but = document.createElement('button');
               true_but.id = TRUE+row.id   // establishes a HAHA JS id for cell
-              true_but.innerHTML = row.true;  // add fetched "haha count" to innerHTML
+              true_but.innerHTML = row.trued;  // add fetched "haha count" to innerHTML
               true_but.onclick = function () {
                 // onclick function call with "like parameters"
                 reaction(TRUE, like_url+row.id, true_but.id);  
               };
-              true.appendChild(true_but);  // add "haha button" to haha cell
+              trued.appendChild(true_but);  // add "haha button" to haha cell
 
             // td for boohoo cell with onclick actions
             const bullpoop = document.createElement("td");
@@ -168,7 +168,7 @@ window.onload = wrap_img;
              
             // this builds ALL td's (cells) into tr (row) element
             tr.appendChild(trfa);
-            tr.appendChild(true);
+            tr.appendChild(trued);
             tr.appendChild(bullpoop);
 
             // this adds all the tr (row) work above to the HTML "result" container
