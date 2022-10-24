@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      5 min read
+      4 min read
     
 </span></p>
 
@@ -527,6 +527,12 @@ window.onload = wrap_img;
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Menu-Stuff">Menu Stuff<a class="anchor-link" href="#Menu-Stuff"> </a></h2>
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -537,15 +543,17 @@ window.onload = wrap_img;
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">menu</span> <span class="o">=</span>  <span class="p">{</span><span class="s2">&quot;burger&quot;</span><span class="p">:</span> <span class="mf">3.99</span><span class="p">,</span>
          <span class="s2">&quot;fries&quot;</span><span class="p">:</span> <span class="mf">1.99</span><span class="p">,</span>
          <span class="s2">&quot;drink&quot;</span><span class="p">:</span> <span class="mf">0.99</span><span class="p">,</span>
-         <span class="s2">&quot;chicken&quot;</span><span class="p">:</span> <span class="mf">5.99</span><span class="p">}</span>
+         <span class="s2">&quot;chicken&quot;</span><span class="p">:</span> <span class="mf">5.99</span><span class="p">,</span>
+         <span class="s2">&quot;teddy bear&quot;</span><span class="p">:</span> <span class="mf">11.99</span><span class="p">,</span>
+         <span class="s2">&quot;cheese stick&quot;</span><span class="p">:</span> <span class="mf">49.99</span><span class="p">,</span>
+         <span class="s2">&quot;beloved basketball&quot;</span><span class="p">:</span> <span class="mf">99.99</span><span class="p">}</span>
 <span class="n">go</span> <span class="o">=</span> <span class="mi">0</span>
 
-<span class="c1">#shows the user the menu and prompts them to select an item</span>
+
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Menu&quot;</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">k</span><span class="p">,</span><span class="n">v</span> <span class="ow">in</span> <span class="n">menu</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">k</span> <span class="o">+</span> <span class="s2">&quot;  $&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">v</span><span class="p">))</span> <span class="c1">#why does v have &quot;str&quot; in front of it?</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">k</span> <span class="o">+</span> <span class="s2">&quot;  $&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">v</span><span class="p">))</span>
 
-<span class="c1">#ideally the code should prompt the user multiple times</span>
 <span class="k">while</span> <span class="n">go</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
     <span class="n">item</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Please select an item from the menu&quot;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Your Order:&quot;</span><span class="p">,</span> <span class="n">item</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
@@ -558,7 +566,6 @@ window.onload = wrap_img;
     <span class="k">if</span> <span class="n">item</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">!=</span> <span class="n">k</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Please Try Again&quot;</span><span class="p">)</span>
         <span class="k">continue</span>
-<span class="c1">#code should add the price of the menu items selected by the user </span>
 </pre></div>
 
     </div>
@@ -576,12 +583,15 @@ burger  $3.99
 fries  $1.99
 drink  $0.99
 chicken  $5.99
+teddy bear  $11.99
+cheese stick  $49.99
+beloved basketball  $99.99
 Your Order: apples
 Please Try Again
-Your Order: cheese
+Your Order: nuggies
 Please Try Again
-Your Order: chicken
-Your total is $ 5.99
+Your Order: beloved basketball
+Your total is $ 99.99
 </pre>
 </div>
 </div>
