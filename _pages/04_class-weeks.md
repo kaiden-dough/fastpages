@@ -8,7 +8,7 @@ title: Class Weeks
 ---
 # Weekly Progress
 
-## Week 7
+<!-- ## Week 7
 - I learned about identifying errors in code
 - practiced identifying errors in code segments
 - implemented API through jupyter notebook
@@ -57,7 +57,7 @@ title: Class Weeks
 - Added a photo to my index.html
 - Changed my favicon
 - Updated my about me
-- Created a Markdown and Jupyter Notebook post
+- Created a Markdown and Jupyter Notebook post -->
 <html>
     <head>
         <style>
@@ -93,6 +93,66 @@ title: Class Weeks
   <tr>
   <!-- In config.yml -->
     <th colspan="10">{{site.cont}}</th>
+  </tr>
+  <tr>
+    <th>12</th>
+    <td><a href=""></a></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <th>11</th>
+    <td><a href="https://kaiden-dough.github.io/lawnmowers-fastpages/"></a>Lawnmowers Arcade Fastpages</td>
+    <td><a href="https://lawnmowers.nighthawkcodescrums.gq/api/rate/"></a>Backend API</td>
+    <td><a href="https://github.com/kaiden-dough/lawnmowers-fastpages"></a>Fastpages Repo</td>
+    <td><a href="https://github.com/kaiden-dough/lawnmowers-flask-repo"></a>Flask Repo</td>
+    <td><a href="https://github.com/kaiden-dough/lawnmowers-fastpages/issues/2"></a>Scrumboard</td>
+    <td><a href="https://kaiden-dough.github.io/fastpages/markdown/week11/2022/11/03/nightatthemuseum.html"></a>N@tM Blog</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <th>10</th>
+    <td><a href="https://github.com/kaiden-dough/lawnmowers-fastpages/issues/2"></a>Team Scrumboard</td>
+    <td><a href="https://lawnmowers.nighthawkcodescrums.gq/blackjack/"></a>Blackjack Game Prototype</td>
+    <td><a href="https://github.com/kaiden-dough/lawnmowers-flask-repo/graphs/contributors"></a>Commit History</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <th>9</th>
+    <td><a href="https://kaiden-dough.github.io/fastpages/data/jokes"></a>Frontend of Jokes API</td>
+    <td><a href="https://lawnmowers.nighthawkcodescrums.gq/api/jokes/"></a>Backend of Jokes API</td>
+    <td><a href="https://kaiden-dough.github.io/fastpages/data/trfa"></a>Frontend of True False API</td>
+    <td><a href="https://lawnmowers.nighthawkcodescrums.gq/api/trfa/"></a>Backend of True False API</td>
+    <td><a href="https://github.com/kushsirohi123/kushsirohirepo/issues/8"></a>Team Project Video</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <th>8</th>
+    <td><a href="https://kaiden-dough.github.io/fastpages/data/jokes"></a>Frontend of Jokes API</td>
+    <td><a href="https://lawnmowers.nighthawkcodescrums.gq/api/jokes/"></a>Backend of Jokes API</td>
+    <td><a href="https://kaiden-dough.github.io/fastpages/data/trfa"></a>Frontend of True False API</td>
+    <td><a href="https://lawnmowers.nighthawkcodescrums.gq/api/trfa/"></a>Backend of True False API</td>
+    <td><a href="https://kaiden-dough.github.io/fastpages/markdown/week8/2022/10/11/theinternet.html"></a>4.1 Internet Connections</td>
+    <td><a href="https://lawnmowers.nighthawkcodescrums.gq/GroupProjectPlan/"></a>Group Plan</td>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
     <th>7</th>
