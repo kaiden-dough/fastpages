@@ -13,7 +13,7 @@ title: Night At The Museum
 - Here is a photo of our project at the N@tM:
 ![]({{ site.baseurl }}/images/pong.png "Me playing pong with someone we presented to")
 
-## Other people's projects
+## Other People's Projects
 - Ivy League Acceptance Calculator
     - A user would input information about themselves like:
         - Ethnicity
@@ -31,7 +31,7 @@ title: Night At The Museum
     - The program would produce links to the statistics about the team
     - Project is a great website for a one stop shop for basketball teams
     ![]({{ site.baseurl }}/images/nbateams.jpg)
-
+    
 - CodeHoots
     - A revamped version of Kahoot
         - Frontend was remodeled

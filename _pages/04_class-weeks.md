@@ -96,9 +96,9 @@ title: Class Weeks
   </tr>
   <tr>
     <th>12</th>
-    <td><a href=""></a></td>
-    <td></td>
-    <td></td>
+    <td><a href="https://kaiden-dough.github.io/fastpages/markdown/week11/2022/11/04/tri1finalreflection.html">Trimester 1 Final Reflection</a></td>
+    <td><a href="https://kaiden-dough.github.io/fastpages/markdown/week11/2022/11/03/nightatthemuseum.html">Night At The Museum Reflection</a></td>
+    <td><a href="https://kaiden-dough.github.io/fastpages/_pages/04_class-weeks.html">Class Weeks Table</a></td>
     <td></td>
     <td></td>
     <td></td>
