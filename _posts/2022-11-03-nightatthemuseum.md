@@ -3,7 +3,7 @@ toc: true
 layout: post
 author: Kaiden Do
 categories: [markdown, week11]
-title: Night At The Museum
+title: Night At The Museum Blog
 ---
 
 ## Our Project
