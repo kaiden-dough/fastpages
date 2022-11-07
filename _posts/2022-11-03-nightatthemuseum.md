@@ -31,7 +31,7 @@ title: Night At The Museum
     - The program would produce links to the statistics about the team
     - Project is a great website for a one stop shop for basketball teams
     ![]({{ site.baseurl }}/images/nbateams.jpg)
-    
+
 - CodeHoots
     - A revamped version of Kahoot
         - Frontend was remodeled
