@@ -144,7 +144,7 @@ title: Class Weeks
   </tr>
   <tr>
     <th>8</th>
-    <td><a href="https://kaiden-dough.github.io/fastpages/data/jokes"></a>Frontend of Jokes API</td>
+    <td><a href="https://kaiden-dough.github.io/fastpages/data/jokes">Frontend of Jokes API</a></td>
     <td><a href="https://lawnmowers.nighthawkcodescrums.gq/api/jokes/">Backend of Jokes API</a></td>
     <td><a href="https://kaiden-dough.github.io/fastpages/data/trfa">Frontend of True False API</a></td>
     <td><a href="https://lawnmowers.nighthawkcodescrums.gq/api/trfa/">Backend of True False API</a></td>
