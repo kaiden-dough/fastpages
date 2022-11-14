@@ -38,8 +38,16 @@ baseurl: "/fastpages" # the subpath of your site, e.g. "/blog".
 
 # Github and twitter are optional:
 minima:
+  skin: dark
+  #social_links:
+  #  twitter: kaiden_d0
+  #  github: kaiden-dough
+  #  youtube_channel: UCAj00TsaBIGnMXLcWu1ytyQ
   social_links:
-    github: kaiden-dough
+    - { platform: github, user_url: "https://github.com/kaiden-dough"}
+    - { platform: twitter, user_url: "https://twitter.com/kaiden_d0"}
+    - { platform: youtube, user_url: "https://www.youtube.com/channel/UCAj00TsaBIGnMXLcWu1ytyQ"}
+    
 
 # Set this to true to get LaTeX math equation support
 use_math: 
