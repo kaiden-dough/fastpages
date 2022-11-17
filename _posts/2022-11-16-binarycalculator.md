@@ -43,7 +43,7 @@ title: Binary Calculator
             const final = binary.join('');
             document.getElementById('binary').innerHTML = final;            
         }
-        document.getElementById("decimal" + (array.length-1)).focus();
+        document.getElementById("decimal").focus();
     }
 
 </script>
