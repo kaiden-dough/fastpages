@@ -17,7 +17,7 @@ title: Binary Calculator
         <div class="form-group row">
             Input a decimal number and press tab to convert it to binary:
             <div>
-                <input onblur="convert()" type="text" name="decimal"/><br>
+                <input onblur="convert()" type="text" name="decimal" id="decimal"/><br>
             </div>
         </div>
         <div class="form-group row">
@@ -33,7 +33,10 @@ title: Binary Calculator
             var binary = [];
             var decimal = parseInt(array[0].value)
             var rem;
-            if(parseInt(array[0].value)) {
+            if (decimal == "0") {
+                binary.unshift("0");
+            }
+            else if(parseInt(array[0].value)) {
                 while (decimal != 0){
                     rem = decimal%2;
                     decimal = Math.floor(decimal/2)
