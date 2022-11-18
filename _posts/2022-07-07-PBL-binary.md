@@ -113,7 +113,7 @@ type: pbl
     function getBits() {
         let bits = "";
         for(let i = 0; i < BITS; i++) {
-        bits = bits + document.getElementById('digit' + i).value;
+        bits = bits + document.getElementById('digit' + i).value;        
         }
         return bits;
     }
@@ -209,7 +209,9 @@ type: pbl
         // update bits
         for (let i = 0; i < binary.length; i++) {
         let digit = binary.substr(i, 1);
+        console.log('digit'+i)
         document.getElementById('digit' + i).value = digit;
+        console.log(digit)
         }
         updateColor()
     }
