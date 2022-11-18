@@ -15,7 +15,7 @@ title: Binary Calculator
     </header>
     <form>
         <div class="form-group row">
-            Input a decimal number and press tab to convert it to binary:
+            Input a decimal number:
             <div>
                 <input oninput="convert('decimal', 'binaryfin')" type="text" class="decimal"  name="decimal" maxlength="16"><br>
             </div>
@@ -26,7 +26,7 @@ title: Binary Calculator
     </form>
     <form>
         <div class="form-group row">
-            Input a decimal number and press tab to convert it to binary:
+            Input a decimal number:
             <div>
                 <input oninput="convert('decimal2', 'binaryfin2')" type="text" class="decimal" name="decimal2" maxlength="16"><br>
             </div>
@@ -36,6 +36,7 @@ title: Binary Calculator
         </div>
     </form>
     <div class="form-group row">
+        Choose an operation: <br>
         <button type="button" id="plus" onclick="add()">+</button>
         <button type="button" id="minus" onclick="subtract()">-</button>
         <button type="button" id="times" onclick="multiply()">*</button>

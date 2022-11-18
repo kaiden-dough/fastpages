@@ -15,8 +15,14 @@ type: pbl
 <!-- Hack 3: do your own thing -->
 
 {% include navbarsubmenu.html %}
-{% assign BITS = 3 %}
-
+{% assign BITS = 8 %}
+<style>
+    #colorBox {
+			margin-top: 0.5rem;
+			width: 100px;
+			height: 100px;
+		}
+</style>
 <div class="container bg-primary">
     <header class="pb-3 mb-4 border-bottom border-primary text-dark">
         <span class="fs-4">Binary Math with Conversions</span>
@@ -26,7 +32,7 @@ type: pbl
             <table class="table">
             <tr id="table">
                 <th>Plus</th>
-                <th>Binary</th>
+                <th>Binary (prevents the user from inputting a more than 8 bits)</th>
                 <th>Octal</th>
                 <th>Hexadecimal</th>
                 <th>Decimal</th>
@@ -63,6 +69,36 @@ type: pbl
             </table>
         </div>
     </div>
+    <div class="col-8">
+    COLORS
+            <table class="table">
+            <tr id="table">
+                <th>Plus</th>
+                <th>Binary (prevents the user from inputting a more than 8 bits)</th>
+                <th>Decimal</th>
+                <th>Minus</th>
+            </tr>
+            <tr>
+                <td><button type="button" id="addone" onclick="addone(1)">+1</button></td>
+                <td id="binary1">00000000</td>
+                <td id="decimal1">0</td>
+                <td><button type="button" id="subone" onclick="addone(-1)">-1</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" id="addtwo" onclick="addtwo(1)">+1</button></td>
+                <td id="binary2">00000000</td>
+                <td id="decimal2">0</td>
+                <td><button type="button" id="subtwo" onclick="addtwo(-1)">-1</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" id="addthree" onclick="addthree(1)">+1</button></td>
+                <td id="binary3">00000000</td>
+                <td id="decimal3">0</td>
+                <td><button type="button" id="subthree" onclick="addthree(-1)">-1</button></td>
+            </tr>
+            </table>
+        </div>
+        <div id="colorBox"></div>
 </div>
 
 <script>
@@ -81,6 +117,7 @@ type: pbl
         }
         return bits;
     }
+
     // setter for DOM values
     function setConversions(binary) {
         document.getElementById('binary').innerHTML = binary;
@@ -155,5 +192,105 @@ type: pbl
             document.getElementById('butt' + i).innerHTML = MSG_ON;
         }
         }
+    }
+    function addone(n) {
+        let binary = getBits1();
+        // convert to decimal and do math
+        let decimal = parseInt(binary, 2);
+        if (n > 0) {  // PLUS
+        decimal = MAX === decimal ? 0 : decimal += n; // OVERFLOW or PLUS
+        } else  {     // MINUS
+        decimal = 0 === decimal ? MAX : decimal += n; // OVERFLOW or MINUS
+        }
+        // convert the result back to binary
+        binary = decimal_2_base(decimal, 2);
+        // update conversions
+        setConversionsone(binary);
+        // update bits
+        for (let i = 0; i < binary.length; i++) {
+        let digit = binary.substr(i, 1);
+        document.getElementById('digit' + i).value = digit;
+        }
+        updateColor()
+    }
+    function setConversionsone(binary) {
+        document.getElementById('binary1').innerHTML = binary;
+        document.getElementById('decimal1').innerHTML = parseInt(binary, 2).toString();
+    }
+    function getBits1() {
+        let bits = "";
+        for(let i = 0; i < BITS; i++) {
+        bits = bits + document.getElementById('digit' + i).value;
+        }
+        return bits;
+    }
+    function getBits2() {
+        let bits = "";
+        for(let i = 0; i < BITS; i++) {
+        bits = bits + document.getElementById('digit' + i).value;
+        }
+        return bits;
+    }
+    function getBits3() {
+        let bits = "";
+        for(let i = 0; i < BITS; i++) {
+        bits = bits + document.getElementById('digit' + i).value;
+        }
+        return bits;
+    }
+        function addtwo(n) {
+        let binary = getBits2();
+        // convert to decimal and do math
+        let decimal = parseInt(binary, 2);
+        if (n > 0) {  // PLUS
+        decimal = MAX === decimal ? 0 : decimal += n; // OVERFLOW or PLUS
+        } else  {     // MINUS
+        decimal = 0 === decimal ? MAX : decimal += n; // OVERFLOW or MINUS
+        }
+        // convert the result back to binary
+        binary = decimal_2_base(decimal, 2);
+        // update conversions
+        setConversionstwo(binary);
+        // update bits
+        for (let i = 0; i < binary.length; i++) {
+        let digit = binary.substr(i, 1);
+        document.getElementById('digit' + i).value = digit;
+        }
+        updateColor()
+    }
+    function setConversionstwo(binary) {
+        document.getElementById('binary2').innerHTML = binary;
+        document.getElementById('decimal2').innerHTML = parseInt(binary, 2).toString();
+    }
+        function addthree(n) {
+        let binary = getBits3();
+        // convert to decimal and do math
+        let decimal = parseInt(binary, 2);
+        if (n > 0) {  // PLUS
+        decimal = MAX === decimal ? 0 : decimal += n; // OVERFLOW or PLUS
+        } else  {     // MINUS
+        decimal = 0 === decimal ? MAX : decimal += n; // OVERFLOW or MINUS
+        }
+        // convert the result back to binary
+        binary = decimal_2_base(decimal, 2);
+        // update conversions
+        setConversionsthree(binary);
+        // update bits
+        for (let i = 0; i < binary.length; i++) {
+        let digit = binary.substr(i, 1);
+        document.getElementById('digit' + i).value = digit;
+        }
+        updateColor()
+    }
+    function setConversionsthree(binary) {
+        document.getElementById('binary3').innerHTML = binary;
+        document.getElementById('decimal3').innerHTML = parseInt(binary, 2).toString();
+    }
+    function updateColor() {
+        var dec1 = document.getElementById('decimal1').innerHTML
+        var dec2 = document.getElementById('decimal2').innerHTML
+        var dec3 = document.getElementById('decimal3').innerHTML
+        console.log("rgb("+dec1+","+dec2+","+dec3+")")
+        document.getElementById('colorBox').style.backgroundColor = "rgb("+dec1+","+dec2+","+dec3+")"
     }
 </script>
