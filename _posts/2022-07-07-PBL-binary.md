@@ -19,8 +19,8 @@ type: pbl
 <style>
     #colorBox {
 			margin-top: 0.5rem;
-			width: 100px;
-			height: 100px;
+			width: 800px;
+			height: 800px;
 		}
 </style>
 <div class="container bg-primary">
