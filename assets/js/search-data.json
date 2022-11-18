@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "Binary Calculator",
-            "content": "| JavaScript | Table | Airline API | Jokes API | True/False API | Binary Lights | Binary Calculator | . Decimal to Binary Calculator . Input a decimal number and press tab to convert it to binary: Binary : ___ Input a decimal number and press tab to convert it to binary: Binary : ___ + - * / Answer : ___ &lt;&gt; Binary Answer : ___",
+            "content": "| JavaScript | Table | Airline API | Jokes API | True/False API | Binary Lights | Binary Calculator | . Decimal to Binary Calculator . Input a decimal number: Binary : ___ Input a decimal number: Binary : ___ Choose an operation: + - * / Answer : ___ &lt;&gt; Binary Answer : ___",
             "url": "https://kaiden-dough.github.io/fastpages/frontend/binarycalculator",
             "relUrl": "/frontend/binarycalculator",
             "date": " • Nov 16, 2022"
@@ -388,7 +388,7 @@
     
         ,"post35": {
             "title": "Binary Math",
-            "content": "| JavaScript | Table | Airline API | Jokes API | True/False API | Binary Lights | Binary Calculator | . Binary Math with Conversions . Plus Binary Octal Hexadecimal Decimal Minus . +1 | 00000000 | 0 | 0 | 0 | -1 | . Turn on | Turn on | Turn on | . | | | .",
+            "content": "| JavaScript | Table | Airline API | Jokes API | True/False API | Binary Lights | Binary Calculator | . Binary Math with Conversions . Plus Binary (prevents the user from inputting a more than 8 bits) Octal Hexadecimal Decimal Minus . +1 | 00000000 | 0 | 0 | 0 | -1 | . Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | . | | | | | | | | . COLORS Plus Binary (prevents the user from inputting a more than 8 bits) Decimal Minus . +1 | 00000000 | 0 | -1 | . +1 | 00000000 | 0 | -1 | . +1 | 00000000 | 0 | -1 | .",
             "url": "https://kaiden-dough.github.io/fastpages/frontend/binary",
             "relUrl": "/frontend/binary",
             "date": " • Jul 7, 2022"
