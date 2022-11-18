@@ -8,7 +8,12 @@ title: Binary Calculator
 ---
 
 {% include navbarsubmenu.html %}
-
+<style>
+    .button{
+        width: 100px;
+        height:50px;
+    }
+</style>
 <div class="container bg-primary">
     <header class="pb-3 mb-4 border-bottom border-primary text-dark">
         <span class="fs-4">Decimal to Binary Calculator</span>
@@ -37,10 +42,10 @@ title: Binary Calculator
     </form>
     <div class="form-group row">
         Choose an operation: <br>
-        <button type="button" id="plus" onclick="add()">+</button>
-        <button type="button" id="minus" onclick="subtract()">-</button>
-        <button type="button" id="times" onclick="multiply()">*</button>
-        <button type="button" id="slash" onclick="divide()">/</button>
+        <button class="button" id="plus" onclick="add()">+</button>
+        <button class="button" id="minus" onclick="subtract()">-</button>
+        <button class="button" id="times" onclick="multiply()">*</button>
+        <button class="button" id="slash" onclick="divide()">/</button>
         <br>
         Answer :  <span id="ans">___</span> <---> Binary Answer : <span id="binaryans" >___</span>
     </div>
