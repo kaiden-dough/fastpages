@@ -9,8 +9,8 @@
 <meta property="og:title" content="Binary Calculator" />
 <meta name="author" content="Kaiden Do" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="JavaScript Table Airline API Jokes API True/False API Binary Lights Binary Calculator" />
-<meta property="og:description" content="JavaScript Table Airline API Jokes API True/False API Binary Lights Binary Calculator" />
+<meta name="description" content="JavaScript Table Airline API Jokes API True/False API Binary Lights Binary Calculator Decimal to Binary Calculator Input a decimal number: Binary : ___ Input a decimal number: Binary : ___ Choose an operation: + - * / Answer : ___ &lt;---&gt; Binary Answer : ___" />
+<meta property="og:description" content="JavaScript Table Airline API Jokes API True/False API Binary Lights Binary Calculator Decimal to Binary Calculator Input a decimal number: Binary : ___ Input a decimal number: Binary : ___ Choose an operation: + - * / Answer : ___ &lt;---&gt; Binary Answer : ___" />
 <link rel="canonical" href="https://kaiden-dough.github.io/fastpages/frontend/binarycalculator" />
 <meta property="og:url" content="https://kaiden-dough.github.io/fastpages/frontend/binarycalculator" />
 <meta property="og:site_name" content="Kaiden Do FastPages" />
@@ -19,7 +19,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Binary Calculator" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Kaiden Do"},"dateModified":"2022-11-16T00:00:00-06:00","datePublished":"2022-11-16T00:00:00-06:00","description":"JavaScript Table Airline API Jokes API True/False API Binary Lights Binary Calculator","headline":"Binary Calculator","mainEntityOfPage":{"@type":"WebPage","@id":"https://kaiden-dough.github.io/fastpages/frontend/binarycalculator"},"url":"https://kaiden-dough.github.io/fastpages/frontend/binarycalculator"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Kaiden Do"},"dateModified":"2022-11-16T00:00:00-06:00","datePublished":"2022-11-16T00:00:00-06:00","description":"JavaScript Table Airline API Jokes API True/False API Binary Lights Binary Calculator Decimal to Binary Calculator Input a decimal number: Binary : ___ Input a decimal number: Binary : ___ Choose an operation: + - * / Answer : ___ &lt;---&gt; Binary Answer : ___","headline":"Binary Calculator","mainEntityOfPage":{"@type":"WebPage","@id":"https://kaiden-dough.github.io/fastpages/frontend/binarycalculator"},"url":"https://kaiden-dough.github.io/fastpages/frontend/binarycalculator"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/fastpages/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://kaiden-dough.github.io/fastpages/feed.xml" title="Kaiden Do FastPages" /><link rel="shortcut icon" type="image/x-icon" href="/fastpages/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -114,6 +114,12 @@ window.onload = wrap_img;
         <td><a href="/fastpages/frontend/binarycalculator">Binary Calculator</a></td>
     </tr>
 </table>
+<style>
+    .button{
+        width: 100px;
+        height:50px;
+    }
+</style>
 
 <div class="container bg-primary">
     <header class="pb-3 mb-4 border-bottom border-primary text-dark">
@@ -143,10 +149,10 @@ window.onload = wrap_img;
     </form>
     <div class="form-group row">
         Choose an operation: <br>
-        <button type="button" id="plus" onclick="add()">+</button>
-        <button type="button" id="minus" onclick="subtract()">-</button>
-        <button type="button" id="times" onclick="multiply()">*</button>
-        <button type="button" id="slash" onclick="divide()">/</button>
+        <button class="button" id="plus" onclick="add()">+</button>
+        <button class="button" id="minus" onclick="subtract()">-</button>
+        <button class="button" id="times" onclick="multiply()">*</button>
+        <button class="button" id="slash" onclick="divide()">/</button>
         <br>
         Answer :  <span id="ans">___</span> &lt;---&gt; Binary Answer : <span id="binaryans">___</span>
     </div>
