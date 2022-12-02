@@ -38,7 +38,7 @@ title: Unit 3 Notes
  - Many variables are not needed, don't need to edit/add/remove entire variable to change it
 
 # Unit 3 Section 3-4
-Lesson 3.3
+## Lesson 3.3
  - An algorithm is a finite set of instructions that completes a task
    - Sequencing: the order the code is completed
    - Selection: lets algorithm make a decision based on if a condition is met
@@ -48,8 +48,55 @@ Lesson 3.3
  - Arithmetic Operators: addition, subtraction, multiplication, division, and modulus
    - +, -, *, /, %
    - MOD returns the remainder
-Lesson 3.4
+## Lesson 3.4
  - String Concatenation
    - Joins two or more strings together to make a new string
       - strings are sequences of characters
       - substring string in python can be found with the string and which range of characters
+
+# Unit 3 Section 5-7
+## Lesson 3.5
+Boolean
+ - Boolean is a true (1) or false (0) --> (binary)
+ - Used to tell if something is true or false
+ - Ex 1 & Ex 2:
+ ```python
+ score = 3
+ if score == 3:
+    print("Score equals 3")
+ ```
+Relational Operators
+ - Mathematical relationship between two variables
+ - Determines output even if statement is not true
+ - Ex 1
+ ```python
+ age = 18
+ if age >= 16:
+    print("Can Drive")
+ ```
+ - Ex 2
+ ```python
+ passengers = 3
+ cart = 4
+ if cart >= passengers:
+    print("Not Full")
+ ```
+
+ Logical Operators
+ - NOT: opposite of the data, usually true/false
+ - AND: evaluate 2 conditions together and if both conditions are met
+ - OR: determines if one of the conditions is met
+
+## Lesson 3.6
+- Selection: specific block of code that will execute if the condition passed
+- Algorithm: finite set of code that completes a task
+- Conditional statement: affects the sequence of control by executing statements in different order
+  - Affects the sequential flow of the code
+
+## Lesson 3.7
+- Nested Conditional Statement: conditional statement with more inside of it
+- Nested into each other: else if in else if
+- Question 1: x = 5 & y = 4
+  - x is smaller than y
+- Question 2: height = 60 & age = 17 & photo taken
+  - The total bill is $10.
