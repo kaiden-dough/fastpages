@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Palindrome Maker",
-            "content": "first = input(&quot;What would you like to become a palindrome?&quot;) print(&quot;Before:&quot;, first) length = len(first) firstpart = first[0:(length-1)] lastchar = first[-1] flip = first[::-1] print(&quot;Palindrome:&quot;,firstpart+flip) . Before: computer Palindrome: computeretupmoc .",
+            "content": "first = input(&quot;What would you like to become a palindrome?&quot;) print(&quot;Input:&quot;, first) length = len(first) firstpart = first[0:(length-1)] lastchar = first[-1] flip = first[::-1] if first == flip: print(&quot;Is a palindrome&quot;) else: print(&quot;Isn&#39;t a palindrome&quot;) print(&quot;Palindrome:&quot;,firstpart+flip) . Input: hello Isn&#39;t a palindrome Palindrome: hellolleh .",
             "url": "https://kaiden-dough.github.io/fastpages/jupyter/week14/2022/12/01/palindrome.html",
             "relUrl": "/jupyter/week14/2022/12/01/palindrome.html",
             "date": " • Dec 1, 2022"
