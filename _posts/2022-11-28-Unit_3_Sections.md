@@ -20,7 +20,7 @@ title: Unit 3 Notes
  - In python, they use equal sign to assign a value to the variable
  - Recap: learn what is an assignment operator, how to use it, how to store value inside a variable
 
- ## Unit 3, Section 2.1 : List and Strings Using Variables
+## Unit 3, Section 2.1 : List and Strings Using Variables
  - Strings are a series of characters, both numbers and letters and characters
  - Lists are sequences of elements with each element is a variable
     - In order
