@@ -82,7 +82,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      3 min read
     
 </span></p>
 
@@ -110,7 +110,19 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#unit-3-section-23--managing-complexity-with-lists">Unit 3, Section 2.3 : Managing Complexity with lists</a></li>
 </ul>
 </li>
-<li class="toc-entry toc-h1"><a href="#unit-3-section-3-4">Unit 3 Section 3-4</a></li>
+<li class="toc-entry toc-h1"><a href="#unit-3-section-3-4">Unit 3 Section 3-4</a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#lesson-33">Lesson 3.3</a></li>
+<li class="toc-entry toc-h2"><a href="#lesson-34">Lesson 3.4</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#unit-3-section-5-7">Unit 3 Section 5-7</a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#lesson-35">Lesson 3.5</a></li>
+<li class="toc-entry toc-h2"><a href="#lesson-36">Lesson 3.6</a></li>
+<li class="toc-entry toc-h2"><a href="#lesson-37">Lesson 3.7</a></li>
+</ul>
+</li>
 </ul><h1 id="unit-3-section-1-2">
 <a class="anchor" href="#unit-3-section-1-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Unit 3 Section 1-2</h1>
 <h2 id="unit-3-section-11-data-types-and-variables">
@@ -165,7 +177,8 @@ window.onload = wrap_img;
 
 <h1 id="unit-3-section-3-4">
 <a class="anchor" href="#unit-3-section-3-4" aria-hidden="true"><span class="octicon octicon-link"></span></a>Unit 3 Section 3-4</h1>
-<p>Lesson 3.3</p>
+<h2 id="lesson-33">
+<a class="anchor" href="#lesson-33" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lesson 3.3</h2>
 <ul>
   <li>An algorithm is a finite set of instructions that completes a task
     <ul>
@@ -183,7 +196,9 @@ window.onload = wrap_img;
     <ul>
       <li>+, -, *, /, %</li>
       <li>MOD returns the remainder
-Lesson 3.4</li>
+        <h2 id="lesson-34">
+<a class="anchor" href="#lesson-34" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lesson 3.4</h2>
+      </li>
     </ul>
   </li>
   <li>String Concatenation
@@ -194,6 +209,77 @@ Lesson 3.4</li>
           <li>substring string in python can be found with the string and which range of characters</li>
         </ul>
       </li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="unit-3-section-5-7">
+<a class="anchor" href="#unit-3-section-5-7" aria-hidden="true"><span class="octicon octicon-link"></span></a>Unit 3 Section 5-7</h1>
+<h2 id="lesson-35">
+<a class="anchor" href="#lesson-35" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lesson 3.5</h2>
+<p>Boolean</p>
+<ul>
+  <li>Boolean is a true (1) or false (0) –&gt; (binary)</li>
+  <li>Used to tell if something is true or false</li>
+  <li>Ex 1 &amp; Ex 2:
+    <div class="language-python highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code> <span class="n">score</span> <span class="o">=</span> <span class="mi">3</span>
+ <span class="k">if</span> <span class="n">score</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+ <span class="k">print</span><span class="p">(</span><span class="s">"Score equals 3"</span><span class="p">)</span>
+</code></pre></div>    </div>
+    <p>Relational Operators</p>
+  </li>
+  <li>Mathematical relationship between two variables</li>
+  <li>Determines output even if statement is not true</li>
+  <li>Ex 1
+    <div class="language-python highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code> <span class="n">age</span> <span class="o">=</span> <span class="mi">18</span>
+ <span class="k">if</span> <span class="n">age</span> <span class="o">&gt;=</span> <span class="mi">16</span><span class="p">:</span>
+ <span class="k">print</span><span class="p">(</span><span class="s">"Can Drive"</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Ex 2
+    <div class="language-python highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code> <span class="n">passengers</span> <span class="o">=</span> <span class="mi">3</span>
+ <span class="n">cart</span> <span class="o">=</span> <span class="mi">4</span>
+ <span class="k">if</span> <span class="n">cart</span> <span class="o">&gt;=</span> <span class="n">passengers</span><span class="p">:</span>
+ <span class="k">print</span><span class="p">(</span><span class="s">"Not Full"</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>Logical Operators</p>
+<ul>
+  <li>NOT: opposite of the data, usually true/false</li>
+  <li>AND: evaluate 2 conditions together and if both conditions are met</li>
+  <li>OR: determines if one of the conditions is met</li>
+</ul>
+
+<h2 id="lesson-36">
+<a class="anchor" href="#lesson-36" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lesson 3.6</h2>
+<ul>
+  <li>Selection: specific block of code that will execute if the condition passed</li>
+  <li>Algorithm: finite set of code that completes a task</li>
+  <li>Conditional statement: affects the sequence of control by executing statements in different order
+    <ul>
+      <li>Affects the sequential flow of the code</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="lesson-37">
+<a class="anchor" href="#lesson-37" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lesson 3.7</h2>
+<ul>
+  <li>Nested Conditional Statement: conditional statement with more inside of it</li>
+  <li>Nested into each other: else if in else if</li>
+  <li>Question 1: x = 5 &amp; y = 4
+    <ul>
+      <li>x is smaller than y</li>
+    </ul>
+  </li>
+  <li>Question 2: height = 60 &amp; age = 17 &amp; photo taken
+    <ul>
+      <li>The total bill is $10.</li>
     </ul>
   </li>
 </ul>
