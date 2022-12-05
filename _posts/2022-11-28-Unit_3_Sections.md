@@ -100,3 +100,36 @@ Relational Operators
   - x is smaller than y
 - Question 2: height = 60 & age = 17 & photo taken
   - The total bill is $10.
+
+# Unit 3 Section 8 & 10
+## Lesson 3.8 Iteration
+- Iteration: repeating part of an algorithm until a condition is met
+- Iteration Statements: changes the flow of the code by repeating statements a number of times and it stops repeating once a condition is met
+- Repeat Until: the loop of code loops if the condition is not true
+### Section 3.8.1
+- Stopping condition is used to stop the iteration when the requirement is already met
+### Section 3.8.2
+- Iteration Statement: causes statement to be executed 0 or more times, depending on the loop-termination condition
+- Starting Value: where the variable starts
+- Ending Value: where the variable stops
+- Incrementing Value: how the variable increases
+### Section 3.8.3
+- break would stop the loop
+## Section 3.10 Lists
+- Traversing Lists: all elements in the list are accessed, for partial traversal, only portion of elements are accessed
+### Section 3.10.1
+- pop() --> takes element off the list and returns it
+- sort() --> permanently changes the order of the list
+- sorted() --> temporarily changes the order
+- min() --> returns the minimum value of the list
+- max() --> returns the maximum value of the list
+- sum() --> returns the sum of the values in the list
+### Section 3.10.2
+- Traversing a list is process of visiting each element in a list in sequential order; used to access, search for, and modify elements in a list
+1. Complete Traversal: all elements are accessed
+2. Partial Traversal: only a portion are accessed
+3. Iterative Traversal: loops used to iterate through list to access each single element at a time
+- insert() --> allows value to be inserted at index i
+- append() --> allows value to be added at end of list
+- remove() --> allows an element at index i to be removed
+- length() --> returns number of elements in the list
