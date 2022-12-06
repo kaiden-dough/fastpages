@@ -2,10 +2,10 @@
   
     
         "post0": {
-            "title": "Unit 3.8 & 3.10 Hacks",
-            "content": "HACKS Unit 3 Section 8 . Hacks Unit 3 Section 3.8.1 . Define an Iteration Portion of code segments that repeat until the requirement is met | Make your own example of an iteration with at least 4 steps and a stopping condition(Similar to mine that I did) I have n homeworks to do | Start and finish homework assignment | Move onto next homework assignment | Repeat steps 2-3 until there is no more homework | | Program a simple iteration. | . fruit = [&quot;apple&quot;, &quot;orange&quot;, &quot;strawberry&quot;, &quot;pear&quot;] i = 0 for x in fruit: print(fruit[i]) i += 1 . apple orange strawberry pear . Hacks Unit 3 Section 3.8.2 . What is an iteration statement, in your own words? They change the order or course that the code is executed by repeating a section of code until the condition is met | Create a descending list of numbers using for loop | . for x in range(10, -1, -1): print(x) . 10 9 8 7 6 5 4 3 2 1 0 . Using while loop, make a list of numbers which will form an output of 3,16,29,42,55,68,81 | . for x in range(3, 94, 13): print(x) . 3 16 29 42 55 68 81 . HACKS Unit 3 Section 10 . Find the lowest value in a list (Luna Iwazaki) Use the list made below | Make a variable to hold the minimum and set it to potential minimum value | Loop | Check each element to see if it is less than the minimum variable | If the element is less than the minimum variable, update the minimum | After all the elements of the list have been checked, display the minimum value | . | . nums = [&quot;10&quot;, &quot;15&quot;, &quot;20&quot;, &quot;25&quot;, &quot;30&quot;, &quot;35&quot;] potentialMin = int(nums.pop()) while len(nums) != 0: newNum = int(nums.pop()) if newNum &lt; potentialMin: potentialMin = newNum print(potentialMin, &quot;is the minimum value.&quot;) . 10 is the minimum value. . Lists Quiz (Ethan Tran) Take a screenshot of your score on put it on your review ticket! . | .",
-            "url": "https://kaiden-dough.github.io/fastpages/jupyter/week15/2022/12/05/Unit_3.8_3.10_HACKS.html",
-            "relUrl": "/jupyter/week15/2022/12/05/Unit_3.8_3.10_HACKS.html",
+            "title": "Palindrome Maker",
+            "content": "first = input(&quot;What would you like to become a palindrome?&quot;) print(&quot;Input:&quot;, first) length = len(first) firstpart = first[0:(length-1)] lastchar = first[-1] flip = first[::-1] if first == flip: print(&quot;Is a palindrome&quot;) else: print(&quot;Isn&#39;t a palindrome&quot;) print(&quot;Palindrome:&quot;,firstpart+flip) . Input: hello Isn&#39;t a palindrome Palindrome: hellolleh .",
+            "url": "https://kaiden-dough.github.io/fastpages/jupyter/week14/2022/12/05/palindrome.html",
+            "relUrl": "/jupyter/week14/2022/12/05/palindrome.html",
             "date": " • Dec 5, 2022"
         }
         
@@ -13,22 +13,22 @@
   
     
         ,"post1": {
-            "title": "Palindrome Maker",
-            "content": "first = input(&quot;What would you like to become a palindrome?&quot;) print(&quot;Input:&quot;, first) length = len(first) firstpart = first[0:(length-1)] lastchar = first[-1] flip = first[::-1] if first == flip: print(&quot;Is a palindrome&quot;) else: print(&quot;Isn&#39;t a palindrome&quot;) print(&quot;Palindrome:&quot;,firstpart+flip) . Input: hello Isn&#39;t a palindrome Palindrome: hellolleh .",
-            "url": "https://kaiden-dough.github.io/fastpages/jupyter/week14/2022/12/04/palindrome.html",
-            "relUrl": "/jupyter/week14/2022/12/04/palindrome.html",
-            "date": " • Dec 4, 2022"
+            "title": "Fibonacci Series",
+            "content": "amount = int(input(&quot;How many terms do you want?&quot;)) num1 = 0 num2 = 1 count = 0 if amount &lt;= 0: print(&quot;Error: Positive integers only&quot;) elif(amount == 1): print(&quot;Terms:&quot;, amount) print(num1) else: print(&quot;Terms:&quot;, amount) print(num1) print(num2) while (count+2) &lt; amount: count += 1 temp = num2 num2 = num1 + temp num1 = temp print(num2) . Terms: 10 0 1 1 2 3 5 8 13 21 34 .",
+            "url": "https://kaiden-dough.github.io/fastpages/jupyter/week14/2022/12/05/fibonacci.html",
+            "relUrl": "/jupyter/week14/2022/12/05/fibonacci.html",
+            "date": " • Dec 5, 2022"
         }
         
     
   
     
         ,"post2": {
-            "title": "Fibonacci Series",
-            "content": "amount = int(input(&quot;How many terms do you want?&quot;)) num1 = 0 num2 = 1 count = 0 if amount &lt;= 0: print(&quot;Error: Positive integers only&quot;) elif(amount == 1): print(&quot;Terms:&quot;, amount) print(num1) else: print(&quot;Terms:&quot;, amount) print(num1) print(num2) while (count+2) &lt; amount: count += 1 temp = num2 num2 = num1 + temp num1 = temp print(num2) . Terms: 10 0 1 1 2 3 5 8 13 21 34 .",
-            "url": "https://kaiden-dough.github.io/fastpages/jupyter/week14/2022/12/04/fibonacci.html",
-            "relUrl": "/jupyter/week14/2022/12/04/fibonacci.html",
-            "date": " • Dec 4, 2022"
+            "title": "Unit 3.8 & 3.10 Hacks",
+            "content": "HACKS Unit 3 Section 8 . Hacks Unit 3 Section 3.8.1 . Define an Iteration Portion of code segments that repeat until the requirement is met | Make your own example of an iteration with at least 4 steps and a stopping condition(Similar to mine that I did) I have n homeworks to do | Start and finish homework assignment | Move onto next homework assignment | Repeat steps 2-3 until there is no more homework | | Program a simple iteration. | . fruit = [&quot;apple&quot;, &quot;orange&quot;, &quot;strawberry&quot;, &quot;pear&quot;] i = 0 for x in fruit: print(fruit[i]) i += 1 . apple orange strawberry pear . Hacks Unit 3 Section 3.8.2 . What is an iteration statement, in your own words? They change the order or course that the code is executed by repeating a section of code until the condition is met | Create a descending list of numbers using for loop | . for x in range(10, -1, -1): print(x) . 10 9 8 7 6 5 4 3 2 1 0 . Using while loop, make a list of numbers which will form an output of 3,16,29,42,55,68,81 | . for x in range(3, 94, 13): print(x) . 3 16 29 42 55 68 81 . HACKS Unit 3 Section 10 . Find the lowest value in a list (Luna Iwazaki) Use the list made below | Make a variable to hold the minimum and set it to potential minimum value | Loop | Check each element to see if it is less than the minimum variable | If the element is less than the minimum variable, update the minimum | After all the elements of the list have been checked, display the minimum value | . | . nums = [&quot;10&quot;, &quot;15&quot;, &quot;20&quot;, &quot;25&quot;, &quot;30&quot;, &quot;35&quot;] potentialMin = int(nums.pop()) while len(nums) != 0: newNum = int(nums.pop()) if newNum &lt; potentialMin: potentialMin = newNum print(potentialMin, &quot;is the minimum value.&quot;) . 10 is the minimum value. . Lists Quiz (Ethan Tran) Take a screenshot of your score on put it on your review ticket! . | .",
+            "url": "https://kaiden-dough.github.io/fastpages/jupyter/week15/2022/12/05/Unit_3.8_3.10_HACKS.html",
+            "relUrl": "/jupyter/week15/2022/12/05/Unit_3.8_3.10_HACKS.html",
+            "date": " • Dec 5, 2022"
         }
         
     
