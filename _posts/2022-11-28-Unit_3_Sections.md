@@ -159,3 +159,6 @@ These are not the same.
   - get middle number, then finds if the number is bigger or small than the middle number
   - then moves to the respective side and repeats past step until finds the desired result
 [](https://cdn.discordapp.com/attachments/806618712056528906/1049218809539592212/IMG_1541.jpg)
+- Practice:
+1. 19
+2. 22
