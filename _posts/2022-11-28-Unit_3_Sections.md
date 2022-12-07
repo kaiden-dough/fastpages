@@ -133,3 +133,29 @@ Relational Operators
 - append() --> allows value to be added at end of list
 - remove() --> allows an element at index i to be removed
 - length() --> returns number of elements in the list
+## Lesson 3.9
+### 3.9.1 Algorithms
+- Review: components of an algorithm are selection, sequencing, and iteration
+- Algorithms don't always do the same thing because of a small equals sign
+```python
+70 <= grade
+70 < grade
+```
+These are not the same.
+- But there are multiple ways to make an algorithm, so they don't need to be identical to work.
+- Can use nested conditionals with booleans while making algorithms
+### 3.9.2 Developing Algorithms
+- should outline or brainstorm before coding an algorithm to make sure it is sequenced correctly
+  - Use a flowchart or pseudo-code and write it out
+  - Helps visualize the algorithm and makes it easier to code it after
+- Iteration and selection are used within algorithms
+### 3.9.3 Using Pre-existing Algorithms
+- You can make new algorithms by branching off old ones
+- Collatz Conjecture: can repeating two arithmetic operations make all integer become 1?
+## Lesson 3.11 Binary Search
+- Binary Search: repeatedly diving search interval in half
+  - first put numbers in order from small to big
+[](https://cdn.discordapp.com/attachments/806618712056528906/1049218338116620339/IMG_8574.jpg)
+  - get middle number, then finds if the number is bigger or small than the middle number
+  - then moves to the respective side and repeats past step until finds the desired result
+[](https://cdn.discordapp.com/attachments/806618712056528906/1049218809539592212/IMG_1541.jpg)
