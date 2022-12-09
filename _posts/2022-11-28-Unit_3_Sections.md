@@ -187,6 +187,14 @@ Relational Operators
 - min() --> returns the minimum value of the list
 - max() --> returns the maximum value of the list
 - sum() --> returns the sum of the values in the list
+```python
+list.pop()
+list.sort()
+list.sorted()
+list.min()
+list.max()
+list.sum()
+```
 ### Section 3.10.2
 - Traversing a list is process of visiting each element in a list in sequential order; used to access, search for, and modify elements in a list
 1. Complete Traversal: all elements are accessed
@@ -196,6 +204,12 @@ Relational Operators
 - append() --> allows value to be added at end of list
 - remove() --> allows an element at index i to be removed
 - length() --> returns number of elements in the list
+```python
+list.insert()
+list.append()
+list.remove()
+list.length()
+```
 ## Lesson 3.9
 ### 3.9.1 Algorithms
 - Review: components of an algorithm are selection, sequencing, and iteration
@@ -209,6 +223,18 @@ These are not the same.
 - Can use nested conditionals with booleans while making algorithms
 ### 3.9.2 Developing Algorithms
 - should outline or brainstorm before coding an algorithm to make sure it is sequenced correctly
+```python
+def multiply(x,y):
+  product = x*y
+  return product
+products = multiply(5,6)
+def function(x,y):
+  while x > 0:
+    print(y+x)
+    x+=1
+  multiply = x*y
+  return multiply
+```
   - Use a flowchart or pseudo-code and write it out
   - Helps visualize the algorithm and makes it easier to code it after
 - Iteration and selection are used within algorithms
