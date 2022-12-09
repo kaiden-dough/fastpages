@@ -190,10 +190,10 @@ Relational Operators
 ```python
 list.pop()
 list.sort()
-list.sorted()
-list.min()
-list.max()
-list.sum()
+sorted(list)
+min(list)
+max(list)
+sum(list)
 ```
 ### Section 3.10.2
 - Traversing a list is process of visiting each element in a list in sequential order; used to access, search for, and modify elements in a list
