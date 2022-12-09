@@ -31,9 +31,17 @@ def function(x,y):
   multiply = x*y
   return multiply
 ```
-- Expressions, Comparison Operators, Booleans Expressions and Selection, Booleans Expressions and Iteration, Truth Tables
+- Expressions, Comparison Operators, Booleans Expressions and Selection, Booleans Expressions and Iteration, Truth Tables: +, -, *, /, %. The boolean expressions see if the conditions are true or false. Truth Tables are AND, OR, XOR, NOT
 ```python
-
+x+y
+x-y
+x*y
+x/y
+x%y
+x and y
+x or y
+x ^ y
+x not
 ```
 - Characters, Strings, Length, Concatenation, Upper, Lower, Traversing Strings: going through the list and assessing each one
 ``python
@@ -46,7 +54,13 @@ pop()
 if (x==1):
   print(x)
 ```
-- Python For, While loops with Range, with List
+- Python For, While loops with Range, with List: while loops loops until a condition is met. For loop does something a number of times
+```python
+for x in range(5):
+  print(x)
+while x>0:
+  print(x)
+```
 - Combining loops with conditionals to Break, Continue
 - Procedural Abstraction, Python Def procedures, Parameters, Return Values
 # Unit 3 Section 1-2
