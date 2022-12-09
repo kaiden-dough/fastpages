@@ -7,9 +7,9 @@ title: Unit 3 Notes
 ---
 # Extra Vocab
 ## Unit 2… Binary/Data Terms
-- Bits, Bytes, Hexadecimal / Nibbles
-- Binary Numbers: Unsigned Integer, Signed Integer, Floating Point
-- Binary Data Abstractions: Boolean, ASCII, Unicode, RGB
+- Bits, Bytes, Hexadecimal / Nibbles: pieces of information used in computers and devices
+- Binary Numbers: Unsigned Integer, Signed Integer, Floating Point: binary numbers are 1 and 0, used in computers are true and false
+- Binary Data Abstractions: Boolean, ASCII, Unicode, RGB: 1 and 0 are true in false in the boolean. ASCII are characters used in code, RGB are a range of colors that can be set with binary
 - Data Compression: Lossy, Lossless (note discussed yet)
 ## Unit 3… Algorithm/Programming Terms
 - Variables, Data Types, Assignment Operators: variables hold different data types like string, integer and array
