@@ -62,7 +62,13 @@ while x>0:
   print(x)
 ```
 - Combining loops with conditionals to Break, Continue
-- Procedural Abstraction, Python Def procedures, Parameters, Return Values
+- Procedural Abstraction, Python Def procedures, Parameters, Return Values: procedural abstraction is the making of functions to decrease code repetition, parameters are used in functions to have specific values in a procedure to execute, return values is the value returned by the function
+```python
+def multiply(x,y):
+  product = x*y
+  return product
+products = multiply(5,6)
+```
 # Unit 3 Section 1-2
 ## Unit 3, Section 1.1: Data Types and Variables
  - Variable is an abstraction in a program that holds a value, only one value at a time
