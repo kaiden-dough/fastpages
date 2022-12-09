@@ -6,7 +6,7 @@ toc: true
 badges: false
 comments: true
 author: Kaiden Do
-categories: [bash, week1]
+categories: [week1]
 image: /images/bash.png
 nb_path: _notebooks/2022-08-27-bashtoolcheck.ipynb
 layout: notebook

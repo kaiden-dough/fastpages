@@ -95,6 +95,18 @@ title: Class Weeks
     <th colspan="10">{{site.cont}}</th>
   </tr>
   <tr>
+    <th>15</th>
+    <td><a href="https://kaiden-dough.github.io/fastpages/jupyter/week15/2022/12/05/Unit_3.8_3.10_HACKS.html">Unit 3.8 & 3.10 Hacks</a></td>
+    <td><a href="https://kaiden-dough.github.io/fastpages/jupyter/week15/2022/12/06/Unit_3.9_3.11_HACKS.html">Unit 3.9 & 3.11 Hacks</a></td>
+    <td><a href="https://kaiden-dough.github.io/fastpages/markdown/week14/2022/11/28/Unit_3_Sections.html">Unit 3 Notes</a></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
     <th>14</th>
     <td><a href="https://kaiden-dough.github.io/fastpages/markdown/week14/2022/11/28/Unit_3_Sections.html">Unit 3 Notes</a></td>
     <td><a href="https://kaiden-dough.github.io/fastpages/jupyter/week14/2022/11/28/Unit_3.1_3.2_HACKS.html">Unit 3.1 & 3.2 Hacks</a></td>

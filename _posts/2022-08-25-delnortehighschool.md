@@ -3,7 +3,7 @@ toc: true
 layout: post
 description: A high school based in the San Diego area.
 author: Kaiden Do
-categories: [markdown, DNHS, week1]
+categories: [markdown, week1]
 title: Del Norte High School
 ---
 # Del Norte High School
