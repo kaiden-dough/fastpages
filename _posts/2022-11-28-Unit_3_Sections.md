@@ -10,7 +10,7 @@ title: Unit 3 Notes
 - Bits, Bytes, Hexadecimal / Nibbles: pieces of information used in computers and devices
 - Binary Numbers: Unsigned Integer, Signed Integer, Floating Point: binary numbers are 1 and 0, used in computers are true and false
 - Binary Data Abstractions: Boolean, ASCII, Unicode, RGB: 1 and 0 are true in false in the boolean. ASCII are characters used in code, RGB are a range of colors that can be set with binary
-- Data Compression: Lossy, Lossless (note discussed yet)
+- Data Compression: Lossy, Lossless (note discussed yet): unknown
 ## Unit 3… Algorithm/Programming Terms
 - Variables, Data Types, Assignment Operators: variables hold different data types like string, integer and array
 ```python
@@ -61,7 +61,7 @@ for x in range(5):
 while x>0:
   print(x)
 ```
-- Combining loops with conditionals to Break, Continue
+- Combining loops with conditionals to Break, Continue: loops are combined with  conditionals to reduce code repetition and it only works if the condition is met
 - Procedural Abstraction, Python Def procedures, Parameters, Return Values: procedural abstraction is the making of functions to decrease code repetition, parameters are used in functions to have specific values in a procedure to execute, return values is the value returned by the function
 ```python
 def multiply(x,y):
