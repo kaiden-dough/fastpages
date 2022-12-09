@@ -225,15 +225,15 @@ These are not the same.
 - should outline or brainstorm before coding an algorithm to make sure it is sequenced correctly
 ```python
 def multiply(x,y):
-  product = x*y
-  return product
+    product = x*y
+    return product
 products = multiply(5,6)
 def function(x,y):
-  while x > 0:
-    print(y+x)
-    x+=1
-  multiply = x*y
-  return multiply
+    while x > 0:
+        print(y+x)
+        x+=1
+    multiply = x*y
+    return multiply
 ```
   - Use a flowchart or pseudo-code and write it out
   - Helps visualize the algorithm and makes it easier to code it after
