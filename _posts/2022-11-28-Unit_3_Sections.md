@@ -5,7 +5,50 @@ author: Kaiden Do
 categories: [markdown, week14]
 title: Unit 3 Notes
 ---
+# Extra Vocab
+## Unit 2… Binary/Data Terms
+- Bits, Bytes, Hexadecimal / Nibbles
+- Binary Numbers: Unsigned Integer, Signed Integer, Floating Point
+- Binary Data Abstractions: Boolean, ASCII, Unicode, RGB
+- Data Compression: Lossy, Lossless (note discussed yet)
+## Unit 3… Algorithm/Programming Terms
+- Variables, Data Types, Assignment Operators: variables hold different data types like string, integer and array
+```python
+score = 90
+name = "Bob"
+array = ["Hi", 6, 95]
+```
+- Managing Complexity with Variables:  Lists, 2D Lists, Dictionaries, Class: Lists, classes and dictionaries decrease redundancy in code and make it easier to view
+```python
+list = ["apple","oranges","mangos"]
+```
+- Algorithms, Sequence, Selection, Iteration: a procedure helps reduce the redundancy in the code and helps loops or executes lines of code with certain parameters. They contain all three with sequencing through the code, selection of specific code executing, and iteration with looping until a specific requirement is met
+```python
+def function(x,y):
+  while x > 0:
+    print(y+x)
+    x+=1
+  multiply = x*y
+  return multiply
+```
+- Expressions, Comparison Operators, Booleans Expressions and Selection, Booleans Expressions and Iteration, Truth Tables
+```python
 
+```
+- Characters, Strings, Length, Concatenation, Upper, Lower, Traversing Strings: going through the list and assessing each one
+``python
+index[x]
+sort()
+pop()
+```
+- Python If, Elif, Else conditionals; Nested Selection Statements: Is selection, does code if a requirement or condition is met
+```python
+if (x==1):
+  print(x)
+```
+- Python For, While loops with Range, with List
+- Combining loops with conditionals to Break, Continue
+- Procedural Abstraction, Python Def procedures, Parameters, Return Values
 # Unit 3 Section 1-2
 ## Unit 3, Section 1.1: Data Types and Variables
  - Variable is an abstraction in a program that holds a value, only one value at a time
