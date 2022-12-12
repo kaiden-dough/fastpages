@@ -82,7 +82,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      8 min read
+      9 min read
     
 </span></p>
 
@@ -153,6 +153,13 @@ window.onload = wrap_img;
 </ul>
 </li>
 <li class="toc-entry toc-h2"><a href="#lesson-311-binary-search">Lesson 3.11 Binary Search</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#lesson-314-15">Lesson 3.14-15</a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#section-3141-libraries">Section 3.14.1 Libraries</a></li>
+<li class="toc-entry toc-h2"><a href="#section-3151">Section 3.15.1</a></li>
+<li class="toc-entry toc-h2"><a href="#3152-lesson">3.15.2 Lesson</a></li>
 </ul>
 </li>
 </ul><h1 id="extra-vocab">
@@ -515,10 +522,77 @@ pop()
   <li>Practice:
     <ol>
       <li>19</li>
-      <li>22</li>
+      <li>22
+        <h1 id="lesson-314-15">
+<a class="anchor" href="#lesson-314-15" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lesson 3.14-15</h1>
+        <h2 id="section-3141-libraries">
+<a class="anchor" href="#section-3141-libraries" aria-hidden="true"><span class="octicon octicon-link"></span></a>Section 3.14.1 Libraries</h2>
+      </li>
     </ol>
   </li>
+  <li>Library contains procedures that can be used in new programs</li>
+  <li>Code segments can come from internal or external sources</li>
+  <li>Libraries can simplify complex programs</li>
+  <li>libraries are included with a “.”
+    <div class="language-python highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">math</span>
+<span class="n">math</span><span class="p">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">64</span><span class="p">)</span>
+</code></pre></div>    </div>
+    <h2 id="section-3151">
+<a class="anchor" href="#section-3151" aria-hidden="true"><span class="octicon octicon-link"></span></a>Section 3.15.1</h2>
+  </li>
+  <li>Randomization generates a random value between two numbers</li>
+  <li>Need to do import random at the beginning to use random
+    <div class="language-python highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">random</span>
+<span class="n">answer1</span> <span class="o">=</span> <span class="n">random</span><span class="p">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">answer2</span> <span class="o">=</span> <span class="n">random</span><span class="p">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">8</span><span class="p">)</span>
+<span class="n">answer3</span> <span class="o">=</span> <span class="n">answer1</span> <span class="o">+</span> <span class="n">answer2</span>
+<span class="k">print</span><span class="p">(</span><span class="n">answer3</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li>The range includes the numbers in the range</li>
+  <li>Many methods for random
+    <ul>
+      <li>seed()</li>
+      <li>getstate()</li>
+      <li>setstate()</li>
+      <li>getrandbits()</li>
+      <li>randrange()</li>
+      <li>randint()</li>
+      <li>choice()</li>
+      <li>choices()</li>
+      <li>shuffle()</li>
+      <li>sample()</li>
+      <li>random()</li>
+      <li>uniform()</li>
+      <li>betavariate()</li>
+      <li>expovariate()</li>
+      <li>gammavariate()</li>
+      <li>gauss()</li>
+      <li>lognormvariate()</li>
+      <li>normalvariate()</li>
+      <li>vonmisesvariate()</li>
+      <li>paretovariate()</li>
+      <li>weibullvariate()
+        <h2 id="3152-lesson">
+<a class="anchor" href="#3152-lesson" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.15.2 Lesson</h2>
+      </li>
+    </ul>
+  </li>
+  <li>RANDOM (a,b) will provide you with a random integer between the numbers a-b</li>
+  <li>Ex. RANDOM (7,18) can provide you with the number 13.</li>
+  <li>Using a random generator means each result can come out as different.
+```python
+import random
+flip = random.randint(1,2)</li>
 </ul>
+
+<p>if flip == 1:
+    print(“Heads”)
+else:
+    print(“Tails”)
+```</p>
 
   </div><a class="u-url" href="/fastpages/markdown/week14/2022/11/28/Unit_3_Sections.html" hidden></a>
 </article>
