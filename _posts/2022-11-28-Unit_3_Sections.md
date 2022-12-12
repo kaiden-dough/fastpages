@@ -251,3 +251,59 @@ def function(x,y):
 - Practice:
 1. 19
 2. 22
+# Lesson 3.14-15
+## Section 3.14.1 Libraries
+- Library contains procedures that can be used in new programs
+- Code segments can come from internal or external sources
+- Libraries can simplify complex programs
+- libraries are included with a "."
+```python
+import math
+math.sqrt(64)
+```
+## Section 3.15.1
+- Randomization generates a random value between two numbers
+- Need to do import random at the beginning to use random
+```python
+import random
+answer1 = random.randint(0,3)
+answer2 = random.randint(1,8)
+answer3 = answer1 + answer2
+print(answer3)
+```
+- The range includes the numbers in the range
+- Many methods for random
+  - seed()
+  - getstate()
+  - setstate()
+  - getrandbits()
+  - randrange()
+  - randint()
+  - choice()
+  - choices()
+  - shuffle()
+  - sample()
+  - random()
+  - uniform()
+  - betavariate()
+  - expovariate()
+  - gammavariate()
+  - gauss()
+  - lognormvariate()
+  - normalvariate()
+  - vonmisesvariate()
+  - paretovariate()
+  - weibullvariate()
+## 3.15.2 Lesson
+- RANDOM (a,b) will provide you with a random integer between the numbers a-b
+- Ex. RANDOM (7,18) can provide you with the number 13.
+- Using a random generator means each result can come out as different. 
+```python
+import random
+flip = random.randint(1,2)
+ 
+if flip == 1:
+    print("Heads")
+else:
+    print("Tails")
+```
