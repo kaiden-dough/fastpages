@@ -307,3 +307,53 @@ if flip == 1:
 else:
     print("Tails")
 ```
+# Lesson 3.16
+## 3.16 Intro to Simulations
+- Simulation: an imitation of situation or process also called a virtual experiment
+  - Examples: testing safety of cars, games, testing things
+- Experiment: procedure undertaken to make a discovery, test a hypothesis, or to demonstrate a fact
+- Simulation Pros and Cons
+  - Pros: safer, cheaper, efficient
+  - Cons: not as accurate, no outside factors
+  - Don't simulate a situation with set results
+- Four Corners Example Simulation
+```python
+import random
+
+status = "in"
+while status != "out":
+    chooseCorner = input("What corner do you choose?")
+
+    corner = random.randint(1,4)
+
+    if int(chooseCorner) == corner:
+        status = "out"
+        print("You chose corner number " + chooseCorner + " and you're OUT")
+    else:
+        print("You chose corner number " + chooseCorner + " and are still in!")
+```
+- Rolling Dice Simulation
+```python
+def parse_input(input_string):
+    if input_string.strip() in {"1", "2", "3","4", "5", "6"}:
+        return int(input_string)
+    else:
+        print("Please enter a number from 1 to 6.")
+        raise SystemExit(1)
+
+import random
+
+def roll_dice(num_dice):
+    roll_results = []
+    for _ in range(num_dice):
+        roll = random.randint(1, 6)
+        roll_results.append(roll)
+    return roll_results
+
+
+num_dice_input = input("How many dice do you want to roll? [1-6] ")
+num_dice = parse_input(num_dice_input)
+roll_results = roll_dice(num_dice)
+
+print("you rolled:", roll_results) 
+```
