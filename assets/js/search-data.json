@@ -2,10 +2,10 @@
   
     
         "post0": {
-            "title": "Unit 3.14 & 3.15 Hacks",
-            "content": "",
-            "url": "https://kaiden-dough.github.io/fastpages/jupyter/week16/2022/12/12/Unit_3.14_3.15_HACKS.html",
-            "relUrl": "/jupyter/week16/2022/12/12/Unit_3.14_3.15_HACKS.html",
+            "title": "Palindrome Maker",
+            "content": "first = input(&quot;What would you like to become a palindrome?&quot;) print(&quot;Input:&quot;, first) length = len(first) firstpart = first[0:(length-1)] lastchar = first[-1] flip = first[::-1] if first == flip: print(&quot;Is a palindrome&quot;) else: print(&quot;Isn&#39;t a palindrome&quot;) print(&quot;Palindrome:&quot;,firstpart+flip) . Input: hello Isn&#39;t a palindrome Palindrome: hellolleh .",
+            "url": "https://kaiden-dough.github.io/fastpages/jupyter/week14/2022/12/12/palindrome.html",
+            "relUrl": "/jupyter/week14/2022/12/12/palindrome.html",
             "date": " • Dec 12, 2022"
         }
         
@@ -13,22 +13,22 @@
   
     
         ,"post1": {
-            "title": "Palindrome Maker",
-            "content": "first = input(&quot;What would you like to become a palindrome?&quot;) print(&quot;Input:&quot;, first) length = len(first) firstpart = first[0:(length-1)] lastchar = first[-1] flip = first[::-1] if first == flip: print(&quot;Is a palindrome&quot;) else: print(&quot;Isn&#39;t a palindrome&quot;) print(&quot;Palindrome:&quot;,firstpart+flip) . Input: hello Isn&#39;t a palindrome Palindrome: hellolleh .",
-            "url": "https://kaiden-dough.github.io/fastpages/jupyter/week14/2022/12/11/palindrome.html",
-            "relUrl": "/jupyter/week14/2022/12/11/palindrome.html",
-            "date": " • Dec 11, 2022"
+            "title": "Fibonacci Series",
+            "content": "amount = int(input(&quot;How many terms do you want?&quot;)) num1 = 0 num2 = 1 count = 0 if amount &lt;= 0: print(&quot;Error: Positive integers only&quot;) elif(amount == 1): print(&quot;Terms:&quot;, amount) print(num1) else: print(&quot;Terms:&quot;, amount) print(num1) print(num2) while (count+2) &lt; amount: count += 1 temp = num2 num2 = num1 + temp num1 = temp print(num2) . Terms: 10 0 1 1 2 3 5 8 13 21 34 .",
+            "url": "https://kaiden-dough.github.io/fastpages/jupyter/week14/2022/12/12/fibonacci.html",
+            "relUrl": "/jupyter/week14/2022/12/12/fibonacci.html",
+            "date": " • Dec 12, 2022"
         }
         
     
   
     
         ,"post2": {
-            "title": "Fibonacci Series",
-            "content": "amount = int(input(&quot;How many terms do you want?&quot;)) num1 = 0 num2 = 1 count = 0 if amount &lt;= 0: print(&quot;Error: Positive integers only&quot;) elif(amount == 1): print(&quot;Terms:&quot;, amount) print(num1) else: print(&quot;Terms:&quot;, amount) print(num1) print(num2) while (count+2) &lt; amount: count += 1 temp = num2 num2 = num1 + temp num1 = temp print(num2) . Terms: 10 0 1 1 2 3 5 8 13 21 34 .",
-            "url": "https://kaiden-dough.github.io/fastpages/jupyter/week14/2022/12/11/fibonacci.html",
-            "relUrl": "/jupyter/week14/2022/12/11/fibonacci.html",
-            "date": " • Dec 11, 2022"
+            "title": "Unit 3.14 & 3.15 Hacks",
+            "content": "Hacks . Lesson 3.14.1 . import math decimalNum = float(input(&quot;Enter a decimal number to be rounded&quot;)) onlyDecimal = decimalNum - math.floor(decimalNum) if onlyDecimal &gt;= 0.5 and onlyDecimal &lt; 1: print(decimalNum, &quot;rounds up to&quot;, math.ceil(decimalNum)) elif onlyDecimal &gt; 0: print(decimalNum, &quot;rounds down to&quot;, math.floor(decimalNum)) else: print(decimalNum, &quot;stays the same&quot;) . 0.3 rounds down to 0 . My code is asking the user to input a number to be rounded. I used the import math in order to do the rounding. I first floor() the original number and subtracted it from the original number to only get the decimals. Then I compared the decimal to see if I need to round up, down, or stay the same. If it is round up, I use the ceil() of the original number to round up. If it is round down, I use the floor() of the original number to round down. . Lesson 3.15.1 . import random print(&quot;Random Number:&quot;) print(random.randint(1,100)) . Random Number: 95 . The import random function randomizes stuff. Random number would return a random number between the two numbers in the range given. | You can import math and flask and sys | . Lesson 3.15.2 . import random spinnerLand = random.randint(1,8) if spinnerLand &lt;= 3: print(&quot;You got green&quot;) elif spinnerLand &lt;= 5: print(&quot;You got blue&quot;) elif spinnerLand &lt;= 6: print(&quot;You got purple&quot;) elif spinnerLand &lt;= 7: print(&quot;You got red&quot;) elif spinnerLand &lt;= 8: print(&quot;You got orange&quot;) . You got blue . The numbers from RANDOM(12,20) that can be outputted are 12, 13, 14, 15, 16, 17, 18, 19, 20. All other numbers are excluded .",
+            "url": "https://kaiden-dough.github.io/fastpages/jupyter/week16/2022/12/12/Unit_3.14_3.15_HACKS.html",
+            "relUrl": "/jupyter/week16/2022/12/12/Unit_3.14_3.15_HACKS.html",
+            "date": " • Dec 12, 2022"
         }
         
     
