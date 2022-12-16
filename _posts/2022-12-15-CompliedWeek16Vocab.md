@@ -17,9 +17,8 @@ def gradeAverage(num):
     return average
 
 print("The average grade is", gradeAverage([65, 70, 72, 75, 80, 73, 61, 84, 81, 83]))
-
-# Documentation for the example above: The procedure gradeAverage takes a list of integer values representing the percentages in a certain class, and returns the average of those integers.
 ```
+    - Documentation for the example above: The procedure gradeAverage takes a list of integer values representing the percentages in a certain class, and returns the average of those integers.
 - Libraries: A collection of pre-written code or procedures that coders can use to maximize their efficiency
 ```python
 import math
