@@ -9,8 +9,8 @@
 <meta property="og:title" content="Week 16 Vocab" />
 <meta name="author" content="Kaiden Do" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="3.14 Documentation: Text that explains the what, how, or why of your code ```python def gradeAverage(num): sumNums = 0 for t in num: sumNums = sumNums + t" />
-<meta property="og:description" content="3.14 Documentation: Text that explains the what, how, or why of your code ```python def gradeAverage(num): sumNums = 0 for t in num: sumNums = sumNums + t" />
+<meta name="description" content="3.14 Documentation: Text that explains the what, how, or why of your code" />
+<meta property="og:description" content="3.14 Documentation: Text that explains the what, how, or why of your code" />
 <link rel="canonical" href="https://kaiden-dough.github.io/fastpages/markdown/week16/2022/12/15/CompliedWeek16Vocab.html" />
 <meta property="og:url" content="https://kaiden-dough.github.io/fastpages/markdown/week16/2022/12/15/CompliedWeek16Vocab.html" />
 <meta property="og:site_name" content="Kaiden Do FastPages" />
@@ -19,7 +19,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Week 16 Vocab" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Kaiden Do"},"dateModified":"2022-12-15T00:00:00-06:00","datePublished":"2022-12-15T00:00:00-06:00","description":"3.14 Documentation: Text that explains the what, how, or why of your code ```python def gradeAverage(num): sumNums = 0 for t in num: sumNums = sumNums + t","headline":"Week 16 Vocab","mainEntityOfPage":{"@type":"WebPage","@id":"https://kaiden-dough.github.io/fastpages/markdown/week16/2022/12/15/CompliedWeek16Vocab.html"},"url":"https://kaiden-dough.github.io/fastpages/markdown/week16/2022/12/15/CompliedWeek16Vocab.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Kaiden Do"},"dateModified":"2022-12-15T00:00:00-06:00","datePublished":"2022-12-15T00:00:00-06:00","description":"3.14 Documentation: Text that explains the what, how, or why of your code","headline":"Week 16 Vocab","mainEntityOfPage":{"@type":"WebPage","@id":"https://kaiden-dough.github.io/fastpages/markdown/week16/2022/12/15/CompliedWeek16Vocab.html"},"url":"https://kaiden-dough.github.io/fastpages/markdown/week16/2022/12/15/CompliedWeek16Vocab.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/fastpages/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://kaiden-dough.github.io/fastpages/feed.xml" title="Kaiden Do FastPages" /><link rel="shortcut icon" type="image/x-icon" href="/fastpages/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -105,92 +105,123 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h1"><a href="#314">3.14</a></li>
 <li class="toc-entry toc-h1"><a href="#315">3.15</a></li>
 <li class="toc-entry toc-h1"><a href="#316">3.16</a></li>
+<li class="toc-entry toc-h1"><a href="#317">3.17</a></li>
+<li class="toc-entry toc-h1"><a href="#318">3.18</a></li>
 </ul><h1 id="314">
 <a class="anchor" href="#314" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.14</h1>
 <ul>
-  <li>
-    <p>Documentation: Text that explains the what, how, or why of your code
-```python
-def gradeAverage(num):
-  sumNums = 0
-  for t in num:
-      sumNums = sumNums + t</p>
-
-    <p>average = sumNums / len(num)
-  return average</p>
-  </li>
+  <li>Documentation: Text that explains the what, how, or why of your code</li>
 </ul>
 
-<p>print(“The average grade is”, gradeAverage([65, 70, 72, 75, 80, 73, 61, 84, 81, 83]))</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    - Documentation for the example above: The procedure gradeAverage takes a list of integer values representing the percentages in a certain class, and returns the average of those integers.
-- Libraries: A collection of pre-written code or procedures that coders can use to maximize their efficiency
-```python
-import math
-math.sqrt(64)
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">gradeAverage</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+    <span class="n">sumNums</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">num</span><span class="p">:</span>
+        <span class="n">sumNums</span> <span class="o">=</span> <span class="n">sumNums</span> <span class="o">+</span> <span class="n">t</span>
+
+    <span class="n">average</span> <span class="o">=</span> <span class="n">sumNums</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">average</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"The average grade is"</span><span class="p">,</span> <span class="n">gradeAverage</span><span class="p">([</span><span class="mi">65</span><span class="p">,</span> <span class="mi">70</span><span class="p">,</span> <span class="mi">72</span><span class="p">,</span> <span class="mi">75</span><span class="p">,</span> <span class="mi">80</span><span class="p">,</span> <span class="mi">73</span><span class="p">,</span> <span class="mi">61</span><span class="p">,</span> <span class="mi">84</span><span class="p">,</span> <span class="mi">81</span><span class="p">,</span> <span class="mi">83</span><span class="p">]))</span>
 </code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- Documentation for the example above: The procedure gradeAverage takes a list of integer values representing the percentages in a certain class, and returns the average of those integers. - Libraries: A collection of pre-written code or procedures that coders can use to maximize their efficiency
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">math</span>
+<span class="n">math</span><span class="p">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">64</span><span class="p">)</span>
+</code></pre></div></div>
+
 <ul>
   <li>Application Programming Interface: A type of software through several computers are able to communicate information amongst each other
     <h1 id="315">
 <a class="anchor" href="#315" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.15</h1>
   </li>
-  <li>Randomization: generates a value between two numbers
-    <div class="language-python highlighter-rouge">
-<div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">random</span>
-<span class="n">answer1</span> <span class="o">=</span> <span class="n">random</span><span class="p">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="n">answer1</span><span class="p">)</span>
-</code></pre></div>    </div>
-    <h1 id="316">
-<a class="anchor" href="#316" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.16</h1>
-  </li>
-  <li>Simulations: an imitation of a situation or process
-```python
-import random</li>
+  <li>Randomization: generates a value between two numbers</li>
 </ul>
 
-<p>status = “in”
-while status != “out”:
-    chooseCorner = input(“What corner do you choose?”)</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>corner = random.randint(1,4)
-
-if int(chooseCorner) == corner:
-    status = "out"
-    print("You chose corner number " + chooseCorner + " and you're OUT")
-else:
-    print("You chose corner number " + chooseCorner + " and are still in!") ``` - Experiment: procedure undertaken to make a discovery, test a hypothesis, or demonstrate a known fact # 3.17 - Algorithm Efficiency: aspect of algorithmic programming that measures the number of steps needed to solve a problem
-- Inefficient:
-```python
-def inefficientWay(numbers):
-    for i in range(len(numbers)):
-    min_index = i
-    for j in range(i+1, len(numbers)):
-        if numbers[j] &lt; numbers[min_index]:
-        min_index = j
-    numbers[i], numbers[min_index] = numbers[min_index], numbers[i]
-    return numbers
-print(inefficientWay([2, 4, 5, 1, 3]))
-```
-- Efficient:
-```python
-def efficient_sort(numbers):
-    for i in range(len(numbers)):
-    min_index = i
-    for j in range(i+1, len(numbers)):
-        if numbers[j] &lt; numbers[min_index]:
-        min_index = j
-    numbers[i], numbers[min_index] = numbers[min_index], numbers[i]
-    return numbers
-print(efficient_sort([2, 4, 5, 1, 3]))
-``` - Heuristic Approach: taking the shortest or easiest possibilities to the result # 3.18 - Collatz Conjecture: asks whether repeating two simple arithmetic operations will eventually transform every positive integer into 1 ```python def collatz(i):
-while i != 1:
-    if i % 2 &gt; 0:
-         i =((3 * i) + 1)
-         list_.append(i)
-    else:
-        i = (i / 2)
-        list_.append(i)
-return list_ ``` - Hailstone numbers: sequence of integers generated by Collatz conjecture - Undecidable problems: should give a "yes" or "no" answer, but yet no algorithm exists that can answer correctly on all inputs - Unsolvable problems: no algorithm can ever be written to find the solution
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">random</span>
+<span class="n">answer1</span> <span class="o">=</span> <span class="n">random</span><span class="p">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">answer1</span><span class="p">)</span>
 </code></pre></div></div>
+
+<h1 id="316">
+<a class="anchor" href="#316" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.16</h1>
+<ul>
+  <li>Simulations: an imitation of a situation or process</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">random</span>
+<span class="n">status</span> <span class="o">=</span> <span class="s">"in"</span>
+<span class="k">while</span> <span class="n">status</span> <span class="o">!=</span> <span class="s">"out"</span><span class="p">:</span>
+    <span class="n">chooseCorner</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"What corner do you choose?"</span><span class="p">)</span>
+    <span class="n">corner</span> <span class="o">=</span> <span class="n">random</span><span class="p">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="n">chooseCorner</span><span class="p">)</span> <span class="o">==</span> <span class="n">corner</span><span class="p">:</span>
+        <span class="n">status</span> <span class="o">=</span> <span class="s">"out"</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"You chose corner number "</span> <span class="o">+</span> <span class="n">chooseCorner</span> <span class="o">+</span> <span class="s">" and you're OUT"</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"You chose corner number "</span> <span class="o">+</span> <span class="n">chooseCorner</span> <span class="o">+</span> <span class="s">" and are still in!"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<ul>
+  <li>Experiment: procedure undertaken to make a discovery, test a hypothesis, or demonstrate a known fact
+    <h1 id="317">
+<a class="anchor" href="#317" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.17</h1>
+  </li>
+  <li>Algorithm Efficiency: aspect of algorithmic programming that measures the number of steps needed to solve a problem
+    <ul>
+      <li>Inefficient:</li>
+    </ul>
+
+    <div class="language-python highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>  <span class="k">def</span> <span class="nf">inefficientWay</span><span class="p">(</span><span class="n">numbers</span><span class="p">):</span>
+      <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">numbers</span><span class="p">)):</span>
+      <span class="n">min_index</span> <span class="o">=</span> <span class="n">i</span>
+      <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">numbers</span><span class="p">)):</span>
+          <span class="k">if</span> <span class="n">numbers</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">numbers</span><span class="p">[</span><span class="n">min_index</span><span class="p">]:</span>
+          <span class="n">min_index</span> <span class="o">=</span> <span class="n">j</span>
+      <span class="n">numbers</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">numbers</span><span class="p">[</span><span class="n">min_index</span><span class="p">]</span> <span class="o">=</span> <span class="n">numbers</span><span class="p">[</span><span class="n">min_index</span><span class="p">],</span> <span class="n">numbers</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+      <span class="k">return</span> <span class="n">numbers</span>
+  <span class="k">print</span><span class="p">(</span><span class="n">inefficientWay</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">]))</span>
+</code></pre></div>    </div>
+
+    <ul>
+      <li>Efficient:</li>
+    </ul>
+
+    <div class="language-python highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>  <span class="k">def</span> <span class="nf">efficient_sort</span><span class="p">(</span><span class="n">numbers</span><span class="p">):</span>
+      <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">numbers</span><span class="p">)):</span>
+      <span class="n">min_index</span> <span class="o">=</span> <span class="n">i</span>
+      <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">numbers</span><span class="p">)):</span>
+          <span class="k">if</span> <span class="n">numbers</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">numbers</span><span class="p">[</span><span class="n">min_index</span><span class="p">]:</span>
+          <span class="n">min_index</span> <span class="o">=</span> <span class="n">j</span>
+      <span class="n">numbers</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">numbers</span><span class="p">[</span><span class="n">min_index</span><span class="p">]</span> <span class="o">=</span> <span class="n">numbers</span><span class="p">[</span><span class="n">min_index</span><span class="p">],</span> <span class="n">numbers</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+      <span class="k">return</span> <span class="n">numbers</span>
+  <span class="k">print</span><span class="p">(</span><span class="n">efficient_sort</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">]))</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Heuristic Approach: taking the shortest or easiest possibilities to the result
+    <h1 id="318">
+<a class="anchor" href="#318" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.18</h1>
+  </li>
+  <li>Collatz Conjecture: asks whether repeating two simple arithmetic operations will eventually transform every positive integer into 1</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">collatz</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+    <span class="k">while</span> <span class="n">i</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+             <span class="n">i</span> <span class="o">=</span><span class="p">((</span><span class="mi">3</span> <span class="o">*</span> <span class="n">i</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+             <span class="n">list_</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">i</span> <span class="o">=</span> <span class="p">(</span><span class="n">i</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
+            <span class="n">list_</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">list_</span>
+</code></pre></div></div>
+
+<ul>
+  <li>Hailstone numbers: sequence of integers generated by Collatz conjecture</li>
+  <li>Undecidable problems: should give a “yes” or “no” answer, but yet no algorithm exists that can answer correctly on all inputs</li>
+  <li>Unsolvable problems: no algorithm can ever be written to find the solution</li>
+</ul>
 
   </div><a class="u-url" href="/fastpages/markdown/week16/2022/12/15/CompliedWeek16Vocab.html" hidden></a>
 </article>
