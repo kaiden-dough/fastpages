@@ -5,71 +5,9 @@ author: Kaiden Do
 categories: [markdown, week14]
 title: Unit 3 Notes
 ---
-# Extra Vocab
-## Unit 2… Binary/Data Terms
-- Bits, Bytes, Hexadecimal / Nibbles: pieces of information used in computers and devices
-- Binary Numbers: Unsigned Integer, Signed Integer, Floating Point: binary numbers are 1 and 0, used in computers are true and false
-- Binary Data Abstractions: Boolean, ASCII, Unicode, RGB: 1 and 0 are true in false in the boolean. ASCII are characters used in code, RGB are a range of colors that can be set with binary
-- Data Compression: Lossy, Lossless (note discussed yet): unknown
-## Unit 3… Algorithm/Programming Terms
-- Variables, Data Types, Assignment Operators: variables hold different data types like string, integer and array
-```python
-score = 90
-name = "Bob"
-array = ["Hi", 6, 95]
-```
-- Managing Complexity with Variables:  Lists, 2D Lists, Dictionaries, Class: Lists, classes and dictionaries decrease redundancy in code and make it easier to view
-```python
-list = ["apple","oranges","mangos"]
-```
-- Algorithms, Sequence, Selection, Iteration: a procedure helps reduce the redundancy in the code and helps loops or executes lines of code with certain parameters. They contain all three with sequencing through the code, selection of specific code executing, and iteration with looping until a specific requirement is met
-```python
-def function(x,y):
-  while x > 0:
-    print(y+x)
-    x+=1
-  multiply = x*y
-  return multiply
-```
-- Expressions, Comparison Operators, Booleans Expressions and Selection, Booleans Expressions and Iteration, Truth Tables: +, -, *, /, %. The boolean expressions see if the conditions are true or false. Truth Tables are AND, OR, XOR, NOT
-```python
-x+y
-x-y
-x*y
-x/y
-x%y
-x and y
-x or y
-x ^ y
-x not
-```
-- Characters, Strings, Length, Concatenation, Upper, Lower, Traversing Strings: going through the list and assessing each one
-``python
-index[x]
-sort()
-pop()
-```
-- Python If, Elif, Else conditionals; Nested Selection Statements: Is selection, does code if a requirement or condition is met
-```python
-if (x==1):
-  print(x)
-```
-- Python For, While loops with Range, with List: while loops loops until a condition is met. For loop does something a number of times
-```python
-for x in range(5):
-  print(x)
-while x>0:
-  print(x)
-```
-- Combining loops with conditionals to Break, Continue: loops are combined with  conditionals to reduce code repetition and it only works if the condition is met
-- Procedural Abstraction, Python Def procedures, Parameters, Return Values: procedural abstraction is the making of functions to decrease code repetition, parameters are used in functions to have specific values in a procedure to execute, return values is the value returned by the function
-```python
-def multiply(x,y):
-  product = x*y
-  return product
-products = multiply(5,6)
-```
-# Unit 3 Section 1-2
+# [Vocab Link]()
+
+# Unit 3 Section 1-2: [Hacks](https://kaiden-dough.github.io/fastpages/jupyter/week14/2022/11/28/Unit_3.1_3.2_HACKS.html)
 ## Unit 3, Section 1.1: Data Types and Variables
  - Variable is an abstraction in a program that holds a value, only one value at a time
  - They have good names to organize code and understand what the variables represent
@@ -100,7 +38,7 @@ products = multiply(5,6)
     - Code is easier to read
  - Many variables are not needed, don't need to edit/add/remove entire variable to change it
 
-# Unit 3 Section 3-4
+# Unit 3 Section 3-4: [Hacks](https://kaiden-dough.github.io/fastpages/markdown/week14/2022/11/29/Unit_3.3_3.4_HACKS.html)
 ## Lesson 3.3
  - An algorithm is a finite set of instructions that completes a task
    - Sequencing: the order the code is completed
@@ -117,7 +55,7 @@ products = multiply(5,6)
       - strings are sequences of characters
       - substring string in python can be found with the string and which range of characters
 
-# Unit 3 Section 5-7
+# Unit 3 Section 5-7: [Hacks](https://kaiden-dough.github.io/fastpages/jupyter/week14/2022/12/01/Unit_3.5_3.7_HACKS.html)
 ## Lesson 3.5
 Boolean
  - Boolean is a true (1) or false (0) --> (binary)
@@ -164,7 +102,7 @@ Relational Operators
 - Question 2: height = 60 & age = 17 & photo taken
   - The total bill is $10.
 
-# Unit 3 Section 8 & 10
+# Unit 3 Section 8 & 10: [Hacks](https://kaiden-dough.github.io/fastpages/jupyter/week15/2022/12/05/Unit_3.8_3.10_HACKS.html)
 ## Lesson 3.8 Iteration
 - Iteration: repeating part of an algorithm until a condition is met
 - Iteration Statements: changes the flow of the code by repeating statements a number of times and it stops repeating once a condition is met
@@ -210,6 +148,7 @@ list.append()
 list.remove()
 list.length()
 ```
+# Lesson 3.9 & 3.11: [Hacks](https://kaiden-dough.github.io/fastpages/jupyter/week15/2022/12/06/Unit_3.9_3.11_HACKS.html)
 ## Lesson 3.9
 ### 3.9.1 Algorithms
 - Review: components of an algorithm are selection, sequencing, and iteration
@@ -251,8 +190,19 @@ def function(x,y):
 - Practice:
 1. 19
 2. 22
-# Lesson 3.14-15
+# Lesson 3.14-15: [Hacks](https://kaiden-dough.github.io/fastpages/jupyter/week16/2022/12/12/Unit_3.14_3.15_HACKS.html)
 ## Section 3.14.1 Libraries
+- Documentation: Text that explains the what, how, or why of your code
+```python
+def gradeAverage(num):
+    sumNums = 0
+    for t in num:
+        sumNums = sumNums + t
+
+    average = sumNums / len(num)
+    return average
+print("The average grade is", gradeAverage([65, 70, 72, 75, 80, 73, 61, 84, 81, 83]))
+```
 - Library contains procedures that can be used in new programs
 - Code segments can come from internal or external sources
 - Libraries can simplify complex programs
@@ -263,6 +213,11 @@ math.sqrt(64)
 ```
 ## Section 3.15.1
 - Randomization generates a random value between two numbers
+```python
+import random
+answer1 = random.randint(0,3)
+print(answer1)
+```
 - Need to do import random at the beginning to use random
 ```python
 import random
@@ -307,10 +262,22 @@ if flip == 1:
 else:
     print("Tails")
 ```
-# Lesson 3.16
+# Lesson 3.16: [Hacks](https://kaiden-dough.github.io/fastpages/jupyter/week16/2022/12/13/Unit_3.16_HACKS.html)
 ## 3.16 Intro to Simulations
 - Simulation: an imitation of situation or process also called a virtual experiment
   - Examples: testing safety of cars, games, testing things
+```python
+import random
+status = "in"
+while status != "out":
+    chooseCorner = input("What corner do you choose?")
+    corner = random.randint(1,4)
+    if int(chooseCorner) == corner:
+        status = "out"
+        print("You chose corner number " + chooseCorner + " and you're OUT")
+    else:
+        print("You chose corner number " + chooseCorner + " and are still in!")
+```
 - Experiment: procedure undertaken to make a discovery, test a hypothesis, or to demonstrate a fact
 - Simulation Pros and Cons
   - Pros: safer, cheaper, efficient
@@ -357,12 +324,51 @@ roll_results = roll_dice(num_dice)
 
 print("you rolled:", roll_results) 
 ```
-# Lesson 3.17
+# Lesson 3.17 & 3.18: [Hacks](https://kaiden-dough.github.io/fastpages/jupyter/week16/2022/12/14/Unit_3.17_3.18_HACKS.html)
+## Section 3.17
 - Sometimes when a problem has too many possibilities, a heuristic approach would be taken
 - Algorithmic efficiency: aspect of algorithmic programming that measures the number of steps needed to solve a problem, need code that is more efficient to speed up the code processing.
-# Lesson 3.18
+    - Inefficient:
+
+    ```python
+    def inefficientWay(numbers):
+        for i in range(len(numbers)):
+        min_index = i
+        for j in range(i+1, len(numbers)):
+            if numbers[j] < numbers[min_index]:
+            min_index = j
+        numbers[i], numbers[min_index] = numbers[min_index], numbers[i]
+        return numbers
+    print(inefficientWay([2, 4, 5, 1, 3]))
+    ```
+
+    - Efficient:
+
+    ```python
+    def efficient_sort(numbers):
+        for i in range(len(numbers)):
+        min_index = i
+        for j in range(i+1, len(numbers)):
+            if numbers[j] < numbers[min_index]:
+            min_index = j
+        numbers[i], numbers[min_index] = numbers[min_index], numbers[i]
+        return numbers
+    print(efficient_sort([2, 4, 5, 1, 3]))
+    ```
+## Section 3.18
 - Undecidability: you don't know if the problem can be solved or if every number works in the code
   - An undecidable problem is one that should give a "yes" or "no" answer, but yet no algorithm exists that can answer correctly on all inputs.
 - Unsolvable: An unsolvable problem is one for which no algorithm can ever be written to find the solution.
 - Collatz: The conjecture asks whether repeating two simple arithmetic operations will eventually transform every positive integer into 1
+```python
+def collatz(i):
+    while i != 1:
+        if i % 2 > 0:
+             i =((3 * i) + 1)
+             list_.append(i)
+        else:
+            i = (i / 2)
+            list_.append(i)
+    return list_
+```
 - Hailstone Numbers: The sequence of integers generated by Collatz conjecture are called Hailstone Numbers.
