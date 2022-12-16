@@ -5,7 +5,7 @@ author: Kaiden Do
 categories: [markdown, week14]
 title: Unit 3 Notes
 ---
-# [Vocab Link]()
+# [Vocab Link](https://kaiden-dough.github.io/fastpages/markdown/week16/2022/12/15/vocab.html)
 
 # Unit 3 Section 1-2: [Hacks](https://kaiden-dough.github.io/fastpages/jupyter/week14/2022/11/28/Unit_3.1_3.2_HACKS.html)
 ## Unit 3, Section 1.1: Data Types and Variables
