@@ -96,7 +96,7 @@ title: Class Weeks
   </tr>
   <tr>
     <th>16</th>
-    <td><a href="https://kaiden-dough.github.io/fastpages/markdown/week14/2022/11/28/Unit_3_Sections.html"></a>Unit 3 Notes</td>
+    <td><a href="https://kaiden-dough.github.io/fastpages/markdown/week14/2022/11/28/Unit_3_Sections.html">Unit 3 Notes</a></td>
     <td><a href="https://davidvasilev1.github.io/group-tri2/2022/12/04/lesson3.12_3.13.html">Lesson 3.12 & 3.13</a></td>
     <td><a href="https://kaiden-dough.github.io/fastpages/jupyter/week16/2022/12/12/Unit_3.14_3.15_HACKS.html">Unit 3.14-15 Hacks</a></td>
     <td><a href="https://kaiden-dough.github.io/fastpages/jupyter/week16/2022/12/13/Unit_3.16_HACKS.html">Unit 3.16 Hacks</a></td>
