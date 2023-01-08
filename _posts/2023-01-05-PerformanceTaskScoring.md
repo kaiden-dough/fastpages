@@ -5,27 +5,32 @@ author: Kaiden Do
 categories: [markdown, week17]
 title: Performance Task Scoring
 ---
-### Grade
-|Student|Reporting Category|Student Score|College Board Score|Comments|
-|-|-|-|-|-|
-|1|Program Purpose and Function|1|0|I thought they got they point when they described their purpose, but that was just the functionality, which doesn't score the point.|
-|1|Data Abstraction|1|1|Good job on this category|
-|1|Managing Complexity|0|0|Did not meet neither of the two requirements. The example given did not manage complexity and it may have made the code a bit more confusing. Also the student didn't describe how the code would be written without the list.|
-|1|Procedural Abstraction|1|1|Very good and very in depth description of the code segment for the ratio maker of the side lengths.|
-|1|Algorithm Implementation|1|1|Full marks, did everything in the requirement for the category.|
-|1|Testing|1|1|Also good, did everything that was in the requirement. Well done|
-|2|Program Purpose and Function||||
-|2|Data Abstraction||||
-|2|Managing Complexity||||
-|2|Procedural Abstraction||||
-|2|Algorithm Implementation||||
-|2|Testing||||
-||Program Purpose and Function||||
-||Data Abstraction||||
-||Managing Complexity||||
-||Procedural Abstraction||||
-||Algorithm Implementation||||
-||Testing||||
-
-### Reflection
-MAKE Checkboxes ^
+In progress
+### Student 1 Grade
+|Reporting Category|Requirements|Student Score|College Board Score|
+|-|-|-|-|
+|Program Purpose and Function|<ul><li>- [ ] input</li><li>- [ ] program functionality</li><li>- [ ] output</li><li>- [ ] describes the overall purpose of the program.</li><li>- [ ] describes what functionality of the program is demonstrated in the video.</li><li>- [ ] describes the input and output of the program demonstrated in the video.</li></ul>|1|0|
+|Data Abstraction|<ul><li>- [ ] includes two program code segments:</li><li>- [ ] one that shows how data has been stored in this list (or other collection type).</li><li>- [ ] one that shows the data in this same list being used as part of fulfilling the program’s purpose.</li><li>- [ ] identifies the name of the variable representing the list being used in this response. </li><li>- [ ] describes what the data contained in this list is representing in the program. </li></ul>|1|1|
+|Managing Complexity|<ul><li>- [ ] includes a program code segment that shows a list being used to manage complexity in the program.</li><li>- [ ] explains how the named, selected list manages complexity in the program code by explaining why the program code could not be written, or how it would be written differently, without using this list.</li></ul>|0|0|
+|Procedural Abstraction|<ul><li>- [ ] includes two program code segments: </li><li>- [ ] one showing a student-developed procedure with at least one parameter that has an effect on the functionality of the procedure.</li><li>- [ ] one showing where the student-developed procedure is being called.</li><li>- [ ] describes what the identified procedure does and how it contributes to the overall functionality of the program. </li></ul>|1|1|
+|Algorithm Implementation|<ul><li>- [ ] includes a program code segment of a student-developed algorithm that includes</li><li>- [ ] sequencing</li><li>- [ ] selection</li><li>- [ ] iteration</li><li>- [ ] explains in detailed steps how the identified algorithm works in enough detail that someone else could recreate it.</li></ul>|1|1|
+|Testing|<ul><li>- [ ] describes two calls to the selected procedure identified in written response 3c. Each call must pass a different argument(s) that causes a different segment of code in the algorithm to execute.</li><li>- [ ] describes the condition(s) being tested by each call to the procedure.</li><li>- [ ] identifies the result of each call. </li></ul>|1|1|
+### Student 1 Reflection
+### Student 2 Grade
+|Reporting Category|Requirements|Student Score|College Board Score|
+|-|-|-|-|
+|Program Purpose and Function|<ul><li>- [ ] input</li><li>- [ ] program functionality</li><li>- [ ] output</li><li>- [ ] describes the overall purpose of the program.</li><li>- [ ] describes what functionality of the program is demonstrated in the video.</li><li>- [ ] describes the input and output of the program demonstrated in the video.</li></ul>|||
+|Data Abstraction|<ul><li>- [ ] includes two program code segments:</li><li>- [ ] one that shows how data has been stored in this list (or other collection type).</li><li>- [ ] one that shows the data in this same list being used as part of fulfilling the program’s purpose.</li><li>- [ ] identifies the name of the variable representing the list being used in this response. </li><li>- [ ] describes what the data contained in this list is representing in the program. </li></ul>|||
+|Managing Complexity|<ul><li>- [ ] includes a program code segment that shows a list being used to manage complexity in the program.</li><li>- [ ] explains how the named, selected list manages complexity in the program code by explaining why the program code could not be written, or how it would be written differently, without using this list.</li></ul>|||
+|Procedural Abstraction|<ul><li>- [ ] includes two program code segments: </li><li>- [ ] one showing a student-developed procedure with at least one parameter that has an effect on the functionality of the procedure.</li><li>- [ ] one showing where the student-developed procedure is being called.</li><li>- [ ] describes what the identified procedure does and how it contributes to the overall functionality of the program. </li></ul>|||
+|Algorithm Implementation|<ul><li>- [ ] includes a program code segment of a student-developed algorithm that includes</li><li>- [ ] sequencing</li><li>- [ ] selection</li><li>- [ ] iteration</li><li>- [ ] explains in detailed steps how the identified algorithm works in enough detail that someone else could recreate it.</li></ul>|||
+|Testing|<ul><li>- [ ] describes two calls to the selected procedure identified in written response 3c. Each call must pass a different argument(s) that causes a different segment of code in the algorithm to execute.</li><li>- [ ] describes the condition(s) being tested by each call to the procedure.</li><li>- [ ] identifies the result of each call. </li></ul>|||
+### Student 2 Reflection
+|Reporting Category|Requirements|Student Score|College Board Score|
+|-|-|-|-|
+|Program Purpose and Function|<ul><li>- [ ] input</li><li>- [ ] program functionality</li><li>- [ ] output</li><li>- [ ] describes the overall purpose of the program.</li><li>- [ ] describes what functionality of the program is demonstrated in the video.</li><li>- [ ] describes the input and output of the program demonstrated in the video.</li></ul>|||
+|Data Abstraction|<ul><li>- [ ] includes two program code segments:</li><li>- [ ] one that shows how data has been stored in this list (or other collection type).</li><li>- [ ] one that shows the data in this same list being used as part of fulfilling the program’s purpose.</li><li>- [ ] identifies the name of the variable representing the list being used in this response. </li><li>- [ ] describes what the data contained in this list is representing in the program. </li></ul>|||
+|Managing Complexity|<ul><li>- [ ] includes a program code segment that shows a list being used to manage complexity in the program.</li><li>- [ ] explains how the named, selected list manages complexity in the program code by explaining why the program code could not be written, or how it would be written differently, without using this list.</li></ul>|||
+|Procedural Abstraction|<ul><li>- [ ] includes two program code segments: </li><li>- [ ] one showing a student-developed procedure with at least one parameter that has an effect on the functionality of the procedure.</li><li>- [ ] one showing where the student-developed procedure is being called.</li><li>- [ ] describes what the identified procedure does and how it contributes to the overall functionality of the program. </li></ul>|||
+|Algorithm Implementation|<ul><li>- [ ] includes a program code segment of a student-developed algorithm that includes</li><li>- [ ] sequencing</li><li>- [ ] selection</li><li>- [ ] iteration</li><li>- [ ] explains in detailed steps how the identified algorithm works in enough detail that someone else could recreate it.</li></ul>|||
+|Testing|<ul><li>- [ ] describes two calls to the selected procedure identified in written response 3c. Each call must pass a different argument(s) that causes a different segment of code in the algorithm to execute.</li><li>- [ ] describes the condition(s) being tested by each call to the procedure.</li><li>- [ ] identifies the result of each call. </li></ul>|||
