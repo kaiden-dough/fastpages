@@ -6,7 +6,6 @@ categories: [markdown, week24]
 title: CPT Write Up
 ---
 
-
 ## 3a.
 ### 3.a.i.
 This program is meant to provide users a way to efficiently use their time and improve their productivity.
@@ -17,9 +16,9 @@ The input of the program is a string of the desired equation to be solved. The u
 
 ## 3b.
 ### 3.b.i.
-![image](https://user-images.githubusercontent.com/69410126/221744246-ab7a563e-bf80-47a5-b66c-ef8254a3bb96.png)
+![](https://user-images.githubusercontent.com/69410126/221744246-ab7a563e-bf80-47a5-b66c-ef8254a3bb96.png)
 ### 3.b.ii.
-![image](https://user-images.githubusercontent.com/69410126/221744256-d686003b-8c10-4a5c-8cdc-9aebd8e879bd.png)
+![](https://user-images.githubusercontent.com/69410126/221744256-d686003b-8c10-4a5c-8cdc-9aebd8e879bd.png)
 ### 3.b.iii.
 The name of the list being used is called positions.
 ### 3.b.iv.
@@ -28,15 +27,13 @@ The data contained in the list represents the positions of where the operator si
 The list manages complexity in my code because without it, I would have to write much more code of the program going through the user input, looking for the signs, then the numbers. This would mean the program would need to look for operators each time it wanted to find a new number, and do this until there are no longer any more operators, then the program would have to differentiate the operators from the numbers. Finally the program would be able to calculate the result.
 ## 3.c.
 ### 3.c.i.
-![image](https://user-images.githubusercontent.com/69410126/221744262-3bd4af20-a963-4249-b35d-8355f8635999.png)
+![](https://user-images.githubusercontent.com/69410126/221744262-3bd4af20-a963-4249-b35d-8355f8635999.png)
 ### 3.c.ii.
-![image](https://user-images.githubusercontent.com/69410126/221744269-c2a18135-506b-4321-9fae-a9fd0f867e57.png)
+![](https://user-images.githubusercontent.com/69410126/221744269-c2a18135-506b-4321-9fae-a9fd0f867e57.png)
 ### 3.c.iii.
 The procedure takes the numbers and operators from previous functions and uses it to calculate the expression. The function first begins with the first number, then uses the lists of each of the numbers and operators, and iterates through them and selects to determine whether to add, subtract, multiply, or divide. After determining the operator, it iterates to the next number and does the function, it iterates through the whole list and loops the process until it is finished. This allows the user to find the result of their problem.
 ### 3.c.iv.
 First the function has two parameters of numbers and operators, which are lists of the numbers and operators.Then the program takes the first number and declares the total to be the first number. Then in a for loop, the program would loop the following process the same amount of times as the terms in the operators list. It would declare the operator in the loop to be the i’th term of the list and the number in the loop to be the i+1’th term since the first number was already in the total. There would be if and else if and else statements to determine which operation must take place. And in each statement would be the respective operation to add, subtract, multiply or divide the next number to the previous total. Once the total is found, there is another for loop that adds onto a string that would first add the first number, then iterate through the rest of the operators and numbers to prepare the expression and result to be outputted to the user.
-
-
 ## 3.d
 ### 3.d.i.
 - Call One
