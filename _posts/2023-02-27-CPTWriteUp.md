@@ -16,9 +16,9 @@ The input of the program is a string of the desired equation to be solved. The u
 
 ## 3b.
 ### 3.b.i.
-![](https://user-images.githubusercontent.com/69410126/221744246-ab7a563e-bf80-47a5-b66c-ef8254a3bb96.png)
+![]({{ site.baseurl }}/images/pos.png)
 ### 3.b.ii.
-![](https://user-images.githubusercontent.com/69410126/221744256-d686003b-8c10-4a5c-8cdc-9aebd8e879bd.png)
+![]({{ site.baseurl }}/images/sep.png)
 ### 3.b.iii.
 The name of the list being used is called positions.
 ### 3.b.iv.
@@ -27,9 +27,9 @@ The data contained in the list represents the positions of where the operator si
 The list manages complexity in my code because without it, I would have to write much more code of the program going through the user input, looking for the signs, then the numbers. This would mean the program would need to look for operators each time it wanted to find a new number, and do this until there are no longer any more operators, then the program would have to differentiate the operators from the numbers. Finally the program would be able to calculate the result.
 ## 3.c.
 ### 3.c.i.
-![](https://user-images.githubusercontent.com/69410126/221744262-3bd4af20-a963-4249-b35d-8355f8635999.png)
+![]({{ site.baseurl }}/images/solve.png)
 ### 3.c.ii.
-![](https://user-images.githubusercontent.com/69410126/221744269-c2a18135-506b-4321-9fae-a9fd0f867e57.png)
+![]({{ site.baseurl }}/images/call.png)
 ### 3.c.iii.
 The procedure takes the numbers and operators from previous functions and uses it to calculate the expression. The function first begins with the first number, then uses the lists of each of the numbers and operators, and iterates through them and selects to determine whether to add, subtract, multiply, or divide. After determining the operator, it iterates to the next number and does the function, it iterates through the whole list and loops the process until it is finished. This allows the user to find the result of their problem.
 ### 3.c.iv.
