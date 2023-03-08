@@ -1,6 +1,6 @@
 ---
 title: Binary Math
-layout: default
+layout: base
 description: A Binary Math illustrative application using HTML, Liquid, and JavaScript.
 permalink: /frontend/binary
 image: /images/binary.png
@@ -15,6 +15,7 @@ type: pbl
 
 {% include navbarsubmenu.html %}
 {% assign BITS = 8 %}
+
 <style>
     #colorBox {
 			margin-top: 0.5rem;
