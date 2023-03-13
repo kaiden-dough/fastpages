@@ -932,33 +932,33 @@ I did well on this quiz, I did not find it very difficult.</p>
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>     Company \n(Maker-if known) Specific Bean Origin\nor Bar Name   REF  \
-78                       Amedei                             Chuao   111   
-86                       Amedei                     Toscano Black    40   
-222                      Bonnat                             Kaori  1339   
-76                       Amedei                         Porcelana   111   
-1663     Tobago Estate (Pralus)                Roxborough, Tobago   895   
-...                         ...                               ...   ...   
-245                      Bonnat                       One Hundred    81   
-437             Claudio Corallo                          Principe   252   
-465          Cote d' Or (Kraft)                Sensations Intense    48   
-326                   Callebaut                            Baking   141   
-1175        Neuhaus (Callebaut)                              Dark   135   
+<pre>     Company \r\n(Maker-if known) Specific Bean Origin\r\nor Bar Name   REF  \
+78                         Amedei                               Chuao   111   
+86                         Amedei                       Toscano Black    40   
+222                        Bonnat                               Kaori  1339   
+76                         Amedei                           Porcelana   111   
+1663       Tobago Estate (Pralus)                  Roxborough, Tobago   895   
+...                           ...                                 ...   ...   
+245                        Bonnat                         One Hundred    81   
+437               Claudio Corallo                            Principe   252   
+465            Cote d' Or (Kraft)                  Sensations Intense    48   
+326                     Callebaut                              Baking   141   
+1175          Neuhaus (Callebaut)                                Dark   135   
 
-      Review\nDate Cocoa\nPercent Company\nLocation  Rating  \
-78            2007            70%             Italy     5.0   
-86            2006            70%             Italy     5.0   
-222           2014            75%            France     4.0   
-76            2007            70%             Italy     4.0   
-1663          2012            70%            France     4.0   
-...            ...            ...               ...     ...   
-245           2006           100%            France     1.5   
-437           2008           100%          Sao Tome     1.0   
-465           2006            70%           Belgium     1.0   
-326           2007            70%           Belgium     1.0   
-1175          2007            73%           Belgium     1.0   
+      Review\r\nDate Cocoa\r\nPercent Company\r\nLocation  Rating  \
+78              2007              70%               Italy     5.0   
+86              2006              70%               Italy     5.0   
+222             2014              75%              France     4.0   
+76              2007              70%               Italy     4.0   
+1663            2012              70%              France     4.0   
+...              ...              ...                 ...     ...   
+245             2006             100%              France     1.5   
+437             2008             100%            Sao Tome     1.0   
+465             2006              70%             Belgium     1.0   
+326             2007              70%             Belgium     1.0   
+1175            2007              73%             Belgium     1.0   
 
-               Bean\nType   Broad Bean\nOrigin  
+             Bean\r\nType Broad Bean\r\nOrigin  
 78             Trinitario            Venezuela  
 86                  Blend                       
 222                                     Brazil  
@@ -1007,23 +1007,35 @@ I did well on this quiz, I did not find it very difficult.</p>
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Best chocolate
+Company \r\n(Maker-if known)                             twenty-four blackbirds
+Specific Bean Origin\r\nor Bar Name    the lost city, gracias a dias, batch 362
+REF                                                                        1952
+Review\r\nDate                                                             2017
+Cocoa\r\nPercent                                                            99%
+Company\r\nLocation                                                       Wales
+Rating                                                                      5.0
+dtype: object
+Worst chocolate
+Company \r\n(Maker-if known)                              A. Morin
+Specific Bean Origin\r\nor Bar Name    "heirloom", Arriba Nacional
+REF                                                              5
+Review\r\nDate                                                2006
+Cocoa\r\nPercent                                              100%
+Company\r\nLocation                                      Amsterdam
+Rating                                                         1.0
+dtype: object
 </pre>
 </div>
 </div>
 
 <div class="output_area">
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">/home/kaiden_do/vscode/fastpages/_notebooks/2023-03-09-AP-unit2-3.ipynb Cell 29</span> in <span class="ansi-cyan-fg">&lt;cell line: 2&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/kaiden_do/vscode/fastpages/_notebooks/2023-03-09-AP-unit2-3.ipynb#X40sdnNjb2RlLXJlbW90ZQ%3D%3D?line=0'&gt;1&lt;/a&gt;</span> print("Best chocolate")
-<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/kaiden_do/vscode/fastpages/_notebooks/2023-03-09-AP-unit2-3.ipynb#X40sdnNjb2RlLXJlbW90ZQ%3D%3D?line=1'&gt;2&lt;/a&gt;</span> print(df.max())
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/kaiden_do/vscode/fastpages/_notebooks/2023-03-09-AP-unit2-3.ipynb#X40sdnNjb2RlLXJlbW90ZQ%3D%3D?line=3'&gt;4&lt;/a&gt;</span> print("Worst chocolate")
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/kaiden_do/vscode/fastpages/_notebooks/2023-03-09-AP-unit2-3.ipynb#X40sdnNjb2RlLXJlbW90ZQ%3D%3D?line=4'&gt;5&lt;/a&gt;</span> print(df.min())
-
-<span class="ansi-red-fg">NameError</span>: name 'df' is not defined</pre>
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>/tmp/ipykernel_1217/2482741605.py:2: FutureWarning: Dropping of nuisance columns in DataFrame reductions (with 'numeric_only=None') is deprecated; in a future version this will raise TypeError.  Select only valid columns before calling the reduction.
+  print(df.max())
+/tmp/ipykernel_1217/2482741605.py:5: FutureWarning: Dropping of nuisance columns in DataFrame reductions (with 'numeric_only=None') is deprecated; in a future version this will raise TypeError.  Select only valid columns before calling the reduction.
+  print(df.min())
+</pre>
 </div>
 </div>
 
