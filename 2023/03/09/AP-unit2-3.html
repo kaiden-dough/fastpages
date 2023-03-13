@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      15 min read
+      18 min read
     
 </span></p>
 
@@ -247,8 +247,8 @@ window.onload = wrap_img;
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_json</span><span class="p">(</span><span class="s1">'grade.json'</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
-<span class="c1"># What part of the data set needs to be cleaned?</span>
-<span class="c1"># From PBL learning, what is a good time to clean data?  Hint, remember Garbage in, Garbage out?</span>
+<span class="c1"># What part of the data set needs to be cleaned? For those who typed out the grade level, wrong student ID, and abnormal GPAs</span>
+<span class="c1"># From PBL learning, what is a good time to clean data?  Hint, remember Garbage in, Garbage out? It is a good time to clean data right away, prevent any bad data from coming in, to make it easier to avoid errors in the code.</span>
 </pre></div>
 
     </div>
@@ -866,8 +866,15 @@ None
 <p>AP Prep</p>
 <ul>
 <li>Add this Blog to you own Blogging site.  In the Blog add notes and observations on each code cell.</li>
-<li>In blog add College Board practice problems for 2.3.</li>
+<li>In blog add College Board practice problems for 2.3.
+<img src="/fastpages/images/copied_from_nb/ghtop_images/eifdqscore.png" alt="">
+</li>
 </ul>
+</blockquote>
+<p>On this one, for question five I got the right answer but I was on the fence between The average number of hours per day that the car is in use and The number of bicycles the car passed on a particular day because the camera takes a photo every second, so it should be able to se how many seconds per day it could be used. Then I realized the camera doesn't tell you what day our time it is.</p>
+<p><img src="/fastpages/images/copied_from_nb/ghtop_images/upwdqscore.png" alt="">
+I did well on this quiz, I did not find it very difficult.</p>
+<blockquote>
 <p>The next 4 weeks, Teachers want you to improve your understanding of data.  Look at the blog and others on Unit 2.  Your intention is to find some things to differentiate your individual College Board project.</p>
 <ul>
 <li>Create or Find your own dataset.  The suggestion is to use a JSON file, integrating with your PBL project would be <strong><em>Fambulous</em></strong>.</li>
@@ -882,6 +889,232 @@ None
 <ul>
 <li>Continue this Blog using Pandas extract info from that dataset (ex. max, min, mean, median, mode, etc.)</li>
 </ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'flavors_of_cacao.csv'</span><span class="p">)</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">'Rating'</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>     Company \n(Maker-if known) Specific Bean Origin\nor Bar Name   REF  \
+78                       Amedei                             Chuao   111   
+86                       Amedei                     Toscano Black    40   
+222                      Bonnat                             Kaori  1339   
+76                       Amedei                         Porcelana   111   
+1663     Tobago Estate (Pralus)                Roxborough, Tobago   895   
+...                         ...                               ...   ...   
+245                      Bonnat                       One Hundred    81   
+437             Claudio Corallo                          Principe   252   
+465          Cote d' Or (Kraft)                Sensations Intense    48   
+326                   Callebaut                            Baking   141   
+1175        Neuhaus (Callebaut)                              Dark   135   
+
+      Review\nDate Cocoa\nPercent Company\nLocation  Rating  \
+78            2007            70%             Italy     5.0   
+86            2006            70%             Italy     5.0   
+222           2014            75%            France     4.0   
+76            2007            70%             Italy     4.0   
+1663          2012            70%            France     4.0   
+...            ...            ...               ...     ...   
+245           2006           100%            France     1.5   
+437           2008           100%          Sao Tome     1.0   
+465           2006            70%           Belgium     1.0   
+326           2007            70%           Belgium     1.0   
+1175          2007            73%           Belgium     1.0   
+
+               Bean\nType   Broad Bean\nOrigin  
+78             Trinitario            Venezuela  
+86                  Blend                       
+222                                     Brazil  
+76    Criollo (Porcelana)            Venezuela  
+1663           Trinitario               Tobago  
+...                   ...                  ...  
+245                                             
+437             Forastero  Sao Tome &amp; Principe  
+465                                             
+326                                    Ecuador  
+1175                                            
+
+[1795 rows x 9 columns]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"Best chocolate"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Worst chocolate"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Best chocolate
+   Company \n(Maker-if known) Specific Bean Origin\nor Bar Name  REF  \
+78                     Amedei                             Chuao  111   
+
+    Review\nDate Cocoa\nPercent Company\nLocation  Rating  Bean\nType  \
+78          2007            70%             Italy     5.0  Trinitario   
+
+   Broad Bean\nOrigin  
+78          Venezuela  
+Worst chocolate
+     Company \n(Maker-if known) Specific Bean Origin\nor Bar Name  REF  \
+1175        Neuhaus (Callebaut)                              Dark  135   
+
+      Review\nDate Cocoa\nPercent Company\nLocation  Rating Bean\nType  \
+1175          2007            73%           Belgium     1.0              
+
+     Broad Bean\nOrigin  
+1175                     
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"Median Chocolate"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="nb">round</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">)])</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Mean Rating"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">"Rating"</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Mode Rating"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">"Rating"</span><span class="p">]</span><span class="o">.</span><span class="n">mode</span><span class="p">())</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Median Chocolate
+Company \n(Maker-if known)           Kaoka (Cemoi)
+Specific Bean Origin\nor Bar Name          Ecuador
+REF                                            423
+Review\nDate                                  2009
+Cocoa\nPercent                                 80%
+Company\nLocation                           France
+Rating                                        2.75
+Bean\nType                                        
+Broad Bean\nOrigin                         Ecuador
+Name: 898, dtype: object
+Mean Rating
+3.185933147632312
+Mode Rating
+0    3.5
+Name: Rating, dtype: float64
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">"Rating==5"</span><span class="p">)</span><span class="o">.</span><span class="n">mode</span><span class="p">())</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>  Company \n(Maker-if known) Specific Bean Origin\nor Bar Name  REF  \
+0                     Amedei                             Chuao   40   
+1                        NaN                     Toscano Black  111   
+
+   Review\nDate Cocoa\nPercent Company\nLocation  Rating  Bean\nType  \
+0          2006            70%             Italy     5.0       Blend   
+1          2007            NaN               NaN     NaN  Trinitario   
+
+  Broad Bean\nOrigin  
+0          Venezuela  
+1                     
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Hack-Helpers">
 <a class="anchor" href="#Hack-Helpers" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hack Helpers<a class="anchor-link" href="#Hack-Helpers"> </a>
 </h2>
