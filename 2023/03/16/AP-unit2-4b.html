@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      6 min read
+      9 min read
     
 </span></p>
 
@@ -165,11 +165,11 @@ window.onload = wrap_img;
 <blockquote>
 <p>Uses PRAGMA statement to read schema.</p>
 </blockquote>
-<p>Describe Schema, here is resource <a href="https://www.sqlite.org/index.html">Resource</a>- What is a database schema?</p>
+<p>Describe Schema, here is resource <a href="https://www.sqlite.org/index.html">Resource</a>- What is a database schema? It is the categories in th table with the required types of input.</p>
 <ul>
-<li>What is the purpose of identity Column in SQL database?</li>
-<li>What is the purpose of a primary key in SQL database?</li>
-<li>What are the Data Types in SQL table?</li>
+<li>What is the purpose of identity Column in SQL database? The Id column helps make it easier to access the data by classifying is all under one id.</li>
+<li>What is the purpose of a primary key in SQL database? The primary key in SQL databases is supposed to be unique for each row.</li>
+<li>What are the Data Types in SQL table? The data types in SQL table are integer, string, and boolean, floats, dictionaries, lists</li>
 </ul>
 
 </div>
@@ -244,10 +244,10 @@ window.onload = wrap_img;
 <p>Uses SQL SELECT statement to read data</p>
 </blockquote>
 <ul>
-<li>What is a connection object?  After you google it, what do you think it does?</li>
-<li>Same for cursor object?</li>
-<li>Look at conn object and cursor object in VSCode debugger.  What attributes are in the object?</li>
-<li>Is "results" an object?  How do you know?</li>
+<li>What is a connection object?  After you google it, what do you think it does? A connection object is a way to connect to the SQLite database.</li>
+<li>Same for cursor object? Cursor objects lets use run procedures in the SQLite database.</li>
+<li>Look at conn object and cursor object in VSCode debugger.  What attributes are in the object? The conn object connects to the SQLite database. And the cursor object basically extracts things and interacts with the database.</li>
+<li>Is "results" an object?  How do you know? It is an object because it consists of data.</li>
 </ul>
 
 </div>
@@ -304,6 +304,7 @@ window.onload = wrap_img;
 (4, 'Travis Kelce', 87, 105, 39)
 (5, 'Joe Burrow', 9, 24, 17)
 (6, 'Trevor Lawrence', 16, 12, 22)
+(7, 'Kaiden Do', 50, 100, 0)
 </pre>
 </div>
 </div>
@@ -323,8 +324,8 @@ window.onload = wrap_img;
 <blockquote>
 <p>Uses SQL INSERT to add row</p>
 <ul>
-<li>Compore create() in both SQL lessons.  What is better or worse in the two implementations?</li>
-<li>Explain purpose of SQL INSERT.   Is this the same as User <strong>init</strong>?</li>
+<li>Compore create() in both SQL lessons.  What is better or worse in the two implementations? The better one is the one in this implementation. This is because this is object oriented programming. This allow the program to be more easily organizable with a very large amount of data. While imperative programming is better usually with smaller amounts of data because it is less complex and more straight forward.</li>
+<li>Explain purpose of SQL INSERT.   Is this the same as User <strong>init</strong>? The SQL INSERT is basically putting the new data into the data set. It is not the same as User <strong>init</strong> because that adds preset data.</li>
 </ul>
 </blockquote>
 
@@ -401,9 +402,9 @@ window.onload = wrap_img;
 <blockquote>
 <p>Uses SQL UPDATE to modify password</p>
 <ul>
-<li>What does the hacked part do?</li>
-<li>Explain try/except, when would except occur?</li>
-<li>What code seems to be repeated in each of these examples to point, why is it repeated?</li>
+<li>What does the hacked part do? The hacked part sees if the password has a length greater or equal to 2. To ensure security.</li>
+<li>Explain try/except, when would except occur? The try/except is first testing the code then the except is handling errors. The except would occur when there is an error regarding the SQLite database.</li>
+<li>What code seems to be repeated in each of these examples to point, why is it repeated? The conn and cursor definition is being repeated in each of these examples. It is repeated to connect to the SQLite database because the connection is removed at the end of the method. Without a connection, the database wouldn't be changed or viewed.</li>
 </ul>
 </blockquote>
 
@@ -469,8 +470,8 @@ window.onload = wrap_img;
 <blockquote>
 <p>Uses a delete function to remove a user based on a user input of the id.</p>
 <ul>
-<li>Is DELETE a dangerous operation?  Why?</li>
-<li>In the print statemements, what is the "f" and what does {uid} do?</li>
+<li>Is DELETE a dangerous operation?  Why? It is dangerous because the data deleted is gone forever and it cannot be retrieved again. Also if people get a hold of the database, all of the data can be wiped.</li>
+<li>In the print statemements, what is the "f" and what does {uid} do? The "f" is the fstring and this allows the print to have access to the data or lists. So when it is printed the print would display the value of the {expression}. The {uid} would show the userid of the user for the operation.</li>
 </ul>
 </blockquote>
 
@@ -530,8 +531,8 @@ window.onload = wrap_img;
 <blockquote>
 <p>CRUD and Schema interactions from one location by running menu. Observe input at the top of VSCode, observe output underneath code cell.</p>
 <ul>
-<li>Why does the menu repeat?</li>
-<li>Could you refactor this menu?  Make it work with a List?</li>
+<li>Why does the menu repeat? The menu repeats because of recursion. The menu() function is called at the end of the menu() itself.</li>
+<li>Could you refactor this menu?  Make it work with a List? You could refactor the menu by modifying the C, R, U, D portions to merge the if statements by making it under a single line. I am pretty sure it can work with a list by putting the letters or the functions in a list. And iterating it if needed.</li>
 </ul>
 </blockquote>
 
