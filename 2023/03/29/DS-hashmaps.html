@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      4 min read
+      11 min read
     
 </span></p>
 
@@ -143,14 +143,14 @@ window.onload = wrap_img;
 <p>A hashtable is a data structure that with a collection of key-value pairs, where each key maps to a value, and the keys must be unique and hashable.</p>
 </blockquote>
 <ul>
-<li>In Python there is a built in hashtable known as a <strong><strong><strong>___</strong></strong></strong>.</li>
+<li>In Python there is a built in hashtable known as a <strong>__</strong>dictionary<strong><strong>_</strong></strong>.</li>
 </ul>
 <blockquote>
 <p>The primary purpose of a hashtable is to provide efficient lookup, insertion, and deletion operations. When an element is to be inserted into the hashtable, a hash function is used to map the key to a specific index in the underlying array that is used to store the key-value pairs. The value is then stored at that index. When searching for a value, the hash function is used again to find the index where the value is stored.</p>
 <p>The key advantage of a hashtable over other data structures like arrays and linked lists is its average-case time complexity for lookup, insertion, and deletion operations.</p>
 </blockquote>
 <ul>
-<li>The typical time complexity of a hashtable is <strong><strong><strong>___</strong></strong></strong>. </li>
+<li>The typical time complexity of a hashtable is <strong>__</strong>constant<strong><strong>_</strong></strong>. </li>
 </ul>
 
 </div>
@@ -185,14 +185,28 @@ window.onload = wrap_img;
 
 <span class="c1"># What do you notice in the output?</span>
 <span class="c1">#</span>
-<span class="c1">#</span>
+<span class="c1">#It doesn't out put duplicates</span>
 
 <span class="c1"># Why do you think Sets are in the same tech talk as Hashmaps/Hashtables?</span>
 <span class="c1">#</span>
-<span class="c1">#</span>
+<span class="c1">#I think because they ignore the duplicates</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{1, 2, 3}
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -246,13 +260,27 @@ window.onload = wrap_img;
 
 <span class="c1"># What data structures do you see?</span>
 <span class="c1">#</span>
-<span class="c1">#</span>
+<span class="c1">#I see dicitonaries and lists</span>
 
 <span class="c1"># Printing the dictionary</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">lover_album</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{'title': 'Lover', 'artist': 'Taylor Swift', 'year': 2019, 'genre': ['Pop', 'Synth-pop'], 'tracks': {1: 'I Forgot That You Existed', 2: 'Cruel Summer', 3: 'Lover', 4: 'The Man', 5: 'The Archer', 6: 'I Think He Knows', 7: 'Miss Americana &amp; The Heartbreak Prince', 8: 'Paper Rings', 9: 'Cornelia Street', 10: 'Death By A Thousand Cuts', 11: 'London Boy', 12: "Soon You'll Get Better (feat. Dixie Chicks)", 13: 'False God', 14: 'You Need To Calm Down', 15: 'Afterglow', 16: 'Me! (feat. Brendon Urie of Panic! At The Disco)', 17: "It's Nice To Have A Friend", 18: 'Daylight'}}
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -275,6 +303,21 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{1: 'I Forgot That You Existed', 2: 'Cruel Summer', 3: 'Lover', 4: 'The Man', 5: 'The Archer', 6: 'I Think He Knows', 7: 'Miss Americana &amp; The Heartbreak Prince', 8: 'Paper Rings', 9: 'Cornelia Street', 10: 'Death By A Thousand Cuts', 11: 'London Boy', 12: "Soon You'll Get Better (feat. Dixie Chicks)", 13: 'False God', 14: 'You Need To Calm Down', 15: 'Afterglow', 16: 'Me! (feat. Brendon Urie of Panic! At The Disco)', 17: "It's Nice To Have A Friend", 18: 'Daylight'}
+{1: 'I Forgot That You Existed', 2: 'Cruel Summer', 3: 'Lover', 4: 'The Man', 5: 'The Archer', 6: 'I Think He Knows', 7: 'Miss Americana &amp; The Heartbreak Prince', 8: 'Paper Rings', 9: 'Cornelia Street', 10: 'Death By A Thousand Cuts', 11: 'London Boy', 12: "Soon You'll Get Better (feat. Dixie Chicks)", 13: 'False God', 14: 'You Need To Calm Down', 15: 'Afterglow', 16: 'Me! (feat. Brendon Urie of Panic! At The Disco)', 17: "It's Nice To Have A Friend", 18: 'Daylight'}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -294,6 +337,21 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The Man
+The Man
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -306,15 +364,32 @@ window.onload = wrap_img;
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">lover_album</span><span class="p">[</span><span class="s2">"producer"</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Taylor Swift'</span><span class="p">,</span> <span class="s1">'Jack Antonoff'</span><span class="p">,</span> <span class="s1">'Joel Little'</span><span class="p">,</span> <span class="s1">'Taylor Swift'</span><span class="p">,</span> <span class="s1">'Louis Bell'</span><span class="p">,</span> <span class="s1">'Frank Dukes'</span><span class="p">]</span>
 
+<span class="nb">print</span><span class="p">(</span><span class="n">lover_album</span><span class="p">)</span>
 <span class="c1"># What can you change to make sure there are no duplicate producers?</span>
 <span class="c1">#</span>
-<span class="c1">#</span>
+<span class="c1"># put set([]) in front of it</span>
+<span class="n">lover_album</span><span class="p">[</span><span class="s2">"producer"</span><span class="p">]</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="s1">'Taylor Swift'</span><span class="p">,</span> <span class="s1">'Jack Antonoff'</span><span class="p">,</span> <span class="s1">'Joel Little'</span><span class="p">,</span> <span class="s1">'Taylor Swift'</span><span class="p">,</span> <span class="s1">'Louis Bell'</span><span class="p">,</span> <span class="s1">'Frank Dukes'</span><span class="p">])</span>
 
 <span class="c1"># Printing the dictionary</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">lover_album</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{'title': 'Lover', 'artist': 'Taylor Swift', 'year': 2019, 'genre': ['Pop', 'Synth-pop'], 'tracks': {1: 'I Forgot That You Existed', 2: 'Cruel Summer', 3: 'Lover', 4: 'The Man', 5: 'The Archer', 6: 'I Think He Knows', 7: 'Miss Americana &amp; The Heartbreak Prince', 8: 'Paper Rings', 9: 'Cornelia Street', 10: 'Death By A Thousand Cuts', 11: 'London Boy', 12: "Soon You'll Get Better (feat. Dixie Chicks)", 13: 'False God', 14: 'You Need To Calm Down', 15: 'Afterglow', 16: 'Me! (feat. Brendon Urie of Panic! At The Disco)', 17: "It's Nice To Have A Friend", 18: 'Daylight'}, 'producer': ['Taylor Swift', 'Jack Antonoff', 'Joel Little', 'Taylor Swift', 'Louis Bell', 'Frank Dukes']}
+{'title': 'Lover', 'artist': 'Taylor Swift', 'year': 2019, 'genre': ['Pop', 'Synth-pop'], 'tracks': {1: 'I Forgot That You Existed', 2: 'Cruel Summer', 3: 'Lover', 4: 'The Man', 5: 'The Archer', 6: 'I Think He Knows', 7: 'Miss Americana &amp; The Heartbreak Prince', 8: 'Paper Rings', 9: 'Cornelia Street', 10: 'Death By A Thousand Cuts', 11: 'London Boy', 12: "Soon You'll Get Better (feat. Dixie Chicks)", 13: 'False God', 14: 'You Need To Calm Down', 15: 'Afterglow', 16: 'Me! (feat. Brendon Urie of Panic! At The Disco)', 17: "It's Nice To Have A Friend", 18: 'Daylight'}, 'producer': {'Joel Little', 'Louis Bell', 'Frank Dukes', 'Taylor Swift', 'Jack Antonoff'}}
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -332,13 +407,28 @@ window.onload = wrap_img;
 
 <span class="c1"># How would add an additional genre to the dictionary, like electropop? </span>
 <span class="c1"># </span>
-<span class="c1"># </span>
+<span class="c1"># appending it</span>
+<span class="n">lover_album</span><span class="p">[</span><span class="s2">"genre"</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">"electropop"</span><span class="p">)</span>
 
 <span class="c1"># Printing the dictionary</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">lover_album</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{'title': 'Lover', 'artist': 'Taylor Swift', 'year': 2019, 'genre': ['Pop', 'Synth-pop', 'electropop'], 'tracks': {1: 'I Forgot That You Existed', 2: 'Cruel Summer', 3: 'Lover', 4: 'The Man', 5: 'The Archer', 6: 'I Think He Knows', 7: 'Miss Americana &amp; The Heartbreak Prince', 8: 'Paper Rings', 9: 'Cornelia Street', 10: 'Death By A Thousand Cuts', 11: 'London Boy', 12: "Soon You'll Get Better (feat. Dixie Chicks)", 13: 'False God', 14: 'You Need To Calm Down', 15: 'Afterglow', 16: 'Me! (feat. Brendon Urie of Panic! At The Disco)', 17: "It's Nice To Have A Friend", 18: 'Daylight', 19: 'All Of The Girls You Loved Before'}, 'producer': {'Joel Little', 'Louis Bell', 'Frank Dukes', 'Taylor Swift', 'Jack Antonoff'}}
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -364,6 +454,101 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>title: Lover
+artist: Taylor Swift
+year: 2019
+genre: ['Pop', 'Synth-pop', 'electropop']
+tracks: {1: 'I Forgot That You Existed', 2: 'Cruel Summer', 3: 'Lover', 4: 'The Man', 5: 'The Archer', 6: 'I Think He Knows', 7: 'Miss Americana &amp; The Heartbreak Prince', 8: 'Paper Rings', 9: 'Cornelia Street', 10: 'Death By A Thousand Cuts', 11: 'London Boy', 12: "Soon You'll Get Better (feat. Dixie Chicks)", 13: 'False God', 14: 'You Need To Calm Down', 15: 'Afterglow', 16: 'Me! (feat. Brendon Urie of Panic! At The Disco)', 17: "It's Nice To Have A Friend", 18: 'Daylight', 19: 'All Of The Girls You Loved Before'}
+producer: {'Joel Little', 'Louis Bell', 'Frank Dukes', 'Taylor Swift', 'Jack Antonoff'}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Title: </span><span class="si">{</span><span class="n">lover_album</span><span class="p">[</span><span class="s1">'title'</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Artist: </span><span class="si">{</span><span class="n">lover_album</span><span class="p">[</span><span class="s1">'artist'</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Year: </span><span class="si">{</span><span class="n">lover_album</span><span class="p">[</span><span class="s1">'year'</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Genres:"</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">g</span> <span class="ow">in</span> <span class="n">lover_album</span><span class="p">[</span><span class="s1">'genre'</span><span class="p">]:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"--&gt; </span><span class="si">{</span><span class="n">g</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Tracks:"</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">tn</span><span class="p">,</span><span class="n">tt</span> <span class="ow">in</span> <span class="n">lover_album</span><span class="p">[</span><span class="s1">'tracks'</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">tn</span><span class="si">}</span><span class="s2">. </span><span class="si">{</span><span class="n">tt</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Producers:"</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">lover_album</span><span class="p">[</span><span class="s1">'producer'</span><span class="p">]:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"--&gt; </span><span class="si">{</span><span class="n">p</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Title: Lover
+Artist: Taylor Swift
+Year: 2019
+Genres:
+--&gt; Pop
+--&gt; Synth-pop
+--&gt; electropop
+Tracks:
+1. I Forgot That You Existed
+2. Cruel Summer
+3. Lover
+4. The Man
+5. The Archer
+6. I Think He Knows
+7. Miss Americana &amp; The Heartbreak Prince
+8. Paper Rings
+9. Cornelia Street
+10. Death By A Thousand Cuts
+11. London Boy
+12. Soon You'll Get Better (feat. Dixie Chicks)
+13. False God
+14. You Need To Calm Down
+15. Afterglow
+16. Me! (feat. Brendon Urie of Panic! At The Disco)
+17. It's Nice To Have A Friend
+18. Daylight
+19. All Of The Girls You Loved Before
+Producers:
+--&gt; Joel Little
+--&gt; Louis Bell
+--&gt; Frank Dukes
+--&gt; Taylor Swift
+--&gt; Jack Antonoff
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -385,10 +570,24 @@ window.onload = wrap_img;
 
 <span class="c1"># This is a very basic code segment, how can you improve upon this code?</span>
 <span class="c1">#</span>
-<span class="c1">#</span>
+<span class="c1">#We could make is retrieve songs by track number, and make it keep on repeating with recursion.</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{1: 'I Forgot That You Existed', 2: 'Cruel Summer', 3: 'Lover', 4: 'The Man', 5: 'The Archer', 6: 'I Think He Knows', 7: 'Miss Americana &amp; The Heartbreak Prince', 8: 'Paper Rings', 9: 'Cornelia Street', 10: 'Death By A Thousand Cuts', 11: 'London Boy', 12: "Soon You'll Get Better (feat. Dixie Chicks)", 13: 'False God', 14: 'You Need To Calm Down', 15: 'Afterglow', 16: 'Me! (feat. Brendon Urie of Panic! At The Disco)', 17: "It's Nice To Have A Friend", 18: 'Daylight', 19: 'All Of The Girls You Loved Before'}
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -404,22 +603,254 @@ window.onload = wrap_img;
 <ul>
 <li>Answer <em>ALL</em> questions in the code segments</li>
 <li>Create a diagram or comparison illustration (Canva).<ul>
-<li>What are the pro and cons of using this data structure? </li>
-<li>Dictionary vs List    </li>
+<li>What are the pro and cons of using this data structure? 
+<img src="https://user-images.githubusercontent.com/69410126/229420417-c7611b76-7760-4d93-bba2-360599694718.png">
+</li>
+<li>Dictionary vs List<br>
+<img src="https://user-images.githubusercontent.com/69410126/229421183-1ef1837f-ea40-4ebc-80e7-7af32c6f38cb.png">
+</li>
 </ul>
 </li>
-<li>Expand upon the code given to you, possible improvements in comments</li>
-<li>
-<p>Build your own album showing features of a python dictionary</p>
+<li>Expand upon the code given to you, possible improvements in comments<ul>
+<li>Done</li>
+</ul>
 </li>
-<li>
-<p>For Mr. Yeung's class: Justify your favorite Taylor Swift song, answer may effect seed</p>
+<li>Build your own album showing features of a python dictionary<ul>
+<li>Below</li>
+</ul>
+</li>
+<li>For Mr. Yeung's class: Justify your favorite Taylor Swift song, answer may effect seed<ul>
+<li>Mean or Enchanted</li>
+</ul>
 </li>
 </ul>
 
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">lofis_album</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"title"</span><span class="p">:</span> <span class="s2">"The Lo-Fis"</span><span class="p">,</span>
+    <span class="s2">"artist"</span><span class="p">:</span> <span class="s2">"Steve Lacy"</span><span class="p">,</span>
+    <span class="s2">"year"</span><span class="p">:</span> <span class="mi">2020</span><span class="p">,</span>
+    <span class="s2">"genre"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"R&amp;B/Soul"</span><span class="p">,</span> <span class="s2">"Alternative/Indie"</span><span class="p">],</span>
+    <span class="s2">"tracks"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="mi">1</span><span class="p">:</span> <span class="s2">"Atomic Vomit"</span><span class="p">,</span>
+        <span class="mi">2</span><span class="p">:</span> <span class="s2">"When I"</span><span class="p">,</span>
+        <span class="mi">3</span><span class="p">:</span> <span class="s2">"Thats No Fun"</span><span class="p">,</span>
+        <span class="mi">4</span><span class="p">:</span> <span class="s2">"Cocky Girl"</span><span class="p">,</span>
+        <span class="mi">5</span><span class="p">:</span> <span class="s2">"Uuuu"</span><span class="p">,</span>
+        <span class="mi">6</span><span class="p">:</span> <span class="s2">"Jars of It"</span><span class="p">,</span>
+        <span class="mi">7</span><span class="p">:</span> <span class="s2">"Bars. 16"</span><span class="p">,</span>
+        <span class="mi">8</span><span class="p">:</span> <span class="s2">"Infrunami"</span><span class="p">,</span>
+        <span class="mi">9</span><span class="p">:</span> <span class="s2">"Hummer"</span><span class="p">,</span>
+        <span class="mi">10</span><span class="p">:</span> <span class="s2">"4real"</span><span class="p">,</span>
+        <span class="mi">11</span><span class="p">:</span> <span class="s2">"I Think I Should"</span><span class="p">,</span>
+        <span class="mi">12</span><span class="p">:</span> <span class="s2">"Daze"</span><span class="p">,</span>
+        <span class="mi">13</span><span class="p">:</span> <span class="s2">"Out of Me Head"</span><span class="p">,</span>
+        <span class="mi">14</span><span class="p">:</span> <span class="s2">"Donchano"</span><span class="p">,</span>
+        <span class="mi">15</span><span class="p">:</span> <span class="s2">"The Song"</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">lofis_album</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{'title': 'The Lo-Fis', 'artist': 'Steve Lacy', 'year': 2020, 'genre': ['R&amp;B/Soul', 'Alternative/Indie'], 'tracks': {1: 'Atomic Vomit', 2: 'When I', 3: 'Thats No Fun', 4: 'Cocky Girl', 5: 'Uuuu', 6: 'Jars of It', 7: 'Bars. 16', 8: 'Infrunami', 9: 'Hummer', 10: '4real', 11: 'I Think I Should', 12: 'Daze', 13: 'Out of Me Head', 14: 'Donchano', 15: 'The Song'}}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">lofis_album</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'tracks'</span><span class="p">))</span>
+<span class="c1"># or</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">lofis_album</span><span class="p">[</span><span class="s1">'tracks'</span><span class="p">])</span>
+
+<span class="c1"># Retrieve value from a dictionary inside a dictionary</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">lofis_album</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'tracks'</span><span class="p">)[</span><span class="mi">4</span><span class="p">])</span>
+<span class="c1"># or</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">lofis_album</span><span class="p">[</span><span class="s1">'tracks'</span><span class="p">][</span><span class="mi">4</span><span class="p">])</span>
+<span class="n">lofis_album</span><span class="p">[</span><span class="s2">"producer"</span><span class="p">]</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="s1">'Steve Lacy'</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{1: 'Atomic Vomit', 2: 'When I', 3: 'Thats No Fun', 4: 'Cocky Girl', 5: 'Uuuu', 6: 'Jars of It', 7: 'Bars. 16', 8: 'Infrunami', 9: 'Hummer', 10: '4real', 11: 'I Think I Should', 12: 'Daze', 13: 'Out of Me Head', 14: 'Donchano', 15: 'The Song'}
+{1: 'Atomic Vomit', 2: 'When I', 3: 'Thats No Fun', 4: 'Cocky Girl', 5: 'Uuuu', 6: 'Jars of It', 7: 'Bars. 16', 8: 'Infrunami', 9: 'Hummer', 10: '4real', 11: 'I Think I Should', 12: 'Daze', 13: 'Out of Me Head', 14: 'Donchano', 15: 'The Song'}
+Cocky Girl
+Cocky Girl
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Title: </span><span class="si">{</span><span class="n">lofis_album</span><span class="p">[</span><span class="s1">'title'</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Artist: </span><span class="si">{</span><span class="n">lofis_album</span><span class="p">[</span><span class="s1">'artist'</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Year: </span><span class="si">{</span><span class="n">lofis_album</span><span class="p">[</span><span class="s1">'year'</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Genres:"</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">g</span> <span class="ow">in</span> <span class="n">lofis_album</span><span class="p">[</span><span class="s1">'genre'</span><span class="p">]:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"--&gt; </span><span class="si">{</span><span class="n">g</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Tracks:"</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">tn</span><span class="p">,</span><span class="n">tt</span> <span class="ow">in</span> <span class="n">lofis_album</span><span class="p">[</span><span class="s1">'tracks'</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">tn</span><span class="si">}</span><span class="s2">. </span><span class="si">{</span><span class="n">tt</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Producers:"</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">lofis_album</span><span class="p">[</span><span class="s1">'producer'</span><span class="p">]:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"--&gt; </span><span class="si">{</span><span class="n">p</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Title: The Lo-Fis
+Artist: Steve Lacy
+Year: 2020
+Genres:
+--&gt; R&amp;B/Soul
+--&gt; Alternative/Indie
+Tracks:
+1. Atomic Vomit
+2. When I
+3. Thats No Fun
+4. Cocky Girl
+5. Uuuu
+6. Jars of It
+7. Bars. 16
+8. Infrunami
+9. Hummer
+10. 4real
+11. I Think I Should
+12. Daze
+13. Out of Me Head
+14. Donchano
+15. The Song
+Producers:
+--&gt; Steve Lacy
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">searchlofis</span><span class="p">():</span>
+    <span class="n">search</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"What would you like to know about the album? or escape"</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">lofis_album</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">search</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Invalid Search"</span><span class="p">)</span>
+        <span class="k">return</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">lofis_album</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">search</span><span class="o">.</span><span class="n">lower</span><span class="p">()))</span>
+        
+    <span class="n">searchlofis</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">searchlofis</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{1: 'Atomic Vomit', 2: 'When I', 3: 'Thats No Fun', 4: 'Cocky Girl', 5: 'Uuuu', 6: 'Jars of It', 7: 'Bars. 16', 8: 'Infrunami', 9: 'Hummer', 10: '4real', 11: 'I Think I Should', 12: 'Daze', 13: 'Out of Me Head', 14: 'Donchano', 15: 'The Song'}
+2020
+Steve Lacy
+{'Steve Lacy'}
+Invalid Search
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
