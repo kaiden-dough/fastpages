@@ -18,21 +18,21 @@ week: 29
 > As we have learned, a computer needs aa program to do something smart.  The sequence of a program initiates a series of actions with the computers Central Processing Unit (CPU). This component is essentially a binary machine focussing on program instructions provided.  The CPU retrieives and stores the data it acts upon in Random Access Memory (RAM). Between the CPU, RAM, and Storage Devices a computer can work with many programs and large amounts of data.
 
 List specification of your Computer, or Computers if working as Pair/Trio
-- Processor GHz:
-- Memory in GB:
-- Storage in GB:
-- OS:
+- Processor GHz: 12th Gen Intel(R) Core(TM) i5-1240P 1.70GHz
+- Memory in GB: 16 GB
+- Storage in GB: 475GB
+- OS: Windows 11 Home
 
 Define or describe usage of Computer using Computer Programs. Pictures are preferred over a lot of text.  Use your experience.
-- Input devices
-- Output devices
-- Program File
-- Program Code
-- Processes
-- Ports
-- Data File
-- Inspect Running Code
-- Inspect Variables
+- Input devices: lets a user interact with the computer- mouse, microphone, keyboard
+- Output devices: computer communicate with the user- speaker, headphones, monitor
+- Program File: file that the computer can execute to run a program- games, media player, website
+- Program Code: instructions for the computer when a program file is run- stuff behind the game, website, and stuff
+- Processes: program is executed in multiple threads- searching, debugging, sorting, etc
+- Ports: endpoint that lets a server handle requests from devices over the internet
+- Data File: has information in the file, or data in a specific format, can be CRUDed, and tells program what to do
+- Inspect Running Code: the inspect element on browser, shows what is happening behind what we see normally, cherry tomatoes when we debug in VS code
+- Inspect Variables: see the values on the variables to debug and see what is happening
 
 
 ![Computer Hardware]({{site.baseurl}}/images/cpu.jpeg)
@@ -52,16 +52,23 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
     - Bandwidth is usually measured in bits per second
 
 - Complete Vocabulary Matching Activity.  Incorporate this into your learnings from year.  To analyze measure path and latency use `traceroute` and `ping` commands from Linux Terminal.  
-    - Path 
-    - Route
-    - Computer System
-    - Computer Device
-    - Bandwidth
-    - Computer Network
+    - Path --> A path between two computing devices on a computer network (a sender and a receiver) is a sequence of directly connected computing devices that begins at the sender and ends at the receiver.
+    - Route --> Routing is the process of finding a path from sender to receiver.
+    - Computer System --> A computing system is a group of computing devices and programs working together for a common purpose.
+    - Computer Device --> A computing device is a physical artifact that can run a program. Some examples include computers, tablets, servers, routers, and smart sensors.
+    - Bandwidth --> Bandwidth is usually measured in bits per second.
+    - Computer Network --> A computer network is a group of interconnected computing devices capable of sending or receiving data.
 
 > Watch/review College Board Daily Video 4.1.2
 
 - Complete True of False Questions
+    - i. T
+    - ii. F
+    - iii. F
+    - iv. T
+    - v. F
+    - vi. F 
+    - vii. T
 
 - Essential Knowledge
     - The internet is a computer network consisting of interconnected networks that use standardized, open (nonproprierary) communication protocols.
@@ -80,6 +87,7 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
     - The world wide web uses the internet
 
 - Go over AP videos, vocabulary, and essential knowledge.  Draw a diagram showing the internet and its many levels. A preferred diagram would using your knowledge of frontend, backend, deployment, etc.  Picture would highligh vocabulary by illustration. The below illustration have some ideas
+![](https://user-images.githubusercontent.com/69410126/231610369-43f5401d-a09b-4a90-ad03-2ce3c2b0dff5.png)
 
 ![Full Stack]({{site.baseurl}}/images/fullstack.png)
 
@@ -114,6 +122,7 @@ The "network" layer is responsible for ***routing data packets between networks*
 > Watch both Daily videos for 4.2
 
 - Complete the network activity, summarize your understanding of fault tolerance.
+    - Fault tolerance is a process that lets an OS respond to failure in the hardware or software. So the system won't break down completely due to an error or failure.
 
 
 ### Parallel and Distributed Computing
