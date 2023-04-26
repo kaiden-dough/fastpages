@@ -1,0 +1,321 @@
+
+<!-- Hangman College Board Project -->
+<style>
+    p.mediumText {
+        font-size: 1.5em;
+    }
+</style>
+<canvas id="Board" width="500" height="500" style="border:3px solid #000000;"></canvas>
+<br>
+<p class="mediumText">Guessing a letter or word takes up one guess, but if you incorrectly guess the word, you lose.</p>
+<br>
+<input id='guess' type='text' placeholder="Guess a Letter">
+<input id='guessword' type='text' placeholder="Guess the Word">
+<button onclick="reset()">Reset</button>
+<h1 id="guessList"></h1>
+<div>
+    <canvas id="Letters" width="500" height="100" style="border:3px solid #000000;"></canvas>
+    <h1 id="winlose"></h1>
+</div>
+
+<script>
+    var word = ""
+    var arrayWord = []
+    var guess = document.getElementById('guess');
+    var guessList = document.getElementById('guessList');
+    var winlose = document.getElementById("winlose")
+    var guesses = []
+    var matchPositions = [];
+    var mistakes = 0;
+    var match = false;
+    var matchword = false
+    var done = false;
+    var guessNumber = 0;
+    const words = ["FORTYNINERS","BEARS","BENGALS","BILLS","BRONCOS","BROWNS","BUCCANEERS","CARDINALS","CHARGERS","CHIEFS","COLTS","COMMANDERS","COWBOYS","DOLPHINS","EAGLES","FALCONS","GIANTS","JAGUARS","JETS","LIONS","PACKERS","PANTHERS","PATRIOTS","RAIDERS","RAMS","RAVENS","SAINTS","SEAHAWKS","STEELERS","TEXANS","TITANS","VIKINGS"]
+    var arrayDraw = [drawBoard, drawHead, drawBody, drawLeftArm, drawRightArm, drawLeftLeg, drawRightLeg]
+
+    var b = document.getElementById("Board");
+    var board = b.getContext("2d");
+    board.lineWidth = 3;
+
+    var l = document.getElementById("Letters");
+    var letters = l.getContext("2d");
+    letters.lineWidth = 3;
+    letters.font = "30px Courier New"
+
+    guess.focus();
+
+    reset()
+    function reset(){
+        word = ""
+        arrayWord = []
+        guesses = []
+        guessNumber = 0
+        matchPositions = []
+        mistakes = 0
+        match = false
+        matchword = false
+        done = false
+        guess.focus()
+        guess.value = ""
+        guessword.value = ""
+        board.clearRect(0, 0, b.width, b.height)
+        letters.clearRect(0, 0, l.width, l.height)
+        winlose.innerHTML = ""
+        guessList.innerHTML = "Guesses (0):"
+        drawBoard();
+    }
+    guess.addEventListener("keypress", function(event) {
+        if (done){
+            guess.value = ""
+            return
+        }
+        if (event.key === "Enter") {
+            event.preventDefault();
+            console.log(guess.value)
+            guessed(guess.value);
+        }
+    });
+
+    guessword.addEventListener("keypress", function(event) {
+        if (done){
+            guessword.value = ""
+            return
+        }
+        if (event.key === "Enter") {
+            event.preventDefault();
+            console.log(guessword.value)
+            guessedWord(guessword.value);
+        }
+    });
+    
+    function guessedWord(guessValue){
+        console.log(word)
+        matchword = false
+        guessNumber++
+        guessList.innerHTML = "Guesses ("+guessNumber+"): " +guesses.toString();
+        if(guessValue.toUpperCase() == word){
+            for (let i = 0; i < arrayWord.length; i++){
+                let x = i*35
+                    letters.fillText(arrayWord[i], x+55, 55);
+            }
+            drawWin()
+            guess.value = ""
+            guessword.value = ""
+        }
+        else{
+            wordLose();
+                guess.value = ""
+                guessword.value = ""
+        }
+    }
+
+    function guessed(guessValue){
+        match = false;
+        guessValueArray = guessValue.split("");
+        if (guessValueArray.length != 1 || !guessValueArray.some(e => (/([a-z])/i).test(e))){
+            alert("Try Again With A Guess Of 1 Letter");
+            guess.value = "";
+            return
+        }
+
+        for(let i = 0; i < guesses.length; i++){
+            if (guesses[i] == guessValue[0].toUpperCase()){
+                alert("Try Again: You Already Guessed This")
+                guess.value = "";
+                return
+            }
+        }
+
+        for(let i = 0; i < arrayWord.length; i++){
+            if (guessValue[0].toUpperCase() == arrayWord[i]){
+                matchPositions.push(i);
+                match = true
+                console.log("match");
+                console.log(matchPositions);
+                
+            }
+            else{
+                console.log("no match");
+                
+            }
+            
+        }
+        guesses.push(guessValue[0].toUpperCase())
+        guessNumber++
+        guessList.innerHTML = "Guesses ("+guessNumber+"): " +guesses.toString();
+        console.log(guesses)
+        if (!match){
+            guess.value = ""
+            guessword.value = ""
+            mistakes++
+            arrayDraw[mistakes]();
+            if (mistakes == 6){
+                drawLose();
+                guess.value = ""
+                guessword.value = ""
+                return
+            }
+            else{
+                return
+            }
+        }
+        drawCorrect(guessValue[0].toUpperCase())
+        guess.value = ""
+        guessword.value = ""
+    }
+
+    function drawCorrect(guessValue){
+        for (let i = 0; i < matchPositions.length; i++){
+            if (arrayWord[matchPositions[i]] == guessValue){
+                let x = matchPositions[i]*35
+                letters.fillText(guessValue, x+55, 55);
+
+            }
+        }
+        if (matchPositions.length == arrayWord.length){
+            drawWin();
+        }
+    }
+
+    
+    
+
+
+
+    function drawBoard(){
+        board.beginPath();
+        board.moveTo(325, 75);
+        board.lineTo(325, 25);
+        board.lineTo(75, 25);
+        board.lineTo(75, 425);
+        board.moveTo(25, 425);
+        board.lineTo(125, 425);
+        board.closePath();
+        board.stroke();
+
+        word = words[Math.floor(Math.random() * words.length)]
+        console.log(word);
+        arrayWord = word.split("");
+        for (let i = 0; i < arrayWord.length; i++) {
+            let x = i*35
+            letters.beginPath();
+            letters.moveTo(x+50, 60);
+            letters.lineTo(x+75, 60);
+            letters.closePath();
+            letters.stroke();
+        }
+
+    }
+    
+    function drawHead(){
+        board.beginPath();
+        board.arc(325, 115, 40, 0, 2 * Math.PI);
+        board.closePath();
+        board.stroke();
+    }
+
+    function drawBody(){
+        board.strokeRect(305, 155, 40, 125);
+    }
+
+    function drawLeftArm(){
+        board.beginPath();
+        board.moveTo(305, 155);
+        board.lineTo(290, 275);
+        board.closePath();
+        board.stroke();
+    }
+
+    function drawRightArm(){
+        board.beginPath();
+        board.moveTo(345, 155);
+        board.lineTo(360, 275);
+        board.closePath();
+        board.stroke();
+    }
+
+    function drawLeftLeg(){
+        board.beginPath();
+        board.moveTo(315, 280);
+        board.lineTo(295, 375);
+        board.closePath();
+        board.stroke();
+    }
+
+    function drawRightLeg(){
+        board.beginPath();
+        board.moveTo(335, 280);
+        board.lineTo(355, 375);
+        board.closePath();
+        board.stroke();
+    }
+
+    function drawLose(){
+        board.beginPath();
+        board.moveTo(305, 105);
+        board.lineTo(315, 115);
+        board.moveTo(315, 105);
+        board.lineTo(305, 115);
+        board.moveTo(345, 105);
+        board.lineTo(335, 115);
+        board.moveTo(335, 105);
+        board.lineTo(345, 115);
+        board.closePath();
+        board.stroke();
+        board.beginPath();
+        board.arc(325, 145, 15, 1.9*Math.PI, 1.1*Math.PI, true);
+        board.stroke();
+        done = true
+        winlose.innerHTML = "YOU LOSE!!! - Answer: "+ word
+    }
+    function wordLose(){
+        for (let i = 1; i < arrayDraw.length; i++) {
+            arrayDraw[i]();
+        }
+        drawLose()
+    }
+
+    function drawWin(){
+        board.clearRect(250, 73, b.width, b.height)
+        board.beginPath();
+        board.arc(325, 165, 40, 0, 2 * Math.PI);
+        board.closePath();
+        board.stroke();
+        board.strokeRect(305, 205, 40, 125);
+        board.beginPath();
+        board.moveTo(305, 205);
+        board.lineTo(290, 325);
+        board.closePath();
+        board.stroke();
+        board.beginPath();
+        board.moveTo(345, 205);
+        board.lineTo(360, 325);
+        board.closePath();
+        board.stroke();
+        board.beginPath();
+        board.moveTo(315, 330);
+        board.lineTo(295, 425);
+        board.closePath();
+        board.stroke();
+        board.beginPath();
+        board.moveTo(335, 330);
+        board.lineTo(355, 425);
+        board.closePath();
+        board.stroke();
+        board.beginPath();
+        board.arc(310, 155, 5, 0, 2 * Math.PI);
+        board.closePath();
+        board.fill();
+        board.beginPath();
+        board.arc(340, 155, 5, 0, 2 * Math.PI);
+        board.closePath();
+        board.fill();
+        board.beginPath();
+        board.arc(325, 180, 15, 0.1*Math.PI, 0.9*Math.PI, false);
+        board.stroke();
+        done = true
+        winlose.innerHTML = "YOU WIN!!!"
+    }
+
+</script>
