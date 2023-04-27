@@ -1,0 +1,51 @@
+$color1: #ff0000;
+$color2: #64a6db;
+$color3: #00ff44;
+$backgroundcolor: #f200ff;
+$textcolor: #ead0a4;
+$buttonrad: 8px;
+$buttonpad: 2px 5px;
+$buttonfontsize: 80px;
+$buttonbigness: bold;
+
+@mixin button($backgroundcolor, $textcolor) {
+    background-color: $backgroundcolor;
+    color: $textcolor;
+    border-radius: $buttonrad;
+    padding: $buttonpad;
+    font-size: $buttonfontsize;
+    font-weight: $buttonbigness;
+
+    &:hover {
+        background-color: darken($backgroundcolor,100%);
+    }
+
+}
+
+.button {
+    @include button($color1, $textcolor);
+}
+  
+.secondary-button {
+    @include button($color2, $textcolor);
+}
+  
+.third-button {
+    @include button($color3, $textcolor);
+}
+
+@for $i from 1 through 3 {
+    .box-#{$i} {
+        width: 50px * $i;
+        height: 50px * $i;
+        @if $i == 1 {
+            background-color: $color1;
+        }
+        @if $i == 2 {
+            background-color: $color2;
+        }
+        @if $i == 3 {
+            background-color: $color3;
+        }
+    }
+  }
