@@ -1,31 +1,31 @@
-.button {
+.button1 {
   background-color: #ff0000;
   color: #ead0a4;
   border-radius: 8px;
   padding: 2px 5px;
   font-size: 80px;
   font-weight: bold; }
-  .button:hover {
+  .button1:hover {
     background-color: black; }
 
-.secondary-button {
+.button2 {
   background-color: #64a6db;
   color: #ead0a4;
   border-radius: 8px;
   padding: 2px 5px;
   font-size: 80px;
   font-weight: bold; }
-  .secondary-button:hover {
+  .button2:hover {
     background-color: black; }
 
-.third-button {
+.button3 {
   background-color: #00ff44;
   color: #ead0a4;
   border-radius: 8px;
   padding: 2px 5px;
   font-size: 80px;
   font-weight: bold; }
-  .third-button:hover {
+  .button3:hover {
     background-color: black; }
 
 .box-1 {

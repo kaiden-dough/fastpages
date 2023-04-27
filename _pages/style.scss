@@ -22,15 +22,15 @@ $buttonbigness: bold;
 
 }
 
-.button {
+.button1 {
     @include button($color1, $textcolor);
 }
   
-.secondary-button {
+.button2 {
     @include button($color2, $textcolor);
 }
   
-.third-button {
+.button3 {
     @include button($color3, $textcolor);
 }
 
