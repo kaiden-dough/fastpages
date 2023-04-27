@@ -36,7 +36,7 @@ $buttonbigness: bold;
 
 @for $i from 1 through 3 {
     .box-#{$i} {
-        width: 50px * $i;
+        width: 100px * $i;
         height: 50px * $i;
         @if $i == 1 {
             background-color: $color1;
