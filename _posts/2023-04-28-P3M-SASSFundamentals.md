@@ -963,7 +963,7 @@ Fun Fact: Variables in SASS came before CSS and often SASS has features long bef
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Part-2">Part 2<a class="anchor-link" href="#Part-2"> </a></h2><p>Here is the link to the repo: <a href="https://github.com/kaiden-dough/sasshacks">https://github.com/kaiden-dough/sasshacks</a>. With the use it was a lot easier to style the page. I used the variables, mixins, for loop, and if statements. The variables made it easy to set each value and quickly change the values. The mixins like it be easy to set a bunch of classes for buttons and stuff. The for loop let me iterate through some boxes and divs I wanted to style. The if statements let me change the colors or styling of the box depending on the condition I set.</p>
+<h2 id="Part-2">Part 2<a class="anchor-link" href="#Part-2"> </a></h2><p>Here is the link to the <a href="https://github.com/kaiden-dough/sasshacks">repo</a>. Here is the link to the <a href="https://kaiden-dough.github.io/fastpages/hangman/">website</a> With the use it was a lot easier to style the page. I used the variables, mixins, for loop, and if statements. The variables made it easy to set each value and quickly change the values. The mixins like it be easy to set a bunch of classes for buttons and stuff. The for loop let me iterate through some boxes and divs I wanted to style. The if statements let me change the colors or styling of the box depending on the condition I set.</p>
 
 </div>
 </div>
